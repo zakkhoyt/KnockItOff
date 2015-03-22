@@ -7,12 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8F95FA84802CDEE5C93ACBC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 172AB3A890436BE0BAF1F3B3 /* libPods.a */; };
+		CF51FBF61ABE6EE000C1C9BF /* KnockItOffKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCE94A51ABE563900E1E947 /* KnockItOffKit.framework */; };
 		CFCE94811ABE546900E1E947 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94801ABE546900E1E947 /* AppDelegate.swift */; };
-		CFCE94831ABE546900E1E947 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94821ABE546900E1E947 /* ViewController.swift */; };
+		CFCE94831ABE546900E1E947 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */; };
 		CFCE94861ABE546900E1E947 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCE94841ABE546900E1E947 /* Main.storyboard */; };
 		CFCE94881ABE546900E1E947 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCE94871ABE546900E1E947 /* Images.xcassets */; };
 		CFCE948B1ABE546900E1E947 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFCE94891ABE546900E1E947 /* LaunchScreen.xib */; };
 		CFCE94971ABE546900E1E947 /* KnockItOffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94961ABE546900E1E947 /* KnockItOffTests.swift */; };
+		CFCE94AA1ABE563900E1E947 /* KnockItOffKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CFCE94A91ABE563900E1E947 /* KnockItOffKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFCE94B01ABE563900E1E947 /* KnockItOffKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCE94A51ABE563900E1E947 /* KnockItOffKit.framework */; };
+		CFCE94B91ABE563900E1E947 /* KnockItOffKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94B81ABE563900E1E947 /* KnockItOffKitTests.swift */; };
+		CFCE94BC1ABE563900E1E947 /* KnockItOffKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCE94A51ABE563900E1E947 /* KnockItOffKit.framework */; };
+		CFCE94BD1ABE563900E1E947 /* KnockItOffKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFCE94A51ABE563900E1E947 /* KnockItOffKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFCE94C81ABE58BE00E1E947 /* KnockItOffKitTests.swift in Headers */ = {isa = PBXBuildFile; fileRef = CFCE94B81ABE563900E1E947 /* KnockItOffKitTests.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFCE94CB1ABE5AF500E1E947 /* VWWUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = CFCE94C91ABE5AF500E1E947 /* VWWUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFCE94CC1ABE5AF500E1E947 /* VWWUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94CA1ABE5AF500E1E947 /* VWWUserDefaults.m */; };
+		CFCE94D41ABE5C6B00E1E947 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCE94D31ABE5C6B00E1E947 /* NotificationCenter.framework */; };
+		CFCE94D91ABE5C6B00E1E947 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94D81ABE5C6B00E1E947 /* TodayViewController.swift */; };
+		CFCE94DB1ABE5C6B00E1E947 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCE94DA1ABE5C6B00E1E947 /* MainInterface.storyboard */; };
+		CFCE94DE1ABE5C6B00E1E947 /* KnockItOffToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CFCE94D11ABE5C6B00E1E947 /* KnockItOffToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CFE243C31ABE726C003044B0 /* CurrentStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE243C21ABE726C003044B0 /* CurrentStatusViewController.swift */; };
+		CFE243C41ABE7599003044B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCE94871ABE546900E1E947 /* Images.xcassets */; };
+		CFE243C61ABE7A80003044B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE243C51ABE7A80003044B0 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,19 +40,93 @@
 			remoteGlobalIDString = CFCE947A1ABE546900E1E947;
 			remoteInfo = KnockItOff;
 		};
+		CFCE94B11ABE563900E1E947 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFCE94731ABE546900E1E947 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFCE94A41ABE563900E1E947;
+			remoteInfo = KnockItOffKit;
+		};
+		CFCE94B31ABE563900E1E947 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFCE94731ABE546900E1E947 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFCE947A1ABE546900E1E947;
+			remoteInfo = KnockItOff;
+		};
+		CFCE94BA1ABE563900E1E947 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFCE94731ABE546900E1E947 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFCE94A41ABE563900E1E947;
+			remoteInfo = KnockItOffKit;
+		};
+		CFCE94DC1ABE5C6B00E1E947 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFCE94731ABE546900E1E947 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFCE94D01ABE5C6B00E1E947;
+			remoteInfo = KnockItOffToday;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CFCE94C11ABE563900E1E947 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CFCE94BD1ABE563900E1E947 /* KnockItOffKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCE94E21ABE5C6B00E1E947 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CFCE94DE1ABE5C6B00E1E947 /* KnockItOffToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		172AB3A890436BE0BAF1F3B3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9A1C462C84B9CC26BC24EB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CFCE947B1ABE546900E1E947 /* KnockItOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnockItOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCE947F1ABE546900E1E947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFCE94801ABE546900E1E947 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CFCE94821ABE546900E1E947 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		CFCE94851ABE546900E1E947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFCE94871ABE546900E1E947 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CFCE948A1ABE546900E1E947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CFCE94901ABE546900E1E947 /* KnockItOffTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnockItOffTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCE94951ABE546900E1E947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFCE94961ABE546900E1E947 /* KnockItOffTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnockItOffTests.swift; sourceTree = "<group>"; };
+		CFCE94A51ABE563900E1E947 /* KnockItOffKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KnockItOffKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFCE94A81ABE563900E1E947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFCE94A91ABE563900E1E947 /* KnockItOffKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnockItOffKit.h; sourceTree = "<group>"; };
+		CFCE94AF1ABE563900E1E947 /* KnockItOffKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnockItOffKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFCE94B71ABE563900E1E947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFCE94B81ABE563900E1E947 /* KnockItOffKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnockItOffKitTests.swift; sourceTree = "<group>"; };
+		CFCE94C51ABE565700E1E947 /* KnockItOff.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = KnockItOff.entitlements; sourceTree = "<group>"; };
+		CFCE94C91ABE5AF500E1E947 /* VWWUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWWUserDefaults.h; sourceTree = "<group>"; };
+		CFCE94CA1ABE5AF500E1E947 /* VWWUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWWUserDefaults.m; sourceTree = "<group>"; };
+		CFCE94D11ABE5C6B00E1E947 /* KnockItOffToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KnockItOffToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFCE94D31ABE5C6B00E1E947 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		CFCE94D71ABE5C6B00E1E947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFCE94D81ABE5C6B00E1E947 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		CFCE94DA1ABE5C6B00E1E947 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		CFCE94E31ABE5C7700E1E947 /* KnockItOffToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = KnockItOffToday.entitlements; sourceTree = "<group>"; };
+		CFCE94E41ABE685F00E1E947 /* KnockItOff-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KnockItOff-Bridging-Header.h"; sourceTree = "<group>"; };
+		CFE243C21ABE726C003044B0 /* CurrentStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentStatusViewController.swift; sourceTree = "<group>"; };
+		CFE243C51ABE7A80003044B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E2533ADB502EAFE8398C7855 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +134,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFCE94BC1ABE563900E1E947 /* KnockItOffKit.framework in Frameworks */,
+				B8F95FA84802CDEE5C93ACBC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,15 +146,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CFCE94A11ABE563900E1E947 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCE94AC1ABE563900E1E947 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCE94B01ABE563900E1E947 /* KnockItOffKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCE94CE1ABE5C6B00E1E947 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF51FBF61ABE6EE000C1C9BF /* KnockItOffKit.framework in Frameworks */,
+				CFCE94D41ABE5C6B00E1E947 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34A5867AEE40F3D89DB8DE3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2533ADB502EAFE8398C7855 /* Pods.debug.xcconfig */,
+				4B9A1C462C84B9CC26BC24EB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CFCE94721ABE546900E1E947 = {
 			isa = PBXGroup;
 			children = (
 				CFCE947D1ABE546900E1E947 /* KnockItOff */,
 				CFCE94931ABE546900E1E947 /* KnockItOffTests */,
+				CFCE94A61ABE563900E1E947 /* KnockItOffKit */,
+				CFCE94B51ABE563900E1E947 /* KnockItOffKitTests */,
+				CFCE94D51ABE5C6B00E1E947 /* KnockItOffToday */,
+				CFCE94D21ABE5C6B00E1E947 /* Frameworks */,
 				CFCE947C1ABE546900E1E947 /* Products */,
+				34A5867AEE40F3D89DB8DE3F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +201,9 @@
 			children = (
 				CFCE947B1ABE546900E1E947 /* KnockItOff.app */,
 				CFCE94901ABE546900E1E947 /* KnockItOffTests.xctest */,
+				CFCE94A51ABE563900E1E947 /* KnockItOffKit.framework */,
+				CFCE94AF1ABE563900E1E947 /* KnockItOffKitTests.xctest */,
+				CFCE94D11ABE5C6B00E1E947 /* KnockItOffToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,12 +211,15 @@
 		CFCE947D1ABE546900E1E947 /* KnockItOff */ = {
 			isa = PBXGroup;
 			children = (
+				CFCE94C51ABE565700E1E947 /* KnockItOff.entitlements */,
 				CFCE94801ABE546900E1E947 /* AppDelegate.swift */,
-				CFCE94821ABE546900E1E947 /* ViewController.swift */,
+				CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */,
 				CFCE94841ABE546900E1E947 /* Main.storyboard */,
 				CFCE94871ABE546900E1E947 /* Images.xcassets */,
 				CFCE94891ABE546900E1E947 /* LaunchScreen.xib */,
 				CFCE947E1ABE546900E1E947 /* Supporting Files */,
+				CFCE94E41ABE685F00E1E947 /* KnockItOff-Bridging-Header.h */,
+				CFE243C21ABE726C003044B0 /* CurrentStatusViewController.swift */,
 			);
 			path = KnockItOff;
 			sourceTree = "<group>";
@@ -112,20 +249,104 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CFCE94A61ABE563900E1E947 /* KnockItOffKit */ = {
+			isa = PBXGroup;
+			children = (
+				CFCE94A91ABE563900E1E947 /* KnockItOffKit.h */,
+				CFCE94C91ABE5AF500E1E947 /* VWWUserDefaults.h */,
+				CFCE94CA1ABE5AF500E1E947 /* VWWUserDefaults.m */,
+				CFCE94A71ABE563900E1E947 /* Supporting Files */,
+			);
+			path = KnockItOffKit;
+			sourceTree = "<group>";
+		};
+		CFCE94A71ABE563900E1E947 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFCE94A81ABE563900E1E947 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFCE94B51ABE563900E1E947 /* KnockItOffKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFCE94B81ABE563900E1E947 /* KnockItOffKitTests.swift */,
+				CFCE94B61ABE563900E1E947 /* Supporting Files */,
+			);
+			path = KnockItOffKitTests;
+			sourceTree = "<group>";
+		};
+		CFCE94B61ABE563900E1E947 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFCE94B71ABE563900E1E947 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFCE94D21ABE5C6B00E1E947 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFCE94D31ABE5C6B00E1E947 /* NotificationCenter.framework */,
+				172AB3A890436BE0BAF1F3B3 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFCE94D51ABE5C6B00E1E947 /* KnockItOffToday */ = {
+			isa = PBXGroup;
+			children = (
+				CFCE94E31ABE5C7700E1E947 /* KnockItOffToday.entitlements */,
+				CFCE94D81ABE5C6B00E1E947 /* TodayViewController.swift */,
+				CFCE94DA1ABE5C6B00E1E947 /* MainInterface.storyboard */,
+				CFCE94D61ABE5C6B00E1E947 /* Supporting Files */,
+				CFE243C51ABE7A80003044B0 /* Images.xcassets */,
+			);
+			path = KnockItOffToday;
+			sourceTree = "<group>";
+		};
+		CFCE94D61ABE5C6B00E1E947 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFCE94D71ABE5C6B00E1E947 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CFCE94A21ABE563900E1E947 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCE94AA1ABE563900E1E947 /* KnockItOffKit.h in Headers */,
+				CFCE94CB1ABE5AF500E1E947 /* VWWUserDefaults.h in Headers */,
+				CFCE94C81ABE58BE00E1E947 /* KnockItOffKitTests.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		CFCE947A1ABE546900E1E947 /* KnockItOff */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFCE949A1ABE546900E1E947 /* Build configuration list for PBXNativeTarget "KnockItOff" */;
 			buildPhases = (
+				1267BB5337DC628108CF2B73 /* Check Pods Manifest.lock */,
 				CFCE94771ABE546900E1E947 /* Sources */,
 				CFCE94781ABE546900E1E947 /* Frameworks */,
 				CFCE94791ABE546900E1E947 /* Resources */,
+				CFCE94C11ABE563900E1E947 /* Embed Frameworks */,
+				CFCE94E21ABE5C6B00E1E947 /* Embed App Extensions */,
+				F571D24E62028D8515BD0193 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CFCE94BB1ABE563900E1E947 /* PBXTargetDependency */,
+				CFCE94DD1ABE5C6B00E1E947 /* PBXTargetDependency */,
 			);
 			name = KnockItOff;
 			productName = KnockItOff;
@@ -150,6 +371,60 @@
 			productReference = CFCE94901ABE546900E1E947 /* KnockItOffTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CFCE94A41ABE563900E1E947 /* KnockItOffKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFCE94BE1ABE563900E1E947 /* Build configuration list for PBXNativeTarget "KnockItOffKit" */;
+			buildPhases = (
+				CFCE94A01ABE563900E1E947 /* Sources */,
+				CFCE94A11ABE563900E1E947 /* Frameworks */,
+				CFCE94A21ABE563900E1E947 /* Headers */,
+				CFCE94A31ABE563900E1E947 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KnockItOffKit;
+			productName = KnockItOffKit;
+			productReference = CFCE94A51ABE563900E1E947 /* KnockItOffKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CFCE94AE1ABE563900E1E947 /* KnockItOffKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFCE94C21ABE563900E1E947 /* Build configuration list for PBXNativeTarget "KnockItOffKitTests" */;
+			buildPhases = (
+				CFCE94AB1ABE563900E1E947 /* Sources */,
+				CFCE94AC1ABE563900E1E947 /* Frameworks */,
+				CFCE94AD1ABE563900E1E947 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFCE94B21ABE563900E1E947 /* PBXTargetDependency */,
+				CFCE94B41ABE563900E1E947 /* PBXTargetDependency */,
+			);
+			name = KnockItOffKitTests;
+			productName = KnockItOffKitTests;
+			productReference = CFCE94AF1ABE563900E1E947 /* KnockItOffKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFCE94D01ABE5C6B00E1E947 /* KnockItOffToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFCE94DF1ABE5C6B00E1E947 /* Build configuration list for PBXNativeTarget "KnockItOffToday" */;
+			buildPhases = (
+				CFCE94CD1ABE5C6B00E1E947 /* Sources */,
+				CFCE94CE1ABE5C6B00E1E947 /* Frameworks */,
+				CFCE94CF1ABE5C6B00E1E947 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KnockItOffToday;
+			productName = KnockItOffToday;
+			productReference = CFCE94D11ABE5C6B00E1E947 /* KnockItOffToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +436,32 @@
 				TargetAttributes = {
 					CFCE947A1ABE546900E1E947 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = J7U74N85YF;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					CFCE948F1ABE546900E1E947 = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = CFCE947A1ABE546900E1E947;
+					};
+					CFCE94A41ABE563900E1E947 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					CFCE94AE1ABE563900E1E947 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = CFCE947A1ABE546900E1E947;
+					};
+					CFCE94D01ABE5C6B00E1E947 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = J7U74N85YF;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -183,6 +480,9 @@
 			targets = (
 				CFCE947A1ABE546900E1E947 /* KnockItOff */,
 				CFCE948F1ABE546900E1E947 /* KnockItOffTests */,
+				CFCE94A41ABE563900E1E947 /* KnockItOffKit */,
+				CFCE94AE1ABE563900E1E947 /* KnockItOffKitTests */,
+				CFCE94D01ABE5C6B00E1E947 /* KnockItOffToday */,
 			);
 		};
 /* End PBXProject section */
@@ -205,14 +505,72 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CFCE94A31ABE563900E1E947 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCE94AD1ABE563900E1E947 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCE94CF1ABE5C6B00E1E947 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFE243C61ABE7A80003044B0 /* Images.xcassets in Resources */,
+				CFCE94DB1ABE5C6B00E1E947 /* MainInterface.storyboard in Resources */,
+				CFE243C41ABE7599003044B0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1267BB5337DC628108CF2B73 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F571D24E62028D8515BD0193 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CFCE94771ABE546900E1E947 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFCE94831ABE546900E1E947 /* ViewController.swift in Sources */,
+				CFE243C31ABE726C003044B0 /* CurrentStatusViewController.swift in Sources */,
+				CFCE94831ABE546900E1E947 /* DatePickerViewController.swift in Sources */,
 				CFCE94811ABE546900E1E947 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +583,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CFCE94A01ABE563900E1E947 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCE94CC1ABE5AF500E1E947 /* VWWUserDefaults.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCE94AB1ABE563900E1E947 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCE94B91ABE563900E1E947 /* KnockItOffKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFCE94CD1ABE5C6B00E1E947 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCE94D91ABE5C6B00E1E947 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +614,26 @@
 			isa = PBXTargetDependency;
 			target = CFCE947A1ABE546900E1E947 /* KnockItOff */;
 			targetProxy = CFCE94911ABE546900E1E947 /* PBXContainerItemProxy */;
+		};
+		CFCE94B21ABE563900E1E947 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFCE94A41ABE563900E1E947 /* KnockItOffKit */;
+			targetProxy = CFCE94B11ABE563900E1E947 /* PBXContainerItemProxy */;
+		};
+		CFCE94B41ABE563900E1E947 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFCE947A1ABE546900E1E947 /* KnockItOff */;
+			targetProxy = CFCE94B31ABE563900E1E947 /* PBXContainerItemProxy */;
+		};
+		CFCE94BB1ABE563900E1E947 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFCE94A41ABE563900E1E947 /* KnockItOffKit */;
+			targetProxy = CFCE94BA1ABE563900E1E947 /* PBXContainerItemProxy */;
+		};
+		CFCE94DD1ABE5C6B00E1E947 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFCE94D01ABE5C6B00E1E947 /* KnockItOffToday */;
+			targetProxy = CFCE94DC1ABE5C6B00E1E947 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -336,21 +738,38 @@
 		};
 		CFCE949B1ABE546900E1E947 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2533ADB502EAFE8398C7855 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = KnockItOff/KnockItOff.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = KnockItOff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "KnockItOff/KnockItOff-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		CFCE949C1ABE546900E1E947 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B9A1C462C84B9CC26BC24EB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = KnockItOff/KnockItOff.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = KnockItOff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "KnockItOff/KnockItOff-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -388,6 +807,115 @@
 			};
 			name = Release;
 		};
+		CFCE94BF1ABE563900E1E947 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KnockItOffKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CFCE94C01ABE563900E1E947 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KnockItOffKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CFCE94C31ABE563900E1E947 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KnockItOffKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KnockItOff.app/KnockItOff";
+			};
+			name = Debug;
+		};
+		CFCE94C41ABE563900E1E947 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KnockItOffKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KnockItOff.app/KnockItOff";
+			};
+			name = Release;
+		};
+		CFCE94E01ABE5C6B00E1E947 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = KnockItOffToday/KnockItOffToday.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KnockItOffToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CFCE94E11ABE5C6B00E1E947 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = KnockItOffToday/KnockItOffToday.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = KnockItOffToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -407,6 +935,7 @@
 				CFCE949C1ABE546900E1E947 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFCE949D1ABE546900E1E947 /* Build configuration list for PBXNativeTarget "KnockItOffTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +944,34 @@
 				CFCE949F1ABE546900E1E947 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFCE94BE1ABE563900E1E947 /* Build configuration list for PBXNativeTarget "KnockItOffKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFCE94BF1ABE563900E1E947 /* Debug */,
+				CFCE94C01ABE563900E1E947 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFCE94C21ABE563900E1E947 /* Build configuration list for PBXNativeTarget "KnockItOffKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFCE94C31ABE563900E1E947 /* Debug */,
+				CFCE94C41ABE563900E1E947 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFCE94DF1ABE5C6B00E1E947 /* Build configuration list for PBXNativeTarget "KnockItOffToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFCE94E01ABE5C6B00E1E947 /* Debug */,
+				CFCE94E11ABE5C6B00E1E947 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

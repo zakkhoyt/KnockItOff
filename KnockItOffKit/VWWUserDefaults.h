@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface VWWUserDefaults : NSObject
++(VWWUserDefaults*)sharedInstance;
+-(NSDate*)startDate;
+-(void)setStartDate:(NSDate*)date;
 
 @end

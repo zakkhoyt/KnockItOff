@@ -1,0 +1,1710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00F618FAD2611B0F6B67505C /* NSCalendar+RSDFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9697CDE96C7D96C5364E4DDA /* NSCalendar+RSDFAdditions.m */; };
+		0191976E44AF2351A4769172 /* RSDFDatePickerCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52012AEF26B0851538F2C995 /* RSDFDatePickerCollectionViewLayout.m */; };
+		0199D22917127242B7B97AF9 /* RSDFDatePickerCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8941B6838E31BA4D2075FDE8 /* RSDFDatePickerCollectionView.h */; };
+		03E3E3765B4B37C8374C4E25 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB467DB4282EE0ED8CB967EC /* QuartzCore.framework */; };
+		058320AA435CE3D0676849BC /* RSDFDatePickerMonthHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA2B4CE63EE7F9AA51B0498 /* RSDFDatePickerMonthHeader.m */; };
+		07637DA8139D041CB2836276 /* RSDFDatePickerCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52012AEF26B0851538F2C995 /* RSDFDatePickerCollectionViewLayout.m */; };
+		081A2FA35F52A1C4237DF73C /* RSDFDatePickerCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = F81B06505734F0A33F68DE2A /* RSDFDatePickerCollectionViewLayout.h */; };
+		09674BDDB07B2E1E8DBEC85B /* Pods-KnockItOffKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9E0193238478CF6A1B87E3 /* Pods-KnockItOffKit-dummy.m */; };
+		0E1ADE8F21138A080546071D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB467DB4282EE0ED8CB967EC /* QuartzCore.framework */; };
+		127D45526E60BD12DA6F433E /* RSDFDatePickerDaysOfWeekView.h in Headers */ = {isa = PBXBuildFile; fileRef = DE67919F2FB25D3A724CED67 /* RSDFDatePickerDaysOfWeekView.h */; };
+		156D0FF5E175617908ADEB10 /* RSDFDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D361AEBDD564D45BC6ECFD1 /* RSDFDatePickerView.m */; };
+		1906FEF37F1DF89807A73D5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5D5DBFA10357750B6C25AC /* Foundation.framework */; };
+		1E77CCBF8C6B33AA21679F75 /* RSDFDatePickerDaysOfWeekView.h in Headers */ = {isa = PBXBuildFile; fileRef = DE67919F2FB25D3A724CED67 /* RSDFDatePickerDaysOfWeekView.h */; };
+		2522530924BFE0860FAEBFEB /* NSCalendar+RSDFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9697CDE96C7D96C5364E4DDA /* NSCalendar+RSDFAdditions.m */; };
+		257344BCEFEBF2D2658819BC /* RSDFDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E8DB391B328944AEB3D99A /* RSDFDatePickerView.h */; };
+		2619F041B25976CD5896C72C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCB81DE77A684676BC14B49 /* UIKit.framework */; };
+		2968CC1B43ADD236192D886B /* RSDFDatePickerDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FF5EF37F996FEB75FACDA7 /* RSDFDatePickerDayCell.m */; };
+		2BD9F507F4B46B95F429F25B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB467DB4282EE0ED8CB967EC /* QuartzCore.framework */; };
+		2D6B2A614D7D8D7DC966F7D2 /* RSDayFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AFBCA6E96CA84899E15DF1C /* RSDayFlow.h */; };
+		2E6CD391F5E1E0D196072254 /* RSDFDatePickerDayCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 676F9DC461886C489A034E2D /* RSDFDatePickerDayCell.h */; };
+		30922BEFDCF350690A849F5C /* Pods-KnockItOffKit-RSDayFlow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F69544AD297EEA0E7469EEE4 /* Pods-KnockItOffKit-RSDayFlow-dummy.m */; };
+		316F28495316031AA49751FB /* RSDFDatePickerDaysOfWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4CA9E8C0B8D39CB5C880DD /* RSDFDatePickerDaysOfWeekView.m */; };
+		32F60E7EDACA2E09A337430F /* RSDFDatePickerMonthHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 83251E87A16A95F1D517E7E8 /* RSDFDatePickerMonthHeader.h */; };
+		3322C30034BC2736D814433A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCB81DE77A684676BC14B49 /* UIKit.framework */; };
+		3387AD74A0BE875BA393C48E /* NSCalendar+RSDFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9697CDE96C7D96C5364E4DDA /* NSCalendar+RSDFAdditions.m */; };
+		33AA18AF58BCC37A67650F85 /* Pods-KnockItOff-RSDayFlow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5609FFFE66BFFFFED4A3AC84 /* Pods-KnockItOff-RSDayFlow-dummy.m */; };
+		37AF6EE2191F8F2A86476BCA /* Pods-KnockItOffTests-RSDayFlow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A931039AF539FDC7CFA334 /* Pods-KnockItOffTests-RSDayFlow-dummy.m */; };
+		37F7B848D0649E5FFE53067E /* RSDFDatePickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 496852CFBF6B291BDE66D66F /* RSDFDatePickerCollectionView.m */; };
+		3AE4EBA59425DF819FB4E6D0 /* RSDFDatePickerDaysOfWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4CA9E8C0B8D39CB5C880DD /* RSDFDatePickerDaysOfWeekView.m */; };
+		3BCE8AEAB79E0D0DF98E6620 /* RSDFDatePickerDaysOfWeekView.h in Headers */ = {isa = PBXBuildFile; fileRef = DE67919F2FB25D3A724CED67 /* RSDFDatePickerDaysOfWeekView.h */; };
+		3DD54FFB237B91FD9E6CDD4F /* RSDFDatePickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 496852CFBF6B291BDE66D66F /* RSDFDatePickerCollectionView.m */; };
+		3F945CB9A0CB383F9B107F2B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB467DB4282EE0ED8CB967EC /* QuartzCore.framework */; };
+		408363ED606C86F281E61620 /* RSDFDatePickerDaysOfWeekView.h in Headers */ = {isa = PBXBuildFile; fileRef = DE67919F2FB25D3A724CED67 /* RSDFDatePickerDaysOfWeekView.h */; };
+		449AF331D3BF8762F095BC80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5D5DBFA10357750B6C25AC /* Foundation.framework */; };
+		456075EF6EFFD2FE2E24DD36 /* RSDFDatePickerMonthHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA2B4CE63EE7F9AA51B0498 /* RSDFDatePickerMonthHeader.m */; };
+		460475C777C027622E0473F3 /* RSDFDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E8DB391B328944AEB3D99A /* RSDFDatePickerView.h */; };
+		48835279A52B846FBAEB17E8 /* Pods-KnockItOffToday-RSDayFlow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86335560B09669BBA2B2AE8C /* Pods-KnockItOffToday-RSDayFlow-dummy.m */; };
+		48D9E91621B31118ED72E40D /* RSDFDatePickerCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = F81B06505734F0A33F68DE2A /* RSDFDatePickerCollectionViewLayout.h */; };
+		4A7AB8D76419DF68C35882AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCB81DE77A684676BC14B49 /* UIKit.framework */; };
+		4CF7E1BA6DE9BC6513E8D343 /* RSDFDatePickerDayCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 676F9DC461886C489A034E2D /* RSDFDatePickerDayCell.h */; };
+		4CFE59AEEBAF535FD1C6877C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5D5DBFA10357750B6C25AC /* Foundation.framework */; };
+		50EA39BBE7BC3A58894BB109 /* NSCalendar+RSDFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9697CDE96C7D96C5364E4DDA /* NSCalendar+RSDFAdditions.m */; };
+		522812E9F130DBE82978F324 /* RSDFDatePickerMonthHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA2B4CE63EE7F9AA51B0498 /* RSDFDatePickerMonthHeader.m */; };
+		523A88E7CB848315C09F175E /* RSDFDatePickerDayCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 676F9DC461886C489A034E2D /* RSDFDatePickerDayCell.h */; };
+		53B297E72C9E15279CABAD06 /* RSDFDatePickerCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52012AEF26B0851538F2C995 /* RSDFDatePickerCollectionViewLayout.m */; };
+		54A0DFAE27D1F2CFA2A0BDFB /* RSDFDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E8DB391B328944AEB3D99A /* RSDFDatePickerView.h */; };
+		5656F46073563E69421D3FA9 /* RSDFDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D361AEBDD564D45BC6ECFD1 /* RSDFDatePickerView.m */; };
+		58973277114774B8E0A0F1F2 /* RSDFDatePickerDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FF5EF37F996FEB75FACDA7 /* RSDFDatePickerDayCell.m */; };
+		5AF72DE47174CFB4541C0C9A /* RSDFDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D361AEBDD564D45BC6ECFD1 /* RSDFDatePickerView.m */; };
+		5CB6F3B41EFCDFFA226E0642 /* RSDayFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AFBCA6E96CA84899E15DF1C /* RSDayFlow.h */; };
+		61B0D004D6EC2BDF3949B3B4 /* RSDFDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E8DB391B328944AEB3D99A /* RSDFDatePickerView.h */; };
+		62941769EB47EEA17A04E306 /* NSCalendar+RSDFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E48369732DA7C494070067E3 /* NSCalendar+RSDFAdditions.h */; };
+		636E027386733E0175A59085 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5D5DBFA10357750B6C25AC /* Foundation.framework */; };
+		63D6AD1DE9DC29B5626540E1 /* RSDFDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E8DB391B328944AEB3D99A /* RSDFDatePickerView.h */; };
+		66243DABD4D2478FC22A4E54 /* RSDFDatePickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 496852CFBF6B291BDE66D66F /* RSDFDatePickerCollectionView.m */; };
+		6851AE4A49E0B4A88E3BEA23 /* RSDFDatePickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 496852CFBF6B291BDE66D66F /* RSDFDatePickerCollectionView.m */; };
+		6CE1345146E2BD49321060F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5D5DBFA10357750B6C25AC /* Foundation.framework */; };
+		6FF9792844C757D0DA4FBCCA /* Pods-KnockItOffKitTests-RSDayFlow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC1D2D8C55E09E4BA4BE772 /* Pods-KnockItOffKitTests-RSDayFlow-dummy.m */; };
+		764ED33897A15F453261F653 /* RSDFDatePickerCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8941B6838E31BA4D2075FDE8 /* RSDFDatePickerCollectionView.h */; };
+		77EF19902D3083A9801F0C8C /* NSCalendar+RSDFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9697CDE96C7D96C5364E4DDA /* NSCalendar+RSDFAdditions.m */; };
+		787BCBBBBDAE2BD579C29A4F /* RSDFDatePickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 496852CFBF6B291BDE66D66F /* RSDFDatePickerCollectionView.m */; };
+		7A05330E045D48F172E3A6F7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB467DB4282EE0ED8CB967EC /* QuartzCore.framework */; };
+		7BF5B9B91316CDF1F260866A /* RSDFDatePickerDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FF5EF37F996FEB75FACDA7 /* RSDFDatePickerDayCell.m */; };
+		7CC989607E29EC83A0305DBE /* RSDFDatePickerDayCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 676F9DC461886C489A034E2D /* RSDFDatePickerDayCell.h */; };
+		7FF1F322E84BE22C938B6BCD /* RSDFDatePickerDaysOfWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4CA9E8C0B8D39CB5C880DD /* RSDFDatePickerDaysOfWeekView.m */; };
+		806CD3885B3B8CB47439A149 /* RSDayFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AFBCA6E96CA84899E15DF1C /* RSDayFlow.h */; };
+		819B217F8C67111AA03A1A7F /* Pods-KnockItOffToday-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF8C06A93433415125AF490 /* Pods-KnockItOffToday-dummy.m */; };
+		83D7DF8D7B87C9147DF278BC /* Pods-KnockItOffKitTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595652BB5C91A1CCEA89E6A /* Pods-KnockItOffKitTests-dummy.m */; };
+		85A8544E3F182F038C190E73 /* RSDFDatePickerCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = F81B06505734F0A33F68DE2A /* RSDFDatePickerCollectionViewLayout.h */; };
+		8685ECB0F3F112B3AD19E69B /* NSCalendar+RSDFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E48369732DA7C494070067E3 /* NSCalendar+RSDFAdditions.h */; };
+		86931E371E14E5FAA83EEF5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5D5DBFA10357750B6C25AC /* Foundation.framework */; };
+		87065AFD1B7182B319AF9525 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5D5DBFA10357750B6C25AC /* Foundation.framework */; };
+		879112304987033322B4B693 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCB81DE77A684676BC14B49 /* UIKit.framework */; };
+		8A752209DE92ABC6B74825E7 /* RSDFDatePickerCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8941B6838E31BA4D2075FDE8 /* RSDFDatePickerCollectionView.h */; };
+		8BF788DF808AF1933952F45A /* RSDFDatePickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 496852CFBF6B291BDE66D66F /* RSDFDatePickerCollectionView.m */; };
+		9468ABF5F7BC24429AAB5A28 /* RSDFDatePickerDaysOfWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4CA9E8C0B8D39CB5C880DD /* RSDFDatePickerDaysOfWeekView.m */; };
+		949A28D8EE71BEC9C53014A9 /* RSDFDatePickerDayCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 676F9DC461886C489A034E2D /* RSDFDatePickerDayCell.h */; };
+		97CD6991177A7D1384D533CD /* RSDFDatePickerCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8941B6838E31BA4D2075FDE8 /* RSDFDatePickerCollectionView.h */; };
+		9A2D1862426782B4F34D43E1 /* Pods-RSDayFlow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD861716E38774C2106F5AE7 /* Pods-RSDayFlow-dummy.m */; };
+		9BB5E0DC8C5BB05C4EEB44DF /* RSDFDatePickerMonthHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA2B4CE63EE7F9AA51B0498 /* RSDFDatePickerMonthHeader.m */; };
+		9EE2F751092FF364A8B78807 /* Pods-KnockItOff-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000FFDC73174A53ABFBE2FA3 /* Pods-KnockItOff-dummy.m */; };
+		A2B11451EBC3B257CE3449A2 /* Pods-KnockItOffTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 382CEE7A6769E20B581ECF7E /* Pods-KnockItOffTests-dummy.m */; };
+		A388B687E0C661217874687C /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE15402904ECD389493CDFA1 /* Pods-dummy.m */; };
+		A3E6B352134AD403852B272D /* RSDFDatePickerCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = F81B06505734F0A33F68DE2A /* RSDFDatePickerCollectionViewLayout.h */; };
+		A730533571001F69C9A8AB54 /* RSDFDatePickerDaysOfWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4CA9E8C0B8D39CB5C880DD /* RSDFDatePickerDaysOfWeekView.m */; };
+		AA584F4473F881F939051421 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB467DB4282EE0ED8CB967EC /* QuartzCore.framework */; };
+		B0DCA613D7B6E04491E79848 /* RSDFDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E8DB391B328944AEB3D99A /* RSDFDatePickerView.h */; };
+		B20F005E42C08A9D0B4C07CE /* RSDFDatePickerDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FF5EF37F996FEB75FACDA7 /* RSDFDatePickerDayCell.m */; };
+		B2207A68DBEFBFC279344618 /* RSDFDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D361AEBDD564D45BC6ECFD1 /* RSDFDatePickerView.m */; };
+		B2A51640AA3F51FDAA10D61C /* RSDFDatePickerCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52012AEF26B0851538F2C995 /* RSDFDatePickerCollectionViewLayout.m */; };
+		B41EE3B581C78218682508BA /* RSDFDatePickerCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52012AEF26B0851538F2C995 /* RSDFDatePickerCollectionViewLayout.m */; };
+		B4441D8D3DA4DDC4009570A8 /* RSDFDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D361AEBDD564D45BC6ECFD1 /* RSDFDatePickerView.m */; };
+		B50ED52D852AA210884D8D22 /* RSDFDatePickerMonthHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 83251E87A16A95F1D517E7E8 /* RSDFDatePickerMonthHeader.h */; };
+		B68E3ACE53E8110E80DB4CE6 /* RSDFDatePickerDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FF5EF37F996FEB75FACDA7 /* RSDFDatePickerDayCell.m */; };
+		B9736472F60FFE654CD89FFB /* RSDFDatePickerMonthHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 83251E87A16A95F1D517E7E8 /* RSDFDatePickerMonthHeader.h */; };
+		BC2408E6EDE4B54B88E8B227 /* NSCalendar+RSDFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E48369732DA7C494070067E3 /* NSCalendar+RSDFAdditions.h */; };
+		BDA922888ECCDF056A7CFBF5 /* RSDFDatePickerDaysOfWeekView.h in Headers */ = {isa = PBXBuildFile; fileRef = DE67919F2FB25D3A724CED67 /* RSDFDatePickerDaysOfWeekView.h */; };
+		BE0CE9238C4DC5241102B2DF /* RSDFDatePickerCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = F81B06505734F0A33F68DE2A /* RSDFDatePickerCollectionViewLayout.h */; };
+		BFD7E2CF9C575EFDA38C5905 /* NSCalendar+RSDFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E48369732DA7C494070067E3 /* NSCalendar+RSDFAdditions.h */; };
+		C0CF8C5BFD8B7C3A0EB74B43 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCB81DE77A684676BC14B49 /* UIKit.framework */; };
+		C35A0D1FFD8F2C6CF8DEA991 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5D5DBFA10357750B6C25AC /* Foundation.framework */; };
+		C4739EF1FA0D0B910D0351AE /* RSDFDatePickerDayCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 676F9DC461886C489A034E2D /* RSDFDatePickerDayCell.h */; };
+		C654E4F88A0389E22F99857F /* RSDFDatePickerMonthHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 83251E87A16A95F1D517E7E8 /* RSDFDatePickerMonthHeader.h */; };
+		C7202D8C6B4FF5D83B1752A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5D5DBFA10357750B6C25AC /* Foundation.framework */; };
+		CE65BEC9AC23576A86427ED6 /* RSDayFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AFBCA6E96CA84899E15DF1C /* RSDayFlow.h */; };
+		D1DF118FE9802DAD0EE1C396 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCB81DE77A684676BC14B49 /* UIKit.framework */; };
+		DD04927E6C5850C5FBE02302 /* NSCalendar+RSDFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9697CDE96C7D96C5364E4DDA /* NSCalendar+RSDFAdditions.m */; };
+		DDD45FEFAB3D04C2052B27A9 /* RSDFDatePickerDaysOfWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4CA9E8C0B8D39CB5C880DD /* RSDFDatePickerDaysOfWeekView.m */; };
+		DF2135B7B97EFF561105D1B9 /* RSDFDatePickerDaysOfWeekView.h in Headers */ = {isa = PBXBuildFile; fileRef = DE67919F2FB25D3A724CED67 /* RSDFDatePickerDaysOfWeekView.h */; };
+		E03D9E746546AE5CEBB60988 /* RSDFDatePickerCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = F81B06505734F0A33F68DE2A /* RSDFDatePickerCollectionViewLayout.h */; };
+		E3D7DBCB75D7AF1D7D6105BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5D5DBFA10357750B6C25AC /* Foundation.framework */; };
+		E41771F540C47D1AD0E4EC35 /* NSCalendar+RSDFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E48369732DA7C494070067E3 /* NSCalendar+RSDFAdditions.h */; };
+		E90FA67ACECD2E5289B2A5E1 /* RSDFDatePickerMonthHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA2B4CE63EE7F9AA51B0498 /* RSDFDatePickerMonthHeader.m */; };
+		E956B9D0179569780FF59D27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5D5DBFA10357750B6C25AC /* Foundation.framework */; };
+		EBBB8CA49519C0EF542AFFCC /* RSDFDatePickerMonthHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 83251E87A16A95F1D517E7E8 /* RSDFDatePickerMonthHeader.h */; };
+		ED379CF6E86E70EC0898EACE /* RSDFDatePickerMonthHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA2B4CE63EE7F9AA51B0498 /* RSDFDatePickerMonthHeader.m */; };
+		EDBDC7FD8A556FB24E00805E /* RSDFDatePickerCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8941B6838E31BA4D2075FDE8 /* RSDFDatePickerCollectionView.h */; };
+		EF61E5592944894F9300AC06 /* RSDayFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AFBCA6E96CA84899E15DF1C /* RSDayFlow.h */; };
+		F11054A726A24E02E2420502 /* RSDFDatePickerCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 52012AEF26B0851538F2C995 /* RSDFDatePickerCollectionViewLayout.m */; };
+		F1EFA9CE821415B5EE5F87EF /* RSDayFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AFBCA6E96CA84899E15DF1C /* RSDayFlow.h */; };
+		F43E9AFEE9F6EF451E787FEB /* RSDFDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D361AEBDD564D45BC6ECFD1 /* RSDFDatePickerView.m */; };
+		F4B07C2332D47BFC3AA760C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5D5DBFA10357750B6C25AC /* Foundation.framework */; };
+		F82BAB0937903FD6F0C1DF79 /* RSDFDatePickerDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FF5EF37F996FEB75FACDA7 /* RSDFDatePickerDayCell.m */; };
+		FB708549FB43659F9DAD9D25 /* RSDFDatePickerCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8941B6838E31BA4D2075FDE8 /* RSDFDatePickerCollectionView.h */; };
+		FC0BC3023FCB1D05B9ADC5B8 /* NSCalendar+RSDFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E48369732DA7C494070067E3 /* NSCalendar+RSDFAdditions.h */; };
+		FC282F7D68491F03969BD178 /* RSDFDatePickerMonthHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 83251E87A16A95F1D517E7E8 /* RSDFDatePickerMonthHeader.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B8483B7737F3E48944F1254 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A58DEED8E39218D262B757A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D866E799BC00AD01AF89B39;
+			remoteInfo = "Pods-KnockItOffToday-RSDayFlow";
+		};
+		3D98904390F3574B5E522620 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A58DEED8E39218D262B757A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7BA6141DCAB06C19F4D5689;
+			remoteInfo = "Pods-KnockItOffTests-RSDayFlow";
+		};
+		8F8D18D707F43EBE1A628ADF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A58DEED8E39218D262B757A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FEA773AE242523BA890455F;
+			remoteInfo = "Pods-KnockItOff-RSDayFlow";
+		};
+		AEA38A9BD551225FC36230B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A58DEED8E39218D262B757A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B025BB329578EC188E616631;
+			remoteInfo = "Pods-RSDayFlow";
+		};
+		CB403E34764A607ABE352A0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A58DEED8E39218D262B757A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6942B9CD5A043FB5E2F50749;
+			remoteInfo = "Pods-KnockItOffKit-RSDayFlow";
+		};
+		E0946D6D70D174F98DA1798E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A58DEED8E39218D262B757A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03EC033CE178C51FEC0B8D26;
+			remoteInfo = "Pods-KnockItOffKitTests-RSDayFlow";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000FFDC73174A53ABFBE2FA3 /* Pods-KnockItOff-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KnockItOff-dummy.m"; sourceTree = "<group>"; };
+		00CF8E3EA1D24BD01AC180DE /* Pods-KnockItOffKitTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KnockItOffKitTests-resources.sh"; sourceTree = "<group>"; };
+		012E24E6B4ECD6843A68F1CA /* Pods-KnockItOffToday-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KnockItOffToday-resources.sh"; sourceTree = "<group>"; };
+		022FAED549AF5095849323E0 /* Pods-KnockItOffTests-RSDayFlow-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnockItOffTests-RSDayFlow-Private.xcconfig"; path = "../Pods-KnockItOffTests-RSDayFlow/Pods-KnockItOffTests-RSDayFlow-Private.xcconfig"; sourceTree = "<group>"; };
+		03F8FEA011005182A8799C97 /* Pods-KnockItOff-RSDayFlow-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnockItOff-RSDayFlow-Private.xcconfig"; sourceTree = "<group>"; };
+		0604C70B8422FBE010F1C6E0 /* Pods-KnockItOffToday-RSDayFlow-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnockItOffToday-RSDayFlow-Private.xcconfig"; path = "../Pods-KnockItOffToday-RSDayFlow/Pods-KnockItOffToday-RSDayFlow-Private.xcconfig"; sourceTree = "<group>"; };
+		0706477C149B25BEF70C9AAE /* Pods-KnockItOffKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnockItOffKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		10130C6350EF1C2E646F88BB /* Pods-KnockItOffKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KnockItOffKit-acknowledgements.plist"; sourceTree = "<group>"; };
+		12947446FC497ED8AFC6FE8E /* Pods-KnockItOffKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnockItOffKit.release.xcconfig"; sourceTree = "<group>"; };
+		12D0D6B3D713AF002A8C7FC4 /* Pods-RSDayFlow-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSDayFlow-Private.xcconfig"; path = "../Pods-RSDayFlow/Pods-RSDayFlow-Private.xcconfig"; sourceTree = "<group>"; };
+		16DBD4B3B0E1FED1CD40D416 /* libPods-KnockItOffTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnockItOffTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AC1D2D8C55E09E4BA4BE772 /* Pods-KnockItOffKitTests-RSDayFlow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-KnockItOffKitTests-RSDayFlow-dummy.m"; path = "../Pods-KnockItOffKitTests-RSDayFlow/Pods-KnockItOffKitTests-RSDayFlow-dummy.m"; sourceTree = "<group>"; };
+		1D0299BB62811412E03329A2 /* Pods-KnockItOffToday-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KnockItOffToday-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2230E535B29CA82D4A5EA75A /* Pods-KnockItOff-RSDayFlow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KnockItOff-RSDayFlow-prefix.pch"; sourceTree = "<group>"; };
+		24E08B7C5B6B72AFA8C73DB8 /* Pods-KnockItOffToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnockItOffToday.release.xcconfig"; sourceTree = "<group>"; };
+		280D730A8C69AE0C3A6122AC /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		33EC28E67CDEFD874952FB19 /* Pods-KnockItOffToday-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KnockItOffToday-environment.h"; sourceTree = "<group>"; };
+		3595652BB5C91A1CCEA89E6A /* Pods-KnockItOffKitTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KnockItOffKitTests-dummy.m"; sourceTree = "<group>"; };
+		3714A0EDCEC8E354CD31ABD6 /* Pods-KnockItOffKitTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KnockItOffKitTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		382CEE7A6769E20B581ECF7E /* Pods-KnockItOffTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KnockItOffTests-dummy.m"; sourceTree = "<group>"; };
+		3CFAB17FC3891EB1BFF89612 /* Pods-KnockItOff.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnockItOff.debug.xcconfig"; sourceTree = "<group>"; };
+		407CAA2A000B605DC7D7CC4D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		42856E53FC5971B918A8C6CD /* Pods-KnockItOffKitTests-RSDayFlow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-KnockItOffKitTests-RSDayFlow-prefix.pch"; path = "../Pods-KnockItOffKitTests-RSDayFlow/Pods-KnockItOffKitTests-RSDayFlow-prefix.pch"; sourceTree = "<group>"; };
+		4330506B015F50C631B7723B /* libPods-KnockItOffKitTests-RSDayFlow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnockItOffKitTests-RSDayFlow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		496852CFBF6B291BDE66D66F /* RSDFDatePickerCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDFDatePickerCollectionView.m; path = RSDayFlow/RSDFDatePickerCollectionView.m; sourceTree = "<group>"; };
+		4BCB81DE77A684676BC14B49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		4C70A768107A6F55246EFA17 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		4F8A37334FC2DEB4F456B752 /* libPods-KnockItOffToday-RSDayFlow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnockItOffToday-RSDayFlow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		504E23BA26332FE541383B66 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		50E8DB391B328944AEB3D99A /* RSDFDatePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDFDatePickerView.h; path = RSDayFlow/RSDFDatePickerView.h; sourceTree = "<group>"; };
+		52012AEF26B0851538F2C995 /* RSDFDatePickerCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDFDatePickerCollectionViewLayout.m; path = RSDayFlow/RSDFDatePickerCollectionViewLayout.m; sourceTree = "<group>"; };
+		55611537C288D65A6D708BB2 /* libPods-RSDayFlow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RSDayFlow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5609FFFE66BFFFFED4A3AC84 /* Pods-KnockItOff-RSDayFlow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KnockItOff-RSDayFlow-dummy.m"; sourceTree = "<group>"; };
+		58CC823846601075C0781D91 /* Pods-KnockItOffKitTests-RSDayFlow-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnockItOffKitTests-RSDayFlow-Private.xcconfig"; path = "../Pods-KnockItOffKitTests-RSDayFlow/Pods-KnockItOffKitTests-RSDayFlow-Private.xcconfig"; sourceTree = "<group>"; };
+		5A872A7721A4AE4FCD1090DD /* Pods-KnockItOffTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnockItOffTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D0C66CE995716AB705787A8 /* Pods-KnockItOffKit-RSDayFlow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-KnockItOffKit-RSDayFlow-prefix.pch"; path = "../Pods-KnockItOffKit-RSDayFlow/Pods-KnockItOffKit-RSDayFlow-prefix.pch"; sourceTree = "<group>"; };
+		5D63C834A11C532B719BAF7F /* libPods-KnockItOffKit-RSDayFlow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnockItOffKit-RSDayFlow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F0B740E72A9D40FC48B6D09 /* Pods-KnockItOffKit-RSDayFlow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnockItOffKit-RSDayFlow.xcconfig"; path = "../Pods-KnockItOffKit-RSDayFlow/Pods-KnockItOffKit-RSDayFlow.xcconfig"; sourceTree = "<group>"; };
+		5F2FC54B7E1DF92D8B7D976C /* Pods-KnockItOffTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KnockItOffTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5F7A518B1B081D4A9E64CD9C /* Pods-KnockItOffTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KnockItOffTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5FEF8D42395E416871B63E76 /* Pods-KnockItOffTests-RSDayFlow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-KnockItOffTests-RSDayFlow-prefix.pch"; path = "../Pods-KnockItOffTests-RSDayFlow/Pods-KnockItOffTests-RSDayFlow-prefix.pch"; sourceTree = "<group>"; };
+		6027E902D7B1EF3254D01B1D /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		619B1410B6365B8FF0CF59DB /* Pods-KnockItOff-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KnockItOff-acknowledgements.plist"; sourceTree = "<group>"; };
+		6227DF0BFB6DC908C81F9EEC /* Pods-KnockItOffTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnockItOffTests.debug.xcconfig"; sourceTree = "<group>"; };
+		672D06D6455B988E981EA158 /* Pods-KnockItOffToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnockItOffToday.debug.xcconfig"; sourceTree = "<group>"; };
+		676F9DC461886C489A034E2D /* RSDFDatePickerDayCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDFDatePickerDayCell.h; path = RSDayFlow/RSDFDatePickerDayCell.h; sourceTree = "<group>"; };
+		68A53A3D490A9B3D45AE1FD2 /* libPods-KnockItOff.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnockItOff.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A1DDE65EB722A1AA5997DCB /* libPods-KnockItOffKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnockItOffKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70B2581576C9309F58535176 /* Pods-KnockItOffTests-RSDayFlow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnockItOffTests-RSDayFlow.xcconfig"; path = "../Pods-KnockItOffTests-RSDayFlow/Pods-KnockItOffTests-RSDayFlow.xcconfig"; sourceTree = "<group>"; };
+		710604F9855805CBA341E74E /* Pods-KnockItOffKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnockItOffKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		727C2BD2A3A4F708277638F5 /* Pods-KnockItOffKitTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KnockItOffKitTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		78C141B1A31CD9BE6C4B6736 /* Pods-KnockItOffTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KnockItOffTests-resources.sh"; sourceTree = "<group>"; };
+		7BD0F66AF11D6C5996FF1491 /* Pods-KnockItOff-RSDayFlow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnockItOff-RSDayFlow.xcconfig"; sourceTree = "<group>"; };
+		7CF8C06A93433415125AF490 /* Pods-KnockItOffToday-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KnockItOffToday-dummy.m"; sourceTree = "<group>"; };
+		7FFABAD4AF1B341C7B962FC8 /* Pods-KnockItOff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnockItOff.release.xcconfig"; sourceTree = "<group>"; };
+		83251E87A16A95F1D517E7E8 /* RSDFDatePickerMonthHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDFDatePickerMonthHeader.h; path = RSDayFlow/RSDFDatePickerMonthHeader.h; sourceTree = "<group>"; };
+		86335560B09669BBA2B2AE8C /* Pods-KnockItOffToday-RSDayFlow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-KnockItOffToday-RSDayFlow-dummy.m"; path = "../Pods-KnockItOffToday-RSDayFlow/Pods-KnockItOffToday-RSDayFlow-dummy.m"; sourceTree = "<group>"; };
+		8941B6838E31BA4D2075FDE8 /* RSDFDatePickerCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDFDatePickerCollectionView.h; path = RSDayFlow/RSDFDatePickerCollectionView.h; sourceTree = "<group>"; };
+		8A193B8CD003338BC480390F /* Pods-KnockItOffTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KnockItOffTests-environment.h"; sourceTree = "<group>"; };
+		8AFBCA6E96CA84899E15DF1C /* RSDayFlow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDayFlow.h; path = RSDayFlow/RSDayFlow.h; sourceTree = "<group>"; };
+		9015158949733A4ACE27E08A /* Pods-KnockItOffKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KnockItOffKit.debug.xcconfig"; sourceTree = "<group>"; };
+		910C4CE49D08211D849B5A13 /* Pods-KnockItOffKit-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KnockItOffKit-environment.h"; sourceTree = "<group>"; };
+		939C36FB078D66520276BC82 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		954340EEE09D48DF6F652BE6 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		95A21A207AF993EE90A3F14F /* Pods-KnockItOffKitTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KnockItOffKitTests-environment.h"; sourceTree = "<group>"; };
+		9697CDE96C7D96C5364E4DDA /* NSCalendar+RSDFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+RSDFAdditions.m"; path = "RSDayFlow/NSCalendar+RSDFAdditions.m"; sourceTree = "<group>"; };
+		9D361AEBDD564D45BC6ECFD1 /* RSDFDatePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDFDatePickerView.m; path = RSDayFlow/RSDFDatePickerView.m; sourceTree = "<group>"; };
+		A0191ECB36B6D98886BAB5CB /* Pods-KnockItOffKit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KnockItOffKit-resources.sh"; sourceTree = "<group>"; };
+		A2CC19C727379D3AC5B4D21B /* Pods-KnockItOffKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KnockItOffKit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A4D47E1B73A572D2EE3D2CB3 /* Pods-RSDayFlow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSDayFlow.xcconfig"; path = "../Pods-RSDayFlow/Pods-RSDayFlow.xcconfig"; sourceTree = "<group>"; };
+		B03B49336A86D3A341D03F99 /* libPods-KnockItOff-RSDayFlow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnockItOff-RSDayFlow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4FF5EF37F996FEB75FACDA7 /* RSDFDatePickerDayCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDFDatePickerDayCell.m; path = RSDayFlow/RSDFDatePickerDayCell.m; sourceTree = "<group>"; };
+		B7C8DB1527D19D9CF001FE4F /* libPods-KnockItOffTests-RSDayFlow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnockItOffTests-RSDayFlow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE15402904ECD389493CDFA1 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		C2D51A679D27D6594B2838FF /* Pods-KnockItOff-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KnockItOff-resources.sh"; sourceTree = "<group>"; };
+		C595414DFEB5FDF41C6CD604 /* Pods-KnockItOff-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KnockItOff-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CAB9669D742891B8641185FA /* Pods-KnockItOffToday-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KnockItOffToday-acknowledgements.plist"; sourceTree = "<group>"; };
+		CB467DB4282EE0ED8CB967EC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		CFB8D2ACA9464C226166D75D /* Pods-KnockItOffKitTests-RSDayFlow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnockItOffKitTests-RSDayFlow.xcconfig"; path = "../Pods-KnockItOffKitTests-RSDayFlow/Pods-KnockItOffKitTests-RSDayFlow.xcconfig"; sourceTree = "<group>"; };
+		D1AD73376871B9D442045E52 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		DBE629C8EFB7EB40264BFAD1 /* Pods-RSDayFlow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-RSDayFlow-prefix.pch"; path = "../Pods-RSDayFlow/Pods-RSDayFlow-prefix.pch"; sourceTree = "<group>"; };
+		DD4CA9E8C0B8D39CB5C880DD /* RSDFDatePickerDaysOfWeekView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDFDatePickerDaysOfWeekView.m; path = RSDayFlow/RSDFDatePickerDaysOfWeekView.m; sourceTree = "<group>"; };
+		DD7B13094295CD0453236FCD /* libPods-KnockItOffToday.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnockItOffToday.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD861716E38774C2106F5AE7 /* Pods-RSDayFlow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-RSDayFlow-dummy.m"; path = "../Pods-RSDayFlow/Pods-RSDayFlow-dummy.m"; sourceTree = "<group>"; };
+		DE67919F2FB25D3A724CED67 /* RSDFDatePickerDaysOfWeekView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDFDatePickerDaysOfWeekView.h; path = RSDayFlow/RSDFDatePickerDaysOfWeekView.h; sourceTree = "<group>"; };
+		E22A63421D5013F78259A5B7 /* Pods-KnockItOffToday-RSDayFlow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-KnockItOffToday-RSDayFlow-prefix.pch"; path = "../Pods-KnockItOffToday-RSDayFlow/Pods-KnockItOffToday-RSDayFlow-prefix.pch"; sourceTree = "<group>"; };
+		E3162BD579CD28773E22B67B /* Pods-KnockItOffToday-RSDayFlow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnockItOffToday-RSDayFlow.xcconfig"; path = "../Pods-KnockItOffToday-RSDayFlow/Pods-KnockItOffToday-RSDayFlow.xcconfig"; sourceTree = "<group>"; };
+		E48369732DA7C494070067E3 /* NSCalendar+RSDFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+RSDFAdditions.h"; path = "RSDayFlow/NSCalendar+RSDFAdditions.h"; sourceTree = "<group>"; };
+		EBA2B4CE63EE7F9AA51B0498 /* RSDFDatePickerMonthHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDFDatePickerMonthHeader.m; path = RSDayFlow/RSDFDatePickerMonthHeader.m; sourceTree = "<group>"; };
+		EDC9102945D1B78582013563 /* Pods-KnockItOff-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KnockItOff-environment.h"; sourceTree = "<group>"; };
+		F1A931039AF539FDC7CFA334 /* Pods-KnockItOffTests-RSDayFlow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-KnockItOffTests-RSDayFlow-dummy.m"; path = "../Pods-KnockItOffTests-RSDayFlow/Pods-KnockItOffTests-RSDayFlow-dummy.m"; sourceTree = "<group>"; };
+		F4DB8CA0D0C284852A2A7105 /* libPods-KnockItOffKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KnockItOffKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F69544AD297EEA0E7469EEE4 /* Pods-KnockItOffKit-RSDayFlow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-KnockItOffKit-RSDayFlow-dummy.m"; path = "../Pods-KnockItOffKit-RSDayFlow/Pods-KnockItOffKit-RSDayFlow-dummy.m"; sourceTree = "<group>"; };
+		F81B06505734F0A33F68DE2A /* RSDFDatePickerCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDFDatePickerCollectionViewLayout.h; path = RSDayFlow/RSDFDatePickerCollectionViewLayout.h; sourceTree = "<group>"; };
+		F881FB2E0C65653DE75C49C0 /* Pods-KnockItOffKit-RSDayFlow-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnockItOffKit-RSDayFlow-Private.xcconfig"; path = "../Pods-KnockItOffKit-RSDayFlow/Pods-KnockItOffKit-RSDayFlow-Private.xcconfig"; sourceTree = "<group>"; };
+		FC9E0193238478CF6A1B87E3 /* Pods-KnockItOffKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KnockItOffKit-dummy.m"; sourceTree = "<group>"; };
+		FD5D5DBFA10357750B6C25AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1427C09EB294CDEC9BC2F94E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C35A0D1FFD8F2C6CF8DEA991 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15C65BC0D0EE05786A2F2E9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1906FEF37F1DF89807A73D5F /* Foundation.framework in Frameworks */,
+				03E3E3765B4B37C8374C4E25 /* QuartzCore.framework in Frameworks */,
+				C0CF8C5BFD8B7C3A0EB74B43 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28738FD9825F8192F3D94F68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87065AFD1B7182B319AF9525 /* Foundation.framework in Frameworks */,
+				2BD9F507F4B46B95F429F25B /* QuartzCore.framework in Frameworks */,
+				4A7AB8D76419DF68C35882AD /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DB332D1F7BECE4E135E392C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E956B9D0179569780FF59D27 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413E003C6DDBC7094B4FAAAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86931E371E14E5FAA83EEF5A /* Foundation.framework in Frameworks */,
+				7A05330E045D48F172E3A6F7 /* QuartzCore.framework in Frameworks */,
+				879112304987033322B4B693 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B7365662B67AE16FA7B7A28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D7DBCB75D7AF1D7D6105BA /* Foundation.framework in Frameworks */,
+				3F945CB9A0CB383F9B107F2B /* QuartzCore.framework in Frameworks */,
+				3322C30034BC2736D814433A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FCC8B123E13F44CA4D2CABA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CE1345146E2BD49321060F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E6953BA7AFAF131C8DE647C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				449AF331D3BF8762F095BC80 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B4F07B8AF8646C1D04B29E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CFE59AEEBAF535FD1C6877C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D609578FC4C9A83C025AF77A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7202D8C6B4FF5D83B1752A4 /* Foundation.framework in Frameworks */,
+				AA584F4473F881F939051421 /* QuartzCore.framework in Frameworks */,
+				2619F041B25976CD5896C72C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEDCC404FD9B7B1B2D8522B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B07C2332D47BFC3AA760C9 /* Foundation.framework in Frameworks */,
+				0E1ADE8F21138A080546071D /* QuartzCore.framework in Frameworks */,
+				D1DF118FE9802DAD0EE1C396 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F826E6423C92F17E4197BB3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636E027386733E0175A59085 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11C8B64D4829D45F0DDFB076 /* Pods-KnockItOff */ = {
+			isa = PBXGroup;
+			children = (
+				C595414DFEB5FDF41C6CD604 /* Pods-KnockItOff-acknowledgements.markdown */,
+				619B1410B6365B8FF0CF59DB /* Pods-KnockItOff-acknowledgements.plist */,
+				000FFDC73174A53ABFBE2FA3 /* Pods-KnockItOff-dummy.m */,
+				EDC9102945D1B78582013563 /* Pods-KnockItOff-environment.h */,
+				C2D51A679D27D6594B2838FF /* Pods-KnockItOff-resources.sh */,
+				3CFAB17FC3891EB1BFF89612 /* Pods-KnockItOff.debug.xcconfig */,
+				7FFABAD4AF1B341C7B962FC8 /* Pods-KnockItOff.release.xcconfig */,
+			);
+			name = "Pods-KnockItOff";
+			path = "Target Support Files/Pods-KnockItOff";
+			sourceTree = "<group>";
+		};
+		4463BCA8F28B9B286E7ED685 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A5ECEBFFA7BA7320C32CA63 /* RSDayFlow */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		86B72403FF8A371C72FB8DF1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FD5D5DBFA10357750B6C25AC /* Foundation.framework */,
+				CB467DB4282EE0ED8CB967EC /* QuartzCore.framework */,
+				4BCB81DE77A684676BC14B49 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8A9EB4075403B810FF60C54D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BD0F66AF11D6C5996FF1491 /* Pods-KnockItOff-RSDayFlow.xcconfig */,
+				03F8FEA011005182A8799C97 /* Pods-KnockItOff-RSDayFlow-Private.xcconfig */,
+				5609FFFE66BFFFFED4A3AC84 /* Pods-KnockItOff-RSDayFlow-dummy.m */,
+				2230E535B29CA82D4A5EA75A /* Pods-KnockItOff-RSDayFlow-prefix.pch */,
+				5F0B740E72A9D40FC48B6D09 /* Pods-KnockItOffKit-RSDayFlow.xcconfig */,
+				F881FB2E0C65653DE75C49C0 /* Pods-KnockItOffKit-RSDayFlow-Private.xcconfig */,
+				F69544AD297EEA0E7469EEE4 /* Pods-KnockItOffKit-RSDayFlow-dummy.m */,
+				5D0C66CE995716AB705787A8 /* Pods-KnockItOffKit-RSDayFlow-prefix.pch */,
+				CFB8D2ACA9464C226166D75D /* Pods-KnockItOffKitTests-RSDayFlow.xcconfig */,
+				58CC823846601075C0781D91 /* Pods-KnockItOffKitTests-RSDayFlow-Private.xcconfig */,
+				1AC1D2D8C55E09E4BA4BE772 /* Pods-KnockItOffKitTests-RSDayFlow-dummy.m */,
+				42856E53FC5971B918A8C6CD /* Pods-KnockItOffKitTests-RSDayFlow-prefix.pch */,
+				70B2581576C9309F58535176 /* Pods-KnockItOffTests-RSDayFlow.xcconfig */,
+				022FAED549AF5095849323E0 /* Pods-KnockItOffTests-RSDayFlow-Private.xcconfig */,
+				F1A931039AF539FDC7CFA334 /* Pods-KnockItOffTests-RSDayFlow-dummy.m */,
+				5FEF8D42395E416871B63E76 /* Pods-KnockItOffTests-RSDayFlow-prefix.pch */,
+				E3162BD579CD28773E22B67B /* Pods-KnockItOffToday-RSDayFlow.xcconfig */,
+				0604C70B8422FBE010F1C6E0 /* Pods-KnockItOffToday-RSDayFlow-Private.xcconfig */,
+				86335560B09669BBA2B2AE8C /* Pods-KnockItOffToday-RSDayFlow-dummy.m */,
+				E22A63421D5013F78259A5B7 /* Pods-KnockItOffToday-RSDayFlow-prefix.pch */,
+				A4D47E1B73A572D2EE3D2CB3 /* Pods-RSDayFlow.xcconfig */,
+				12D0D6B3D713AF002A8C7FC4 /* Pods-RSDayFlow-Private.xcconfig */,
+				DD861716E38774C2106F5AE7 /* Pods-RSDayFlow-dummy.m */,
+				DBE629C8EFB7EB40264BFAD1 /* Pods-RSDayFlow-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-KnockItOff-RSDayFlow";
+			sourceTree = "<group>";
+		};
+		9443A7D314C3805B0E89EFE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86B72403FF8A371C72FB8DF1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A5ECEBFFA7BA7320C32CA63 /* RSDayFlow */ = {
+			isa = PBXGroup;
+			children = (
+				E48369732DA7C494070067E3 /* NSCalendar+RSDFAdditions.h */,
+				9697CDE96C7D96C5364E4DDA /* NSCalendar+RSDFAdditions.m */,
+				8941B6838E31BA4D2075FDE8 /* RSDFDatePickerCollectionView.h */,
+				496852CFBF6B291BDE66D66F /* RSDFDatePickerCollectionView.m */,
+				F81B06505734F0A33F68DE2A /* RSDFDatePickerCollectionViewLayout.h */,
+				52012AEF26B0851538F2C995 /* RSDFDatePickerCollectionViewLayout.m */,
+				676F9DC461886C489A034E2D /* RSDFDatePickerDayCell.h */,
+				B4FF5EF37F996FEB75FACDA7 /* RSDFDatePickerDayCell.m */,
+				DE67919F2FB25D3A724CED67 /* RSDFDatePickerDaysOfWeekView.h */,
+				DD4CA9E8C0B8D39CB5C880DD /* RSDFDatePickerDaysOfWeekView.m */,
+				83251E87A16A95F1D517E7E8 /* RSDFDatePickerMonthHeader.h */,
+				EBA2B4CE63EE7F9AA51B0498 /* RSDFDatePickerMonthHeader.m */,
+				50E8DB391B328944AEB3D99A /* RSDFDatePickerView.h */,
+				9D361AEBDD564D45BC6ECFD1 /* RSDFDatePickerView.m */,
+				8AFBCA6E96CA84899E15DF1C /* RSDayFlow.h */,
+				8A9EB4075403B810FF60C54D /* Support Files */,
+			);
+			path = RSDayFlow;
+			sourceTree = "<group>";
+		};
+		AA27108297B8D81E2059CB46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				504E23BA26332FE541383B66 /* libPods.a */,
+				68A53A3D490A9B3D45AE1FD2 /* libPods-KnockItOff.a */,
+				B03B49336A86D3A341D03F99 /* libPods-KnockItOff-RSDayFlow.a */,
+				6A1DDE65EB722A1AA5997DCB /* libPods-KnockItOffKit.a */,
+				5D63C834A11C532B719BAF7F /* libPods-KnockItOffKit-RSDayFlow.a */,
+				F4DB8CA0D0C284852A2A7105 /* libPods-KnockItOffKitTests.a */,
+				4330506B015F50C631B7723B /* libPods-KnockItOffKitTests-RSDayFlow.a */,
+				16DBD4B3B0E1FED1CD40D416 /* libPods-KnockItOffTests.a */,
+				B7C8DB1527D19D9CF001FE4F /* libPods-KnockItOffTests-RSDayFlow.a */,
+				DD7B13094295CD0453236FCD /* libPods-KnockItOffToday.a */,
+				4F8A37334FC2DEB4F456B752 /* libPods-KnockItOffToday-RSDayFlow.a */,
+				55611537C288D65A6D708BB2 /* libPods-RSDayFlow.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0FEB4217E4A787EA81FD9AE /* Pods-KnockItOffKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				3714A0EDCEC8E354CD31ABD6 /* Pods-KnockItOffKitTests-acknowledgements.markdown */,
+				727C2BD2A3A4F708277638F5 /* Pods-KnockItOffKitTests-acknowledgements.plist */,
+				3595652BB5C91A1CCEA89E6A /* Pods-KnockItOffKitTests-dummy.m */,
+				95A21A207AF993EE90A3F14F /* Pods-KnockItOffKitTests-environment.h */,
+				00CF8E3EA1D24BD01AC180DE /* Pods-KnockItOffKitTests-resources.sh */,
+				710604F9855805CBA341E74E /* Pods-KnockItOffKitTests.debug.xcconfig */,
+				0706477C149B25BEF70C9AAE /* Pods-KnockItOffKitTests.release.xcconfig */,
+			);
+			name = "Pods-KnockItOffKitTests";
+			path = "Target Support Files/Pods-KnockItOffKitTests";
+			sourceTree = "<group>";
+		};
+		B3B32737BA6046E8AEBD0BA5 = {
+			isa = PBXGroup;
+			children = (
+				6027E902D7B1EF3254D01B1D /* Podfile */,
+				9443A7D314C3805B0E89EFE0 /* Frameworks */,
+				4463BCA8F28B9B286E7ED685 /* Pods */,
+				AA27108297B8D81E2059CB46 /* Products */,
+				CC14F203F769B0038A6773C8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B506DA7C21E2826C58FC0925 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				954340EEE09D48DF6F652BE6 /* Pods-acknowledgements.markdown */,
+				D1AD73376871B9D442045E52 /* Pods-acknowledgements.plist */,
+				BE15402904ECD389493CDFA1 /* Pods-dummy.m */,
+				4C70A768107A6F55246EFA17 /* Pods-environment.h */,
+				280D730A8C69AE0C3A6122AC /* Pods-resources.sh */,
+				407CAA2A000B605DC7D7CC4D /* Pods.debug.xcconfig */,
+				939C36FB078D66520276BC82 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		C5676D2475A6224A5C0787E5 /* Pods-KnockItOffTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F7A518B1B081D4A9E64CD9C /* Pods-KnockItOffTests-acknowledgements.markdown */,
+				5F2FC54B7E1DF92D8B7D976C /* Pods-KnockItOffTests-acknowledgements.plist */,
+				382CEE7A6769E20B581ECF7E /* Pods-KnockItOffTests-dummy.m */,
+				8A193B8CD003338BC480390F /* Pods-KnockItOffTests-environment.h */,
+				78C141B1A31CD9BE6C4B6736 /* Pods-KnockItOffTests-resources.sh */,
+				6227DF0BFB6DC908C81F9EEC /* Pods-KnockItOffTests.debug.xcconfig */,
+				5A872A7721A4AE4FCD1090DD /* Pods-KnockItOffTests.release.xcconfig */,
+			);
+			name = "Pods-KnockItOffTests";
+			path = "Target Support Files/Pods-KnockItOffTests";
+			sourceTree = "<group>";
+		};
+		CC14F203F769B0038A6773C8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B506DA7C21E2826C58FC0925 /* Pods */,
+				11C8B64D4829D45F0DDFB076 /* Pods-KnockItOff */,
+				D5A11B9D4676B74E7C4E34A4 /* Pods-KnockItOffKit */,
+				B0FEB4217E4A787EA81FD9AE /* Pods-KnockItOffKitTests */,
+				C5676D2475A6224A5C0787E5 /* Pods-KnockItOffTests */,
+				ED4AE20325A1B21D37758DC8 /* Pods-KnockItOffToday */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D5A11B9D4676B74E7C4E34A4 /* Pods-KnockItOffKit */ = {
+			isa = PBXGroup;
+			children = (
+				A2CC19C727379D3AC5B4D21B /* Pods-KnockItOffKit-acknowledgements.markdown */,
+				10130C6350EF1C2E646F88BB /* Pods-KnockItOffKit-acknowledgements.plist */,
+				FC9E0193238478CF6A1B87E3 /* Pods-KnockItOffKit-dummy.m */,
+				910C4CE49D08211D849B5A13 /* Pods-KnockItOffKit-environment.h */,
+				A0191ECB36B6D98886BAB5CB /* Pods-KnockItOffKit-resources.sh */,
+				9015158949733A4ACE27E08A /* Pods-KnockItOffKit.debug.xcconfig */,
+				12947446FC497ED8AFC6FE8E /* Pods-KnockItOffKit.release.xcconfig */,
+			);
+			name = "Pods-KnockItOffKit";
+			path = "Target Support Files/Pods-KnockItOffKit";
+			sourceTree = "<group>";
+		};
+		ED4AE20325A1B21D37758DC8 /* Pods-KnockItOffToday */ = {
+			isa = PBXGroup;
+			children = (
+				1D0299BB62811412E03329A2 /* Pods-KnockItOffToday-acknowledgements.markdown */,
+				CAB9669D742891B8641185FA /* Pods-KnockItOffToday-acknowledgements.plist */,
+				7CF8C06A93433415125AF490 /* Pods-KnockItOffToday-dummy.m */,
+				33EC28E67CDEFD874952FB19 /* Pods-KnockItOffToday-environment.h */,
+				012E24E6B4ECD6843A68F1CA /* Pods-KnockItOffToday-resources.sh */,
+				672D06D6455B988E981EA158 /* Pods-KnockItOffToday.debug.xcconfig */,
+				24E08B7C5B6B72AFA8C73DB8 /* Pods-KnockItOffToday.release.xcconfig */,
+			);
+			name = "Pods-KnockItOffToday";
+			path = "Target Support Files/Pods-KnockItOffToday";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3A329B2EB4979850300BF24F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC0BC3023FCB1D05B9ADC5B8 /* NSCalendar+RSDFAdditions.h in Headers */,
+				EDBDC7FD8A556FB24E00805E /* RSDFDatePickerCollectionView.h in Headers */,
+				BE0CE9238C4DC5241102B2DF /* RSDFDatePickerCollectionViewLayout.h in Headers */,
+				2E6CD391F5E1E0D196072254 /* RSDFDatePickerDayCell.h in Headers */,
+				BDA922888ECCDF056A7CFBF5 /* RSDFDatePickerDaysOfWeekView.h in Headers */,
+				B9736472F60FFE654CD89FFB /* RSDFDatePickerMonthHeader.h in Headers */,
+				61B0D004D6EC2BDF3949B3B4 /* RSDFDatePickerView.h in Headers */,
+				806CD3885B3B8CB47439A149 /* RSDayFlow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		412869D2ED6217D3A033860C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41771F540C47D1AD0E4EC35 /* NSCalendar+RSDFAdditions.h in Headers */,
+				8A752209DE92ABC6B74825E7 /* RSDFDatePickerCollectionView.h in Headers */,
+				48D9E91621B31118ED72E40D /* RSDFDatePickerCollectionViewLayout.h in Headers */,
+				4CF7E1BA6DE9BC6513E8D343 /* RSDFDatePickerDayCell.h in Headers */,
+				DF2135B7B97EFF561105D1B9 /* RSDFDatePickerDaysOfWeekView.h in Headers */,
+				32F60E7EDACA2E09A337430F /* RSDFDatePickerMonthHeader.h in Headers */,
+				257344BCEFEBF2D2658819BC /* RSDFDatePickerView.h in Headers */,
+				F1EFA9CE821415B5EE5F87EF /* RSDayFlow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4597BFFFC70E58577534DED2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD7E2CF9C575EFDA38C5905 /* NSCalendar+RSDFAdditions.h in Headers */,
+				97CD6991177A7D1384D533CD /* RSDFDatePickerCollectionView.h in Headers */,
+				85A8544E3F182F038C190E73 /* RSDFDatePickerCollectionViewLayout.h in Headers */,
+				C4739EF1FA0D0B910D0351AE /* RSDFDatePickerDayCell.h in Headers */,
+				408363ED606C86F281E61620 /* RSDFDatePickerDaysOfWeekView.h in Headers */,
+				B50ED52D852AA210884D8D22 /* RSDFDatePickerMonthHeader.h in Headers */,
+				54A0DFAE27D1F2CFA2A0BDFB /* RSDFDatePickerView.h in Headers */,
+				EF61E5592944894F9300AC06 /* RSDayFlow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D62B2EE4E26DCE2B45CF77 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC2408E6EDE4B54B88E8B227 /* NSCalendar+RSDFAdditions.h in Headers */,
+				FB708549FB43659F9DAD9D25 /* RSDFDatePickerCollectionView.h in Headers */,
+				A3E6B352134AD403852B272D /* RSDFDatePickerCollectionViewLayout.h in Headers */,
+				523A88E7CB848315C09F175E /* RSDFDatePickerDayCell.h in Headers */,
+				1E77CCBF8C6B33AA21679F75 /* RSDFDatePickerDaysOfWeekView.h in Headers */,
+				FC282F7D68491F03969BD178 /* RSDFDatePickerMonthHeader.h in Headers */,
+				B0DCA613D7B6E04491E79848 /* RSDFDatePickerView.h in Headers */,
+				CE65BEC9AC23576A86427ED6 /* RSDayFlow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B6A1B3C853ABB17F1C1840E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62941769EB47EEA17A04E306 /* NSCalendar+RSDFAdditions.h in Headers */,
+				0199D22917127242B7B97AF9 /* RSDFDatePickerCollectionView.h in Headers */,
+				E03D9E746546AE5CEBB60988 /* RSDFDatePickerCollectionViewLayout.h in Headers */,
+				949A28D8EE71BEC9C53014A9 /* RSDFDatePickerDayCell.h in Headers */,
+				3BCE8AEAB79E0D0DF98E6620 /* RSDFDatePickerDaysOfWeekView.h in Headers */,
+				C654E4F88A0389E22F99857F /* RSDFDatePickerMonthHeader.h in Headers */,
+				460475C777C027622E0473F3 /* RSDFDatePickerView.h in Headers */,
+				5CB6F3B41EFCDFFA226E0642 /* RSDayFlow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADDB43D033D9EC0EA75117B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8685ECB0F3F112B3AD19E69B /* NSCalendar+RSDFAdditions.h in Headers */,
+				764ED33897A15F453261F653 /* RSDFDatePickerCollectionView.h in Headers */,
+				081A2FA35F52A1C4237DF73C /* RSDFDatePickerCollectionViewLayout.h in Headers */,
+				7CC989607E29EC83A0305DBE /* RSDFDatePickerDayCell.h in Headers */,
+				127D45526E60BD12DA6F433E /* RSDFDatePickerDaysOfWeekView.h in Headers */,
+				EBBB8CA49519C0EF542AFFCC /* RSDFDatePickerMonthHeader.h in Headers */,
+				63D6AD1DE9DC29B5626540E1 /* RSDFDatePickerView.h in Headers */,
+				2D6B2A614D7D8D7DC966F7D2 /* RSDayFlow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		03EC033CE178C51FEC0B8D26 /* Pods-KnockItOffKitTests-RSDayFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3683E287BDE46F03247B2E1 /* Build configuration list for PBXNativeTarget "Pods-KnockItOffKitTests-RSDayFlow" */;
+			buildPhases = (
+				FD4A2D1C99B53C7B62CFB162 /* Sources */,
+				15C65BC0D0EE05786A2F2E9E /* Frameworks */,
+				4597BFFFC70E58577534DED2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-KnockItOffKitTests-RSDayFlow";
+			productName = "Pods-KnockItOffKitTests-RSDayFlow";
+			productReference = 4330506B015F50C631B7723B /* libPods-KnockItOffKitTests-RSDayFlow.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0FEA773AE242523BA890455F /* Pods-KnockItOff-RSDayFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDE706C08BB834FA0C53DE8F /* Build configuration list for PBXNativeTarget "Pods-KnockItOff-RSDayFlow" */;
+			buildPhases = (
+				AC0CF0B775BBB972D282B421 /* Sources */,
+				6B7365662B67AE16FA7B7A28 /* Frameworks */,
+				7B6A1B3C853ABB17F1C1840E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-KnockItOff-RSDayFlow";
+			productName = "Pods-KnockItOff-RSDayFlow";
+			productReference = B03B49336A86D3A341D03F99 /* libPods-KnockItOff-RSDayFlow.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		57CC2CEFF46655BCA86BFFFD /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56E1CAE71A5D7373587C57BC /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				E60F42354000A5D2A3BC3583 /* Sources */,
+				F826E6423C92F17E4197BB3A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C164EFD9283D94CCEC797655 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 504E23BA26332FE541383B66 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6942B9CD5A043FB5E2F50749 /* Pods-KnockItOffKit-RSDayFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A315FC14A887B524E5FCEA8 /* Build configuration list for PBXNativeTarget "Pods-KnockItOffKit-RSDayFlow" */;
+			buildPhases = (
+				8E7134756487A252262906A5 /* Sources */,
+				413E003C6DDBC7094B4FAAAA /* Frameworks */,
+				68D62B2EE4E26DCE2B45CF77 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-KnockItOffKit-RSDayFlow";
+			productName = "Pods-KnockItOffKit-RSDayFlow";
+			productReference = 5D63C834A11C532B719BAF7F /* libPods-KnockItOffKit-RSDayFlow.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7E205FE7E0B58DD08E19045F /* Pods-KnockItOffKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1366A2B7CCF20EE532C83948 /* Build configuration list for PBXNativeTarget "Pods-KnockItOffKit" */;
+			buildPhases = (
+				74FB56EC4A520CBF851B865B /* Sources */,
+				2DB332D1F7BECE4E135E392C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B05A323B4CE0D43C78BD863 /* PBXTargetDependency */,
+			);
+			name = "Pods-KnockItOffKit";
+			productName = "Pods-KnockItOffKit";
+			productReference = 6A1DDE65EB722A1AA5997DCB /* libPods-KnockItOffKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9D866E799BC00AD01AF89B39 /* Pods-KnockItOffToday-RSDayFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 897B1E799864DBC7B8F33BFB /* Build configuration list for PBXNativeTarget "Pods-KnockItOffToday-RSDayFlow" */;
+			buildPhases = (
+				6DC53BE83C84E7A4E0A51E5F /* Sources */,
+				D609578FC4C9A83C025AF77A /* Frameworks */,
+				412869D2ED6217D3A033860C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-KnockItOffToday-RSDayFlow";
+			productName = "Pods-KnockItOffToday-RSDayFlow";
+			productReference = 4F8A37334FC2DEB4F456B752 /* libPods-KnockItOffToday-RSDayFlow.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B025BB329578EC188E616631 /* Pods-RSDayFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80D34D185CF681B976ED7DD5 /* Build configuration list for PBXNativeTarget "Pods-RSDayFlow" */;
+			buildPhases = (
+				2AA479E6D180B134062F38FB /* Sources */,
+				28738FD9825F8192F3D94F68 /* Frameworks */,
+				3A329B2EB4979850300BF24F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RSDayFlow";
+			productName = "Pods-RSDayFlow";
+			productReference = 55611537C288D65A6D708BB2 /* libPods-RSDayFlow.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BDDA4BBF62ECFC9DAE5EEAE5 /* Pods-KnockItOffKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418BA3CBF9D3965CC19EE397 /* Build configuration list for PBXNativeTarget "Pods-KnockItOffKitTests" */;
+			buildPhases = (
+				B5000B87D99B7C14C9C6416E /* Sources */,
+				6FCC8B123E13F44CA4D2CABA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F61426AD4FE46B74B8059CFA /* PBXTargetDependency */,
+			);
+			name = "Pods-KnockItOffKitTests";
+			productName = "Pods-KnockItOffKitTests";
+			productReference = F4DB8CA0D0C284852A2A7105 /* libPods-KnockItOffKitTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E2EB73D6030F026D3E9072DD /* Pods-KnockItOff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E4109A87679C76A59064579 /* Build configuration list for PBXNativeTarget "Pods-KnockItOff" */;
+			buildPhases = (
+				E762881FFA2457DC7C51869C /* Sources */,
+				8B4F07B8AF8646C1D04B29E7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9B3A50A7CDE865EC5E2E4C5 /* PBXTargetDependency */,
+			);
+			name = "Pods-KnockItOff";
+			productName = "Pods-KnockItOff";
+			productReference = 68A53A3D490A9B3D45AE1FD2 /* libPods-KnockItOff.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E3363EC165669E728B0D2583 /* Pods-KnockItOffTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E95BE12C1689B07C0D652AB /* Build configuration list for PBXNativeTarget "Pods-KnockItOffTests" */;
+			buildPhases = (
+				B4A110CA7A00731D8D3D84C0 /* Sources */,
+				7E6953BA7AFAF131C8DE647C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3459519E5648C18B488A1C21 /* PBXTargetDependency */,
+			);
+			name = "Pods-KnockItOffTests";
+			productName = "Pods-KnockItOffTests";
+			productReference = 16DBD4B3B0E1FED1CD40D416 /* libPods-KnockItOffTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EF8968BD0707AC80D2B8F9FA /* Pods-KnockItOffToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09B8C285A2506544FE310B7F /* Build configuration list for PBXNativeTarget "Pods-KnockItOffToday" */;
+			buildPhases = (
+				22594FA4C8AE17C4732D5048 /* Sources */,
+				1427C09EB294CDEC9BC2F94E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E0C9090787FE1353994719B /* PBXTargetDependency */,
+			);
+			name = "Pods-KnockItOffToday";
+			productName = "Pods-KnockItOffToday";
+			productReference = DD7B13094295CD0453236FCD /* libPods-KnockItOffToday.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F7BA6141DCAB06C19F4D5689 /* Pods-KnockItOffTests-RSDayFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F7A4324643E3E17891DFF1D /* Build configuration list for PBXNativeTarget "Pods-KnockItOffTests-RSDayFlow" */;
+			buildPhases = (
+				07FFD472B58FFD314C4D28E2 /* Sources */,
+				DEDCC404FD9B7B1B2D8522B6 /* Frameworks */,
+				ADDB43D033D9EC0EA75117B1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-KnockItOffTests-RSDayFlow";
+			productName = "Pods-KnockItOffTests-RSDayFlow";
+			productReference = B7C8DB1527D19D9CF001FE4F /* libPods-KnockItOffTests-RSDayFlow.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A58DEED8E39218D262B757A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 9AE13C7F2F3BF238AF7F0359 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B3B32737BA6046E8AEBD0BA5;
+			productRefGroup = AA27108297B8D81E2059CB46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57CC2CEFF46655BCA86BFFFD /* Pods */,
+				E2EB73D6030F026D3E9072DD /* Pods-KnockItOff */,
+				0FEA773AE242523BA890455F /* Pods-KnockItOff-RSDayFlow */,
+				7E205FE7E0B58DD08E19045F /* Pods-KnockItOffKit */,
+				6942B9CD5A043FB5E2F50749 /* Pods-KnockItOffKit-RSDayFlow */,
+				BDDA4BBF62ECFC9DAE5EEAE5 /* Pods-KnockItOffKitTests */,
+				03EC033CE178C51FEC0B8D26 /* Pods-KnockItOffKitTests-RSDayFlow */,
+				E3363EC165669E728B0D2583 /* Pods-KnockItOffTests */,
+				F7BA6141DCAB06C19F4D5689 /* Pods-KnockItOffTests-RSDayFlow */,
+				EF8968BD0707AC80D2B8F9FA /* Pods-KnockItOffToday */,
+				9D866E799BC00AD01AF89B39 /* Pods-KnockItOffToday-RSDayFlow */,
+				B025BB329578EC188E616631 /* Pods-RSDayFlow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07FFD472B58FFD314C4D28E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD04927E6C5850C5FBE02302 /* NSCalendar+RSDFAdditions.m in Sources */,
+				37AF6EE2191F8F2A86476BCA /* Pods-KnockItOffTests-RSDayFlow-dummy.m in Sources */,
+				3DD54FFB237B91FD9E6CDD4F /* RSDFDatePickerCollectionView.m in Sources */,
+				B41EE3B581C78218682508BA /* RSDFDatePickerCollectionViewLayout.m in Sources */,
+				B68E3ACE53E8110E80DB4CE6 /* RSDFDatePickerDayCell.m in Sources */,
+				3AE4EBA59425DF819FB4E6D0 /* RSDFDatePickerDaysOfWeekView.m in Sources */,
+				ED379CF6E86E70EC0898EACE /* RSDFDatePickerMonthHeader.m in Sources */,
+				F43E9AFEE9F6EF451E787FEB /* RSDFDatePickerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22594FA4C8AE17C4732D5048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				819B217F8C67111AA03A1A7F /* Pods-KnockItOffToday-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA479E6D180B134062F38FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00F618FAD2611B0F6B67505C /* NSCalendar+RSDFAdditions.m in Sources */,
+				9A2D1862426782B4F34D43E1 /* Pods-RSDayFlow-dummy.m in Sources */,
+				787BCBBBBDAE2BD579C29A4F /* RSDFDatePickerCollectionView.m in Sources */,
+				53B297E72C9E15279CABAD06 /* RSDFDatePickerCollectionViewLayout.m in Sources */,
+				7BF5B9B91316CDF1F260866A /* RSDFDatePickerDayCell.m in Sources */,
+				9468ABF5F7BC24429AAB5A28 /* RSDFDatePickerDaysOfWeekView.m in Sources */,
+				456075EF6EFFD2FE2E24DD36 /* RSDFDatePickerMonthHeader.m in Sources */,
+				5656F46073563E69421D3FA9 /* RSDFDatePickerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC53BE83C84E7A4E0A51E5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77EF19902D3083A9801F0C8C /* NSCalendar+RSDFAdditions.m in Sources */,
+				48835279A52B846FBAEB17E8 /* Pods-KnockItOffToday-RSDayFlow-dummy.m in Sources */,
+				37F7B848D0649E5FFE53067E /* RSDFDatePickerCollectionView.m in Sources */,
+				07637DA8139D041CB2836276 /* RSDFDatePickerCollectionViewLayout.m in Sources */,
+				B20F005E42C08A9D0B4C07CE /* RSDFDatePickerDayCell.m in Sources */,
+				316F28495316031AA49751FB /* RSDFDatePickerDaysOfWeekView.m in Sources */,
+				058320AA435CE3D0676849BC /* RSDFDatePickerMonthHeader.m in Sources */,
+				B2207A68DBEFBFC279344618 /* RSDFDatePickerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74FB56EC4A520CBF851B865B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09674BDDB07B2E1E8DBEC85B /* Pods-KnockItOffKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E7134756487A252262906A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2522530924BFE0860FAEBFEB /* NSCalendar+RSDFAdditions.m in Sources */,
+				30922BEFDCF350690A849F5C /* Pods-KnockItOffKit-RSDayFlow-dummy.m in Sources */,
+				66243DABD4D2478FC22A4E54 /* RSDFDatePickerCollectionView.m in Sources */,
+				B2A51640AA3F51FDAA10D61C /* RSDFDatePickerCollectionViewLayout.m in Sources */,
+				F82BAB0937903FD6F0C1DF79 /* RSDFDatePickerDayCell.m in Sources */,
+				7FF1F322E84BE22C938B6BCD /* RSDFDatePickerDaysOfWeekView.m in Sources */,
+				E90FA67ACECD2E5289B2A5E1 /* RSDFDatePickerMonthHeader.m in Sources */,
+				B4441D8D3DA4DDC4009570A8 /* RSDFDatePickerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0CF0B775BBB972D282B421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3387AD74A0BE875BA393C48E /* NSCalendar+RSDFAdditions.m in Sources */,
+				33AA18AF58BCC37A67650F85 /* Pods-KnockItOff-RSDayFlow-dummy.m in Sources */,
+				8BF788DF808AF1933952F45A /* RSDFDatePickerCollectionView.m in Sources */,
+				0191976E44AF2351A4769172 /* RSDFDatePickerCollectionViewLayout.m in Sources */,
+				58973277114774B8E0A0F1F2 /* RSDFDatePickerDayCell.m in Sources */,
+				A730533571001F69C9A8AB54 /* RSDFDatePickerDaysOfWeekView.m in Sources */,
+				522812E9F130DBE82978F324 /* RSDFDatePickerMonthHeader.m in Sources */,
+				156D0FF5E175617908ADEB10 /* RSDFDatePickerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4A110CA7A00731D8D3D84C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2B11451EBC3B257CE3449A2 /* Pods-KnockItOffTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5000B87D99B7C14C9C6416E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83D7DF8D7B87C9147DF278BC /* Pods-KnockItOffKitTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60F42354000A5D2A3BC3583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A388B687E0C661217874687C /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E762881FFA2457DC7C51869C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE2F751092FF364A8B78807 /* Pods-KnockItOff-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD4A2D1C99B53C7B62CFB162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50EA39BBE7BC3A58894BB109 /* NSCalendar+RSDFAdditions.m in Sources */,
+				6FF9792844C757D0DA4FBCCA /* Pods-KnockItOffKitTests-RSDayFlow-dummy.m in Sources */,
+				6851AE4A49E0B4A88E3BEA23 /* RSDFDatePickerCollectionView.m in Sources */,
+				F11054A726A24E02E2420502 /* RSDFDatePickerCollectionViewLayout.m in Sources */,
+				2968CC1B43ADD236192D886B /* RSDFDatePickerDayCell.m in Sources */,
+				DDD45FEFAB3D04C2052B27A9 /* RSDFDatePickerDaysOfWeekView.m in Sources */,
+				9BB5E0DC8C5BB05C4EEB44DF /* RSDFDatePickerMonthHeader.m in Sources */,
+				5AF72DE47174CFB4541C0C9A /* RSDFDatePickerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B05A323B4CE0D43C78BD863 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KnockItOffKit-RSDayFlow";
+			target = 6942B9CD5A043FB5E2F50749 /* Pods-KnockItOffKit-RSDayFlow */;
+			targetProxy = CB403E34764A607ABE352A0E /* PBXContainerItemProxy */;
+		};
+		1E0C9090787FE1353994719B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KnockItOffToday-RSDayFlow";
+			target = 9D866E799BC00AD01AF89B39 /* Pods-KnockItOffToday-RSDayFlow */;
+			targetProxy = 1B8483B7737F3E48944F1254 /* PBXContainerItemProxy */;
+		};
+		3459519E5648C18B488A1C21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KnockItOffTests-RSDayFlow";
+			target = F7BA6141DCAB06C19F4D5689 /* Pods-KnockItOffTests-RSDayFlow */;
+			targetProxy = 3D98904390F3574B5E522620 /* PBXContainerItemProxy */;
+		};
+		A9B3A50A7CDE865EC5E2E4C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KnockItOff-RSDayFlow";
+			target = 0FEA773AE242523BA890455F /* Pods-KnockItOff-RSDayFlow */;
+			targetProxy = 8F8D18D707F43EBE1A628ADF /* PBXContainerItemProxy */;
+		};
+		C164EFD9283D94CCEC797655 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RSDayFlow";
+			target = B025BB329578EC188E616631 /* Pods-RSDayFlow */;
+			targetProxy = AEA38A9BD551225FC36230B5 /* PBXContainerItemProxy */;
+		};
+		F61426AD4FE46B74B8059CFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KnockItOffKitTests-RSDayFlow";
+			target = 03EC033CE178C51FEC0B8D26 /* Pods-KnockItOffKitTests-RSDayFlow */;
+			targetProxy = E0946D6D70D174F98DA1798E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10E479AC89E9F536ADFFB2D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24E08B7C5B6B72AFA8C73DB8 /* Pods-KnockItOffToday.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		31B6F0A62D7170E308D2A629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 022FAED549AF5095849323E0 /* Pods-KnockItOffTests-RSDayFlow-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-KnockItOffTests-RSDayFlow/Pods-KnockItOffTests-RSDayFlow-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4AED034E1CEA648CA02F9011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12D0D6B3D713AF002A8C7FC4 /* Pods-RSDayFlow-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RSDayFlow/Pods-RSDayFlow-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4B59DACA7445640AE640E72D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12947446FC497ED8AFC6FE8E /* Pods-KnockItOffKit.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4CDB008471F65DDA4332DB02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F881FB2E0C65653DE75C49C0 /* Pods-KnockItOffKit-RSDayFlow-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-KnockItOffKit-RSDayFlow/Pods-KnockItOffKit-RSDayFlow-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4DA87AADB88823BFF8C12B65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CFAB17FC3891EB1BFF89612 /* Pods-KnockItOff.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4E1DE7A51ECD55C01F11C728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58CC823846601075C0781D91 /* Pods-KnockItOffKitTests-RSDayFlow-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-KnockItOffKitTests-RSDayFlow/Pods-KnockItOffKitTests-RSDayFlow-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5DCBEBA29C283B1226DF007B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61BC71F535DAD4561F03476B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FFABAD4AF1B341C7B962FC8 /* Pods-KnockItOff.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7BEC7E72F5B4D10CBC71047C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 022FAED549AF5095849323E0 /* Pods-KnockItOffTests-RSDayFlow-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-KnockItOffTests-RSDayFlow/Pods-KnockItOffTests-RSDayFlow-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		85806CEC3403E00B6F811922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0706477C149B25BEF70C9AAE /* Pods-KnockItOffKitTests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		88EA7DA588816CA52BBA547F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F881FB2E0C65653DE75C49C0 /* Pods-KnockItOffKit-RSDayFlow-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-KnockItOffKit-RSDayFlow/Pods-KnockItOffKit-RSDayFlow-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8B2565898DFD7FF3B710164B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0604C70B8422FBE010F1C6E0 /* Pods-KnockItOffToday-RSDayFlow-Private.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-KnockItOffToday-RSDayFlow/Pods-KnockItOffToday-RSDayFlow-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8FB262EBEB5D8D20637EEBF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6227DF0BFB6DC908C81F9EEC /* Pods-KnockItOffTests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8FF9461DAA209B8194311892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 407CAA2A000B605DC7D7CC4D /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		97752F837A5D0E5DF54D1BD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 939C36FB078D66520276BC82 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A247488C928453557D45BD6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0604C70B8422FBE010F1C6E0 /* Pods-KnockItOffToday-RSDayFlow-Private.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-KnockItOffToday-RSDayFlow/Pods-KnockItOffToday-RSDayFlow-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B07F137F6FA298F6FC93D901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 672D06D6455B988E981EA158 /* Pods-KnockItOffToday.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B9001E16E30A9231875885F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03F8FEA011005182A8799C97 /* Pods-KnockItOff-RSDayFlow-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-KnockItOff-RSDayFlow/Pods-KnockItOff-RSDayFlow-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C99525253D3A738C41B44BF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03F8FEA011005182A8799C97 /* Pods-KnockItOff-RSDayFlow-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-KnockItOff-RSDayFlow/Pods-KnockItOff-RSDayFlow-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CBA026111B7863099A62FFCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CCEA19AED6C047A3965D06BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A872A7721A4AE4FCD1090DD /* Pods-KnockItOffTests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CD4067620574CB728CABDF8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9015158949733A4ACE27E08A /* Pods-KnockItOffKit.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D5AB6198B75BB2F5DE7C1E77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12D0D6B3D713AF002A8C7FC4 /* Pods-RSDayFlow-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RSDayFlow/Pods-RSDayFlow-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		ED84B5F042AEF5E29D00544C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 710604F9855805CBA341E74E /* Pods-KnockItOffKitTests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F97945CE2A7E5BD9FC3ECEE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58CC823846601075C0781D91 /* Pods-KnockItOffKitTests-RSDayFlow-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-KnockItOffKitTests-RSDayFlow/Pods-KnockItOffKitTests-RSDayFlow-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09B8C285A2506544FE310B7F /* Build configuration list for PBXNativeTarget "Pods-KnockItOffToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B07F137F6FA298F6FC93D901 /* Debug */,
+				10E479AC89E9F536ADFFB2D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1366A2B7CCF20EE532C83948 /* Build configuration list for PBXNativeTarget "Pods-KnockItOffKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4067620574CB728CABDF8A /* Debug */,
+				4B59DACA7445640AE640E72D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F7A4324643E3E17891DFF1D /* Build configuration list for PBXNativeTarget "Pods-KnockItOffTests-RSDayFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31B6F0A62D7170E308D2A629 /* Debug */,
+				7BEC7E72F5B4D10CBC71047C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A315FC14A887B524E5FCEA8 /* Build configuration list for PBXNativeTarget "Pods-KnockItOffKit-RSDayFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CDB008471F65DDA4332DB02 /* Debug */,
+				88EA7DA588816CA52BBA547F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E95BE12C1689B07C0D652AB /* Build configuration list for PBXNativeTarget "Pods-KnockItOffTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB262EBEB5D8D20637EEBF7 /* Debug */,
+				CCEA19AED6C047A3965D06BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		418BA3CBF9D3965CC19EE397 /* Build configuration list for PBXNativeTarget "Pods-KnockItOffKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED84B5F042AEF5E29D00544C /* Debug */,
+				85806CEC3403E00B6F811922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56E1CAE71A5D7373587C57BC /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FF9461DAA209B8194311892 /* Debug */,
+				97752F837A5D0E5DF54D1BD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80D34D185CF681B976ED7DD5 /* Build configuration list for PBXNativeTarget "Pods-RSDayFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5AB6198B75BB2F5DE7C1E77 /* Debug */,
+				4AED034E1CEA648CA02F9011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		897B1E799864DBC7B8F33BFB /* Build configuration list for PBXNativeTarget "Pods-KnockItOffToday-RSDayFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B2565898DFD7FF3B710164B /* Debug */,
+				A247488C928453557D45BD6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AE13C7F2F3BF238AF7F0359 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBA026111B7863099A62FFCF /* Debug */,
+				5DCBEBA29C283B1226DF007B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E4109A87679C76A59064579 /* Build configuration list for PBXNativeTarget "Pods-KnockItOff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DA87AADB88823BFF8C12B65 /* Debug */,
+				61BC71F535DAD4561F03476B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDE706C08BB834FA0C53DE8F /* Build configuration list for PBXNativeTarget "Pods-KnockItOff-RSDayFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C99525253D3A738C41B44BF2 /* Debug */,
+				B9001E16E30A9231875885F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3683E287BDE46F03247B2E1 /* Build configuration list for PBXNativeTarget "Pods-KnockItOffKitTests-RSDayFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E1DE7A51ECD55C01F11C728 /* Debug */,
+				F97945CE2A7E5BD9FC3ECEE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A58DEED8E39218D262B757A /* Project object */;
+}

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <KnockItOffKit/VWWUserDefaults.h>
 
 //! Project version number for KnockItOffKit.
 FOUNDATION_EXPORT double KnockItOffKitVersionNumber;
