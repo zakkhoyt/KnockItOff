@@ -43,6 +43,18 @@ static NSString *VWWStartDateKey = @"startDate";
 }
 
 
+-(NSString*)startDateString{
+    NSString *dateFormatString = @"MMMM dd, YYYY";
+    
+    NSDateFormatter* dateLocal = [[NSDateFormatter alloc] init];
+    [dateLocal setTimeZone:[NSTimeZone localTimeZone]];
+    [dateLocal setDateFormat:dateFormatString];
+    
+    NSString* dateString = [dateLocal stringFromDate:[self startDate]];
+    if(dateString == nil) dateString = @"";
+    return dateString;
+}
+
 -(UIImage*)imageForStartDate{
     // 1-6 day (1) "1 day" - yellow smiley face  with red border
     // 7-13 days (1) "7 days" - yellow circle with red border and red week number

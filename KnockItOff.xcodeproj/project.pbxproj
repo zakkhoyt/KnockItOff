@@ -28,8 +28,8 @@
 		CFCE94DB1ABE5C6B00E1E947 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCE94DA1ABE5C6B00E1E947 /* MainInterface.storyboard */; };
 		CFCE94DE1ABE5C6B00E1E947 /* KnockItOffToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CFCE94D11ABE5C6B00E1E947 /* KnockItOffToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CFE243C31ABE726C003044B0 /* CurrentStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE243C21ABE726C003044B0 /* CurrentStatusViewController.swift */; };
-		CFE243C41ABE7599003044B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCE94871ABE546900E1E947 /* Images.xcassets */; };
-		CFE243C61ABE7A80003044B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE243C51ABE7A80003044B0 /* Images.xcassets */; };
+		CFE2440C1ABF6F01003044B0 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2440B1ABF6F01003044B0 /* SettingsTableViewController.swift */; };
+		CFE2440E1ABF7322003044B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE243C51ABE7A80003044B0 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +126,7 @@
 		CFCE94E41ABE685F00E1E947 /* KnockItOff-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KnockItOff-Bridging-Header.h"; sourceTree = "<group>"; };
 		CFE243C21ABE726C003044B0 /* CurrentStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentStatusViewController.swift; sourceTree = "<group>"; };
 		CFE243C51ABE7A80003044B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CFE2440B1ABF6F01003044B0 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		E2533ADB502EAFE8398C7855 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,8 +214,9 @@
 			children = (
 				CFCE94C51ABE565700E1E947 /* KnockItOff.entitlements */,
 				CFCE94801ABE546900E1E947 /* AppDelegate.swift */,
-				CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */,
 				CFE243C21ABE726C003044B0 /* CurrentStatusViewController.swift */,
+				CFE2440B1ABF6F01003044B0 /* SettingsTableViewController.swift */,
+				CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */,
 				CFCE94841ABE546900E1E947 /* Main.storyboard */,
 				CFCE94871ABE546900E1E947 /* Images.xcassets */,
 				CFCE94891ABE546900E1E947 /* LaunchScreen.xib */,
@@ -523,9 +525,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFE243C61ABE7A80003044B0 /* Images.xcassets in Resources */,
 				CFCE94DB1ABE5C6B00E1E947 /* MainInterface.storyboard in Resources */,
-				CFE243C41ABE7599003044B0 /* Images.xcassets in Resources */,
+				CFE2440E1ABF7322003044B0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +570,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE2440C1ABF6F01003044B0 /* SettingsTableViewController.swift in Sources */,
 				CFE243C31ABE726C003044B0 /* CurrentStatusViewController.swift in Sources */,
 				CFCE94831ABE546900E1E947 /* DatePickerViewController.swift in Sources */,
 				CFCE94811ABE546900E1E947 /* AppDelegate.swift in Sources */,

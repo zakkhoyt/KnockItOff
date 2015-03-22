@@ -15,6 +15,7 @@
 -(void)setStartDate:(NSDate*)date;
 
 
+-(NSString*)startDateString;
 -(UIImage*)imageForStartDate;
 -(NSString*)imageStringForStartDate;
 -(UIColor*)imageStringColorForStartDate;
