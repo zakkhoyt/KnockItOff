@@ -6,12 +6,19 @@
 //  Copyright (c) 2015 Zakk Hoyt. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 
 @interface VWWUserDefaults : NSObject
 +(VWWUserDefaults*)sharedInstance;
 -(NSDate*)startDate;
 -(void)setStartDate:(NSDate*)date;
+
+
+-(UIImage*)imageForStartDate;
+-(NSString*)imageStringForStartDate;
+-(UIColor*)imageStringColorForStartDate;
+-(NSString*)statusStringForStartDate;
 
 
 

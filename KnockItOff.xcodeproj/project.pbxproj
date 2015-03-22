@@ -214,12 +214,12 @@
 				CFCE94C51ABE565700E1E947 /* KnockItOff.entitlements */,
 				CFCE94801ABE546900E1E947 /* AppDelegate.swift */,
 				CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */,
+				CFE243C21ABE726C003044B0 /* CurrentStatusViewController.swift */,
 				CFCE94841ABE546900E1E947 /* Main.storyboard */,
 				CFCE94871ABE546900E1E947 /* Images.xcassets */,
 				CFCE94891ABE546900E1E947 /* LaunchScreen.xib */,
 				CFCE947E1ABE546900E1E947 /* Supporting Files */,
 				CFCE94E41ABE685F00E1E947 /* KnockItOff-Bridging-Header.h */,
-				CFE243C21ABE726C003044B0 /* CurrentStatusViewController.swift */,
 			);
 			path = KnockItOff;
 			sourceTree = "<group>";

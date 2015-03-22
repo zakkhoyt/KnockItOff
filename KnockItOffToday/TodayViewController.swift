@@ -5,10 +5,6 @@
 //  Created by Zakk Hoyt on 3/21/15.
 //  Copyright (c) 2015 Zakk Hoyt. All rights reserved.
 //
-// 1-6 day (1) "1 day" - yellow smiley face  with red border
-// 7-13 days (1) "7 days" - yellow circle with red border and red week number
-// 31-61 days (1) "31 days" - Yellow star with red border and green text
-// 365+ (1) "365 days" Yellow start with black smiley face and red border
 
 
 import UIKit
@@ -23,7 +19,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.preferredContentSize = CGSizeMake(0, 44);
+        self.preferredContentSize = CGSizeMake(0, 60
+        );
     }
     
     
@@ -69,7 +66,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
-        return UIEdgeInsetsMake(0, 16, 0, 0)
+        return UIEdgeInsetsMake(0, 0, 0, 0)
     }
     
 }

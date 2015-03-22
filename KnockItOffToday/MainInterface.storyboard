@@ -13,11 +13,11 @@
                         <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
-                                <rect key="frame" x="52" y="12" width="548" height="21"/>
+                                <rect key="frame" x="68" y="20" width="532" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="npK-aa-QYk"/>
                                 </constraints>
@@ -26,7 +26,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LSs-CI-MOE">
-                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                <rect key="frame" x="16" y="8" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="COs-JA-vbV"/>
                                     <constraint firstAttribute="width" constant="44" id="zxb-GE-VxO"/>
@@ -36,9 +36,9 @@
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="GcN-lo-r42" secondAttribute="centerY" id="1Qg-Ve-Kl5"/>
                             <constraint firstAttribute="trailing" secondItem="GcN-lo-r42" secondAttribute="trailing" id="6V6-Xb-9CC"/>
-                            <constraint firstItem="LSs-CI-MOE" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="CVb-oo-NI6"/>
-                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="LSs-CI-MOE" secondAttribute="bottom" id="hIk-dT-I6y"/>
-                            <constraint firstItem="LSs-CI-MOE" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="mBE-pj-Jeg"/>
+                            <constraint firstItem="LSs-CI-MOE" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="16" id="CVb-oo-NI6"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="LSs-CI-MOE" secondAttribute="bottom" constant="8" id="hIk-dT-I6y"/>
+                            <constraint firstItem="LSs-CI-MOE" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="mBE-pj-Jeg"/>
                             <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="LSs-CI-MOE" secondAttribute="trailing" constant="8" id="mPE-le-Cyb"/>
                         </constraints>
                     </view>
@@ -47,7 +47,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="600" height="44"/>
+                    <size key="freeformSize" width="600" height="60"/>
                     <connections>
                         <outlet property="imageView" destination="LSs-CI-MOE" id="7fk-SG-Kgp"/>
                         <outlet property="startDateLabel" destination="GcN-lo-r42" id="aFs-sQ-fOB"/>
@@ -55,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="967.5" y="300"/>
+            <point key="canvasLocation" x="967" y="300"/>
         </scene>
     </scenes>
 </document>
