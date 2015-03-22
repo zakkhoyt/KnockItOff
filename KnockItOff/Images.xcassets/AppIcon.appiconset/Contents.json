@@ -40,42 +40,36 @@
       "size" : "29x29",
       "idiom" : "ipad",
       "filename" : "KnockItOff_29.png",
-      "unassigned" : true,
       "scale" : "1x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
       "filename" : "KnockItOff_29@2x-1.png",
-      "unassigned" : true,
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
       "filename" : "KnockItOff_40.png",
-      "unassigned" : true,
       "scale" : "1x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
       "filename" : "KnockItOff_40@2x-1.png",
-      "unassigned" : true,
       "scale" : "2x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
       "filename" : "KnockItOff_76.png",
-      "unassigned" : true,
       "scale" : "1x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
       "filename" : "KnockItOff_76@2x.png",
-      "unassigned" : true,
       "scale" : "2x"
     }
   ],

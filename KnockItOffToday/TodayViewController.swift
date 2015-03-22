@@ -24,7 +24,11 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.preferredContentSize = CGSizeMake(0, 44);
-        
+    }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         let startDate: NSDate? = defaults.startDate()
         
         if startDate != nil {
@@ -35,23 +39,14 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         } else {
             startDateLabel.text = "Open KnockItOff to setup a quitting date."
         }
+
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {
-        // Perform any setup necessary in order to update the view.
 
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-
-        completionHandler(NCUpdateResult.NewData)
-    }
-    
     func setImageForDays(days:Int){
         switch days{
         case 0...6:
@@ -65,6 +60,16 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         default:
             imageView.image = nil
         }
+    }
+
+    
+    
+    func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {
+        completionHandler(NCUpdateResult.NewData)
+    }
+    
+    func widgetMarginInsetsForProposedMarginInsets(defaultMarginInsets: UIEdgeInsets) -> UIEdgeInsets {
+        return UIEdgeInsetsMake(0, 16, 0, 0)
     }
     
 }
