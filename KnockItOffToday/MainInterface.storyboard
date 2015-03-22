@@ -25,21 +25,40 @@
                                 <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LSs-CI-MOE">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNR-Sd-qZG">
                                 <rect key="frame" x="16" y="8" width="44" height="44"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LSs-CI-MOE">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJ4-gL-XO8">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="COs-JA-vbV"/>
-                                    <constraint firstAttribute="width" constant="44" id="zxb-GE-VxO"/>
+                                    <constraint firstItem="LSs-CI-MOE" firstAttribute="leading" secondItem="DNR-Sd-qZG" secondAttribute="leading" id="8zF-xF-bGj"/>
+                                    <constraint firstAttribute="trailing" secondItem="LSs-CI-MOE" secondAttribute="trailing" id="HfA-6j-g2B"/>
+                                    <constraint firstAttribute="bottom" secondItem="LSs-CI-MOE" secondAttribute="bottom" id="LBE-PJ-SPc"/>
+                                    <constraint firstAttribute="height" constant="44" id="Pfy-Gz-nUv"/>
+                                    <constraint firstItem="LSs-CI-MOE" firstAttribute="top" secondItem="DNR-Sd-qZG" secondAttribute="top" id="WUx-jC-vES"/>
+                                    <constraint firstAttribute="width" constant="44" id="drx-Jh-hR9"/>
+                                    <constraint firstAttribute="trailing" secondItem="gJ4-gL-XO8" secondAttribute="trailing" id="ehR-f4-anK"/>
+                                    <constraint firstItem="gJ4-gL-XO8" firstAttribute="leading" secondItem="DNR-Sd-qZG" secondAttribute="leading" id="mvK-Zl-1ZJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="gJ4-gL-XO8" secondAttribute="bottom" id="p7P-Jt-2tt"/>
+                                    <constraint firstItem="gJ4-gL-XO8" firstAttribute="top" secondItem="DNR-Sd-qZG" secondAttribute="top" id="tct-qI-Kfn"/>
                                 </constraints>
-                            </imageView>
+                            </view>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="GcN-lo-r42" secondAttribute="centerY" id="1Qg-Ve-Kl5"/>
                             <constraint firstAttribute="trailing" secondItem="GcN-lo-r42" secondAttribute="trailing" id="6V6-Xb-9CC"/>
-                            <constraint firstItem="LSs-CI-MOE" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="16" id="CVb-oo-NI6"/>
-                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="LSs-CI-MOE" secondAttribute="bottom" constant="8" id="hIk-dT-I6y"/>
-                            <constraint firstItem="LSs-CI-MOE" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" id="mBE-pj-Jeg"/>
-                            <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="LSs-CI-MOE" secondAttribute="trailing" constant="8" id="mPE-le-Cyb"/>
+                            <constraint firstItem="DNR-Sd-qZG" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="16" id="mdE-bg-0mq"/>
+                            <constraint firstAttribute="centerY" secondItem="DNR-Sd-qZG" secondAttribute="centerY" id="quJ-gj-xVe"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="DNR-Sd-qZG" secondAttribute="trailing" constant="8" id="suZ-kx-Bfp"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -49,8 +68,9 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="60"/>
                     <connections>
+                        <outlet property="imageStringLabel" destination="gJ4-gL-XO8" id="HFe-9E-jEZ"/>
                         <outlet property="imageView" destination="LSs-CI-MOE" id="7fk-SG-Kgp"/>
-                        <outlet property="startDateLabel" destination="GcN-lo-r42" id="aFs-sQ-fOB"/>
+                        <outlet property="statusLabel" destination="GcN-lo-r42" id="R0g-3a-475"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>

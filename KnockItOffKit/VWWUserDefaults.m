@@ -105,10 +105,10 @@ static NSString *VWWStartDateKey = @"startDate";
 -(UIColor*)colorForNumber:(NSUInteger)number{
     switch (number) {
         case 1:
-            return [UIColor greenColor];
+            return [UIColor colorWithRed:0.0 green:0.7 blue:0.0 alpha:1.0];
             break;
         case 2:
-            return [UIColor redColor];
+            return [UIColor colorWithRed:0.7 green:0.0 blue:0.0 alpha:1.0];
             break;
         case 3:
             return [UIColor blueColor];
