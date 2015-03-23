@@ -1,0 +1,30 @@
+
+* Main Screen
+    * Default background image
+    * Settings icon
+    * Scheduler on app load (if applicable)
+    * Check permissions and prompt/guide for
+        * Notifications
+        * Photo access
+
+* Settings screen
+    * Scheduler on time change
+    * Images for #2
+    * Help images for Today #3
+    * Create SD help section with links and maybe IRC?
+    * Create an about section
+
+* Calendar screen
+    * Dont' allow selecting future date
+    * Make completed days green
+    *
+
+* UserDefaults
+    * Store notification time
+
+* Reddit
+    * Integate SDK: https://github.com/samsymons/RedditKit
+    * Authenticate using reddit
+    * Grab top post from /r/sd and display on front page of app
+    * Grab top post from /r/sd and display in today tab
+    * Grab top post from /r/sd and display in notification

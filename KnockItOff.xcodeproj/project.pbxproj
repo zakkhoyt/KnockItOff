@@ -11,6 +11,9 @@
 		C668C6981AC08CED00478BD6 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C668C6971AC08CED00478BD6 /* NotificationScheduler.swift */; };
 		C668C69D1AC0AC5F00478BD6 /* Summary.h in Headers */ = {isa = PBXBuildFile; fileRef = C668C69B1AC0AC5F00478BD6 /* Summary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C668C69E1AC0AC5F00478BD6 /* Summary.m in Sources */ = {isa = PBXBuildFile; fileRef = C668C69C1AC0AC5F00478BD6 /* Summary.m */; };
+		C668C6A01AC0B83800478BD6 /* TODO.txt in Resources */ = {isa = PBXBuildFile; fileRef = C668C69F1AC0B83800478BD6 /* TODO.txt */; };
+		C668C6A21AC0BA9100478BD6 /* HelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C668C6A11AC0BA9100478BD6 /* HelpTableViewController.swift */; };
+		C668C6A41AC0BB1D00478BD6 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C668C6A31AC0BB1D00478BD6 /* WebViewController.swift */; };
 		CF51FBF61ABE6EE000C1C9BF /* KnockItOffKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCE94A51ABE563900E1E947 /* KnockItOffKit.framework */; };
 		CFCE94811ABE546900E1E947 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94801ABE546900E1E947 /* AppDelegate.swift */; };
 		CFCE94831ABE546900E1E947 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */; };
@@ -104,6 +107,9 @@
 		C668C6971AC08CED00478BD6 /* NotificationScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
 		C668C69B1AC0AC5F00478BD6 /* Summary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Summary.h; sourceTree = "<group>"; };
 		C668C69C1AC0AC5F00478BD6 /* Summary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Summary.m; sourceTree = "<group>"; };
+		C668C69F1AC0B83800478BD6 /* TODO.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO.txt; sourceTree = "<group>"; };
+		C668C6A11AC0BA9100478BD6 /* HelpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTableViewController.swift; sourceTree = "<group>"; };
+		C668C6A31AC0BB1D00478BD6 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		CFCE947B1ABE546900E1E947 /* KnockItOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnockItOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCE947F1ABE546900E1E947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFCE94801ABE546900E1E947 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +200,8 @@
 				CFE243C21ABE726C003044B0 /* CurrentStatusViewController.swift */,
 				CFE2440B1ABF6F01003044B0 /* SettingsTableViewController.swift */,
 				CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */,
+				C668C6A11AC0BA9100478BD6 /* HelpTableViewController.swift */,
+				C668C6A31AC0BB1D00478BD6 /* WebViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -241,6 +249,7 @@
 				C668C69A1AC08D0000478BD6 /* UserInterface */,
 				CFCE947E1ABE546900E1E947 /* Supporting Files */,
 				C668C6971AC08CED00478BD6 /* NotificationScheduler.swift */,
+				C668C69F1AC0B83800478BD6 /* TODO.txt */,
 			);
 			path = KnockItOff;
 			sourceTree = "<group>";
@@ -518,6 +527,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C668C6A01AC0B83800478BD6 /* TODO.txt in Resources */,
 				CFCE94861ABE546900E1E947 /* Main.storyboard in Resources */,
 				CFCE948B1ABE546900E1E947 /* LaunchScreen.xib in Resources */,
 				CFCE94881ABE546900E1E947 /* Images.xcassets in Resources */,
@@ -596,7 +606,9 @@
 			files = (
 				CFE2440C1ABF6F01003044B0 /* SettingsTableViewController.swift in Sources */,
 				CFE243C31ABE726C003044B0 /* CurrentStatusViewController.swift in Sources */,
+				C668C6A21AC0BA9100478BD6 /* HelpTableViewController.swift in Sources */,
 				C668C6981AC08CED00478BD6 /* NotificationScheduler.swift in Sources */,
+				C668C6A41AC0BB1D00478BD6 /* WebViewController.swift in Sources */,
 				CFCE94831ABE546900E1E947 /* DatePickerViewController.swift in Sources */,
 				CFCE94811ABE546900E1E947 /* AppDelegate.swift in Sources */,
 			);

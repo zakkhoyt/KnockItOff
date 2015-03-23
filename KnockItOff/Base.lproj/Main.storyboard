@@ -59,15 +59,21 @@
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="H6m-e4-CJZ"/>
-                                    <barButtonItem title="Settings" id="Zgx-vv-r1w">
-                                        <connections>
-                                            <segue destination="1xD-Qt-g3w" kind="presentation" id="neF-dG-Mos"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Hvg-qd-8UX"/>
                                     <barButtonItem systemItem="camera" id="EB8-3m-2Jj">
                                         <connections>
                                             <action selector="cameraButtonAction:" destination="DuO-yS-vay" id="AyG-pk-mMO"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="TGg-m8-dbJ"/>
+                                    <barButtonItem title="Help" id="aif-tV-Vnl">
+                                        <connections>
+                                            <segue destination="GGq-9g-Fna" kind="presentation" id="fM5-Od-uFo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Hvg-qd-8UX"/>
+                                    <barButtonItem title="Settings" id="Zgx-vv-r1w">
+                                        <connections>
+                                            <segue destination="1xD-Qt-g3w" kind="presentation" id="neF-dG-Mos"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="6eJ-UR-1pk"/>
@@ -250,6 +256,55 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="5.) Get help" id="N9G-pe-hvu">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JRm-Oy-yqt">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JRm-Oy-yqt" id="ulT-h5-gl8">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take user to a page where there are a few links. Maybe IRC" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2t-6Y-hmp">
+                                                    <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="O2t-6Y-hmp" secondAttribute="trailing" constant="8" id="AQM-5J-WHA"/>
+                                                <constraint firstItem="O2t-6Y-hmp" firstAttribute="leading" secondItem="ulT-h5-gl8" secondAttribute="leading" constant="8" id="YfY-Tp-QaO"/>
+                                                <constraint firstItem="O2t-6Y-hmp" firstAttribute="top" secondItem="ulT-h5-gl8" secondAttribute="top" constant="11" id="cUK-z2-rK5"/>
+                                                <constraint firstAttribute="bottom" secondItem="O2t-6Y-hmp" secondAttribute="bottom" constant="11" id="dFW-On-vJs"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="6.) About this app" id="bqh-Pw-aQw">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1Vf-oJ-qfC">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Vf-oJ-qfC" id="O53-Xw-Xf8">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hX-Le-PGu">
+                                                    <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                                    <string key="text">I was inspired to write this app when I found reddit.com/r/stopdrinking. It is a terrific community and near real-time help is available.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5hX-Le-PGu" firstAttribute="top" secondItem="O53-Xw-Xf8" secondAttribute="top" constant="11" id="3ks-Xi-0eT"/>
+                                                <constraint firstAttribute="trailing" secondItem="5hX-Le-PGu" secondAttribute="trailing" constant="8" id="73o-Ho-PjE"/>
+                                                <constraint firstAttribute="bottom" secondItem="5hX-Le-PGu" secondAttribute="bottom" constant="11" id="YdJ-yN-gn2"/>
+                                                <constraint firstItem="5hX-Le-PGu" firstAttribute="leading" secondItem="O53-Xw-Xf8" secondAttribute="leading" constant="8" id="Zzn-kf-O1G"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="jzs-Lw-ZdD" id="Sv9-13-7md"/>
@@ -339,6 +394,136 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOy-NR-Q83" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1776" y="493"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YQX-mI-dXI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GGq-9g-Fna" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MGQ-me-76M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ggk-SJ-Tlw" kind="relationship" relationship="rootViewController" id="poi-d4-cke"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NGA-TF-3gD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1771" y="1291"/>
+        </scene>
+        <!--Help-->
+        <scene sceneID="TWw-jT-P1C">
+            <objects>
+                <tableViewController id="ggk-SJ-Tlw" customClass="HelpTableViewController" customModule="KnockItOff" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="CJs-TK-AHd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="NuO-r6-ZFV">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="VeH-sK-kP9" style="IBUITableViewCellStyleDefault" id="Roi-po-Nbu">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Roi-po-Nbu" id="4zv-Yt-rJd">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Community: reddit.com/r/stopdrinking" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VeH-sK-kP9">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="vuk-za-dED" style="IBUITableViewCellStyleDefault" id="aq1-Wn-4Kn">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aq1-Wn-4Kn" id="pMo-0s-Zam">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Chat: reddit.com/r/stopdrinking IRC 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vuk-za-dED">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Pvd-nZ-VyT" style="IBUITableViewCellStyleDefault" id="gMG-mn-kt2">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gMG-mn-kt2" id="AEg-8p-aot">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Chat: reddit.com/r/stopdrinking IRC 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pvd-nZ-VyT">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="ggk-SJ-Tlw" id="WGA-sP-u6Q"/>
+                            <outlet property="delegate" destination="ggk-SJ-Tlw" id="Lab-50-TQk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Help" id="59r-ve-ECW">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="CUU-4i-P2O">
+                            <connections>
+                                <action selector="doneButtonAction:" destination="ggk-SJ-Tlw" id="OqS-DI-3tH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="hdx-j2-o4G" kind="show" identifier="SegueHelpToWeb" id="azt-KM-6um"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uOF-jq-Ofh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2588" y="1280"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="HI0-kT-apU">
+            <objects>
+                <viewController id="hdx-j2-o4G" customClass="WebViewController" customModule="KnockItOff" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xVC-ZG-pr4"/>
+                        <viewControllerLayoutGuide type="bottom" id="PF0-9w-VJF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dbV-lO-LiL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lb8-gj-hoD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="hdx-j2-o4G" id="Qri-3U-628"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lb8-gj-hoD" firstAttribute="top" secondItem="dbV-lO-LiL" secondAttribute="top" id="7sZ-XY-IQs"/>
+                            <constraint firstItem="PF0-9w-VJF" firstAttribute="top" secondItem="Lb8-gj-hoD" secondAttribute="bottom" id="Evd-sU-r3e"/>
+                            <constraint firstAttribute="trailing" secondItem="Lb8-gj-hoD" secondAttribute="trailing" id="d4x-LE-1ET"/>
+                            <constraint firstItem="Lb8-gj-hoD" firstAttribute="leading" secondItem="dbV-lO-LiL" secondAttribute="leading" id="xqk-Lb-SPb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="Lb8-gj-hoD" id="lRz-Zb-YAE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NuN-iP-80O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3444" y="1275"/>
         </scene>
     </scenes>
 </document>
