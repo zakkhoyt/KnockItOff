@@ -29,7 +29,7 @@
 		CFCE94DE1ABE5C6B00E1E947 /* KnockItOffToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CFCE94D11ABE5C6B00E1E947 /* KnockItOffToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CFE243C31ABE726C003044B0 /* CurrentStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE243C21ABE726C003044B0 /* CurrentStatusViewController.swift */; };
 		CFE2440C1ABF6F01003044B0 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2440B1ABF6F01003044B0 /* SettingsTableViewController.swift */; };
-		CFE2440E1ABF7322003044B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE243C51ABE7A80003044B0 /* Images.xcassets */; };
+		CFE2440F1ABF830B003044B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCE94871ABE546900E1E947 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,7 +125,6 @@
 		CFCE94E31ABE5C7700E1E947 /* KnockItOffToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = KnockItOffToday.entitlements; sourceTree = "<group>"; };
 		CFCE94E41ABE685F00E1E947 /* KnockItOff-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KnockItOff-Bridging-Header.h"; sourceTree = "<group>"; };
 		CFE243C21ABE726C003044B0 /* CurrentStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentStatusViewController.swift; sourceTree = "<group>"; };
-		CFE243C51ABE7A80003044B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CFE2440B1ABF6F01003044B0 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		E2533ADB502EAFE8398C7855 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -303,7 +302,6 @@
 				CFCE94D81ABE5C6B00E1E947 /* TodayViewController.swift */,
 				CFCE94DA1ABE5C6B00E1E947 /* MainInterface.storyboard */,
 				CFCE94D61ABE5C6B00E1E947 /* Supporting Files */,
-				CFE243C51ABE7A80003044B0 /* Images.xcassets */,
 			);
 			path = KnockItOffToday;
 			sourceTree = "<group>";
@@ -526,7 +524,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFCE94DB1ABE5C6B00E1E947 /* MainInterface.storyboard in Resources */,
-				CFE2440E1ABF7322003044B0 /* Images.xcassets in Resources */,
+				CFE2440F1ABF830B003044B0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -889,6 +887,8 @@
 		CFCE94E01ABE5C6B00E1E947 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = KnockItOffToday/KnockItOffToday.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -907,6 +907,8 @@
 		CFCE94E11ABE5C6B00E1E947 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = KnockItOffToday/KnockItOffToday.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

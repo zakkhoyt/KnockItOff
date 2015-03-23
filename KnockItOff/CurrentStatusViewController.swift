@@ -7,16 +7,23 @@
 //
 
 import UIKit
+import AssetsLibrary
+
 import KnockItOffKit
 
 class CurrentStatusViewController: UIViewController {
 
+    let imagePicker = UIImagePickerController()
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var imageStringLabel: UILabel!
     @IBOutlet weak var statusTextView: UITextView!
+    @IBOutlet weak var backgroundImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadBackgroundImage()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -50,11 +57,11 @@ class CurrentStatusViewController: UIViewController {
         insertPoint += str2.length
 
         self.statusTextView.attributedText = attrString
-        
+
         scheduleNotification();
         
         
-        UIApplication.sharedApplication().applicationIconBadgeNumber = 0;
+        UIApplication.sharedApplication().applicationIconBadgeNumber = 0
     }
 
     override func didReceiveMemoryWarning() {
@@ -100,14 +107,51 @@ class CurrentStatusViewController: UIViewController {
         return tomorrowMorning!
     }
     
-    /*
-    // MARK: - Navigation
+    func loadBackgroundImage(){
+        let backgroundImageURL = VWWUserDefaults.sharedInstance().backgroungImageURL() as NSURL?
+        if backgroundImageURL != nil {
+            let library = ALAssetsLibrary()
+            library.assetForURL(backgroundImageURL, resultBlock: { (asset) -> Void in
+                let rep = asset.defaultRepresentation()
+                let cgImage = rep.fullScreenImage().takeRetainedValue()
+                let backgroundImage = UIImage(CGImage: cgImage)
+                self.backgroundImageView.image = backgroundImage?
+                if let url = backgroundImageURL?.absoluteString {
+                    println("Setting background image to asset at url: %@" + url)
+                }
+                
+                }, failureBlock: { (error) -> Void in
+                    println("Failed to retrieve image from AssetLibrary")
+            })
+        }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
+   
+    @IBAction func cameraButtonAction(sender: AnyObject) {
+        imagePicker.delegate = self;
+        imagePicker.sourceType = .PhotoLibrary
+        imagePicker.allowsEditing = false
+        presentViewController(imagePicker, animated: true) { () -> Void in
+            
+        }
+    }
+    
+    
+}
 
+extension CurrentStatusViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        
+        // Store image path for use next instance
+        let assetURL = info[UIImagePickerControllerReferenceURL] as NSURL
+        VWWUserDefaults.sharedInstance().setBackgroundImageURL(assetURL)
+        
+        dismissViewControllerAnimated(true, completion: { () -> Void in
+            self.loadBackgroundImage()
+        })
+    }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }

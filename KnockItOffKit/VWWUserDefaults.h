@@ -11,6 +11,9 @@
 
 @interface VWWUserDefaults : NSObject
 +(VWWUserDefaults*)sharedInstance;
+
+
+
 -(NSDate*)startDate;
 -(void)setStartDate:(NSDate*)date;
 
@@ -21,6 +24,7 @@
 -(UIColor*)imageStringColorForStartDate;
 -(NSString*)statusStringForStartDate;
 
-
+-(NSURL*)backgroungImageURL;
+-(void)setBackgroundImageURL:(NSURL*)backgroundImageURL;
 
 @end

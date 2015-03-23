@@ -145,4 +145,18 @@ static NSString *VWWStartDateKey = @"startDate";
     return days;
 }
 
+
+static NSString *VWWBackgroundImagePathKey = @"backgroundImagePath";
+
+-(NSURL*)backgroungImageURL{
+    NSString *path = [self.defaults objectForKey:VWWBackgroundImagePathKey];
+    NSURL *url = [NSURL URLWithString:path];
+    return url;
+}
+-(void)setBackgroundImageURL:(NSURL*)backgroundImageURL{
+    [self.defaults setObject:backgroundImageURL.absoluteString forKey:VWWBackgroundImagePathKey];
+    [self.defaults synchronize];
+    
+}
+
 @end
