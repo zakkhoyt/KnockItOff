@@ -25,18 +25,17 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        let startDate: NSDate? = defaults.startDate()
+
         
-        if startDate != nil {
-            self.imageView.image = KnockItOffPersistant.sharedInstance().imageForStartDate()
-            self.imageStringLabel.text = KnockItOffPersistant.sharedInstance().imageStringForStartDate()
-            self.imageStringLabel.textColor = KnockItOffPersistant.sharedInstance().imageStringColorForStartDate()
-            self.statusLabel.text = KnockItOffPersistant.sharedInstance().statusStringForStartDate()
-
-        } else {
+        let summary = KnockItOffPersistant.sharedInstance().summary()
+        if summary == nil {
             statusLabel.text = "Open 'Knock It Off' to setup a quitting date."
+        } else {
+            imageView.image = summary.timeQuitImage
+            imageStringLabel.text = summary.timeQuitString
+            imageStringLabel.textColor = summary.timeQuitStringColor
+            statusLabel.text = summary.daysQuitString
         }
-
     }
     
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)!) {

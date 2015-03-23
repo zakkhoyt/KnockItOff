@@ -32,7 +32,10 @@ class SettingsTableViewController: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
-        self.lastDrinkDatelabel.text = KnockItOffPersistant.sharedInstance().startDateString()
+        
+        let summary = KnockItOffPersistant.sharedInstance().summary()
+        
+        self.lastDrinkDatelabel.text = summary.startDateString
         self.twoLabel.sizeToFit()
         self.todayLabel.sizeToFit()
     }

@@ -48,8 +48,7 @@ class CurrentStatusViewController: UIViewController {
         
         let summary = KnockItOffPersistant.sharedInstance().summary()
         
-        let date = KnockItOffPersistant.sharedInstance().startDate()
-        if date == nil {
+        if summary == nil {
             self.imageView.image = nil
             self.imageStringLabel.text = nil
             
@@ -68,11 +67,12 @@ class CurrentStatusViewController: UIViewController {
             
             
             self.statusTextView.attributedText = attrString
-        } else {
             
-            self.imageView.image = KnockItOffPersistant.sharedInstance().imageForStartDate()
-            self.imageStringLabel.text = KnockItOffPersistant.sharedInstance().imageStringForStartDate()
-            self.imageStringLabel.textColor = KnockItOffPersistant.sharedInstance().imageStringColorForStartDate()
+        } else {
+            imageView.image = summary.timeQuitImage
+            imageStringLabel.text = summary.timeQuitString
+            imageStringLabel.textColor = summary.timeQuitStringColor
+            imageStringLabel.sizeToFit()
             
             let attrString = NSMutableAttributedString()
             var insertPoint: Int = 0
@@ -83,7 +83,7 @@ class CurrentStatusViewController: UIViewController {
                 NSForegroundColorAttributeName : UIColor.darkTextColor(),
                 NSFontAttributeName: UIFont.systemFontOfSize(32)]
             
-            let str1 = NSString(format: "%@ ", KnockItOffPersistant.sharedInstance().statusStringForStartDate())
+            let str1 = NSString(format: "%@ ", summary.daysQuitString)
             attrString.appendAttributedString(NSAttributedString(string: str1))
             attrString.setAttributes(attr1, range: NSMakeRange(insertPoint, str1.length))
             insertPoint += str1.length
@@ -91,14 +91,26 @@ class CurrentStatusViewController: UIViewController {
             let attr2 = [NSParagraphStyleAttributeName : paragraph,
                 NSForegroundColorAttributeName : UIColor.darkTextColor(),
                 NSFontAttributeName: UIFont.systemFontOfSize(24)]
-            let str2 = NSString(format: "(%@)\n", KnockItOffPersistant.sharedInstance().startDateString())
+            let str2 = NSString(format: "(%@)", summary.startDateString)
             attrString.appendAttributedString(NSAttributedString(string: str2))
             attrString.setAttributes(attr2, range: NSMakeRange(insertPoint, str2.length))
             insertPoint += str2.length
             
-            self.statusTextView.attributedText = attrString
+            let attr3 = [NSParagraphStyleAttributeName : paragraph,
+                NSForegroundColorAttributeName : UIColor.blackColor(),
+                NSFontAttributeName: UIFont.systemFontOfSize(24)]
+            let str3 = NSString(format: "\n\n\nYou've saved yourself:\n%lu beers\n$%lu\n%ld calories\n",
+                summary.beersSaved.unsignedIntegerValue,
+                summary.moneySaved.unsignedIntegerValue,
+                summary.caloriesSaved.unsignedIntegerValue)
+            attrString.appendAttributedString(NSAttributedString(string: str3))
+            attrString.setAttributes(attr3, range: NSMakeRange(insertPoint, str3.length))
+            insertPoint += str3.length
+
+            
+            statusTextView.attributedText = attrString
+
         }
-        
         
         loadBackgroundImage()
     }

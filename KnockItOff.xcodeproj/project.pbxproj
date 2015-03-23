@@ -777,7 +777,7 @@
 				INFOPLIST_FILE = KnockItOff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "637945d0-6b96-4e23-a889-a6c500329da3";
 				SWIFT_OBJC_BRIDGING_HEADER = "KnockItOff/KnockItOff-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -796,7 +796,7 @@
 				INFOPLIST_FILE = KnockItOff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "637945d0-6b96-4e23-a889-a6c500329da3";
 				SWIFT_OBJC_BRIDGING_HEADER = "KnockItOff/KnockItOff-Bridging-Header.h";
 			};
 			name = Release;
