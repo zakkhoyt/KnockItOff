@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B8F95FA84802CDEE5C93ACBC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 172AB3A890436BE0BAF1F3B3 /* libPods.a */; };
+		C668C6981AC08CED00478BD6 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C668C6971AC08CED00478BD6 /* NotificationScheduler.swift */; };
 		CF51FBF61ABE6EE000C1C9BF /* KnockItOffKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCE94A51ABE563900E1E947 /* KnockItOffKit.framework */; };
 		CFCE94811ABE546900E1E947 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94801ABE546900E1E947 /* AppDelegate.swift */; };
 		CFCE94831ABE546900E1E947 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */; };
@@ -98,6 +99,7 @@
 /* Begin PBXFileReference section */
 		172AB3A890436BE0BAF1F3B3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B9A1C462C84B9CC26BC24EB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C668C6971AC08CED00478BD6 /* NotificationScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
 		CFCE947B1ABE546900E1E947 /* KnockItOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnockItOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCE947F1ABE546900E1E947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFCE94801ABE546900E1E947 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +184,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C668C6991AC08CF300478BD6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CFE243C21ABE726C003044B0 /* CurrentStatusViewController.swift */,
+				CFE2440B1ABF6F01003044B0 /* SettingsTableViewController.swift */,
+				CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		C668C69A1AC08D0000478BD6 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				CFCE94841ABE546900E1E947 /* Main.storyboard */,
+				CFCE94871ABE546900E1E947 /* Images.xcassets */,
+				CFCE94891ABE546900E1E947 /* LaunchScreen.xib */,
+			);
+			name = UserInterface;
+			sourceTree = "<group>";
+		};
 		CFCE94721ABE546900E1E947 = {
 			isa = PBXGroup;
 			children = (
@@ -211,16 +233,10 @@
 		CFCE947D1ABE546900E1E947 /* KnockItOff */ = {
 			isa = PBXGroup;
 			children = (
-				CFCE94C51ABE565700E1E947 /* KnockItOff.entitlements */,
-				CFCE94801ABE546900E1E947 /* AppDelegate.swift */,
-				CFE243C21ABE726C003044B0 /* CurrentStatusViewController.swift */,
-				CFE2440B1ABF6F01003044B0 /* SettingsTableViewController.swift */,
-				CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */,
-				CFCE94841ABE546900E1E947 /* Main.storyboard */,
-				CFCE94871ABE546900E1E947 /* Images.xcassets */,
-				CFCE94891ABE546900E1E947 /* LaunchScreen.xib */,
+				C668C6991AC08CF300478BD6 /* ViewController */,
+				C668C69A1AC08D0000478BD6 /* UserInterface */,
 				CFCE947E1ABE546900E1E947 /* Supporting Files */,
-				CFCE94E41ABE685F00E1E947 /* KnockItOff-Bridging-Header.h */,
+				C668C6971AC08CED00478BD6 /* NotificationScheduler.swift */,
 			);
 			path = KnockItOff;
 			sourceTree = "<group>";
@@ -228,6 +244,9 @@
 		CFCE947E1ABE546900E1E947 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CFCE94E41ABE685F00E1E947 /* KnockItOff-Bridging-Header.h */,
+				CFCE94C51ABE565700E1E947 /* KnockItOff.entitlements */,
+				CFCE94801ABE546900E1E947 /* AppDelegate.swift */,
 				CFCE947F1ABE546900E1E947 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -570,6 +589,7 @@
 			files = (
 				CFE2440C1ABF6F01003044B0 /* SettingsTableViewController.swift in Sources */,
 				CFE243C31ABE726C003044B0 /* CurrentStatusViewController.swift in Sources */,
+				C668C6981AC08CED00478BD6 /* NotificationScheduler.swift in Sources */,
 				CFCE94831ABE546900E1E947 /* DatePickerViewController.swift in Sources */,
 				CFCE94811ABE546900E1E947 /* AppDelegate.swift in Sources */,
 			);

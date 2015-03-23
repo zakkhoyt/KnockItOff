@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>KnockItOff.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>KnockItOffKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>KnockItOffToday.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CFCE947A1ABE546900E1E947</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CFCE948F1ABE546900E1E947</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CFCE94A41ABE563900E1E947</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CFCE94AE1ABE563900E1E947</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CFCE94D01ABE5C6B00E1E947</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

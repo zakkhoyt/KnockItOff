@@ -19,6 +19,12 @@ class SettingsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Plain, target: self, action: "doneButtonAction")
+        self.navigationItem.rightBarButtonItem = doneButton
+        self.navigationItem.hidesBackButton = true
+        title = "Settings"
+        
     }
 
 
@@ -37,6 +43,13 @@ class SettingsTableViewController: UITableViewController {
     
     @IBAction func lastDrinkButtonTouchUpInsde(sender: AnyObject) {
         
+    }
+    
+    func doneButtonAction() {
+//        navigationController?.popViewControllerAnimated(true)
+        dismissViewControllerAnimated(true, completion: { () -> Void in
+            
+        })
     }
     
 
