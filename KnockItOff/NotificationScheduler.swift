@@ -12,9 +12,14 @@ import KnockItOffKit
 
 class NotificationScheduler: NSObject {
     class func scheduleNotifications(){
+        // Ask for permission
         let status: UIUserNotificationSettings? = UIApplication.sharedApplication().currentUserNotificationSettings()
         UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil))
         
+        // Cancel all previously scheduled notifications
+        UIApplication.sharedApplication().cancelAllLocalNotifications()
+        
+        // Schedule daily notification for next 30 days
         for day in 1...30 {
             // schedule notification for tomorrow
             var notification = UILocalNotification()
