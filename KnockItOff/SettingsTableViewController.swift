@@ -20,20 +20,19 @@ class SettingsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Settings"
+        
+        // Add a done button
         let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Plain, target: self, action: "doneButtonAction")
         self.navigationItem.rightBarButtonItem = doneButton
         self.navigationItem.hidesBackButton = true
-        title = "Settings"
-        
     }
 
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
-        
-        self.lastDrinkDatelabel.text = VWWUserDefaults.sharedInstance().startDateString()
-//        self.twoLabel.text = "For quick access move the app to the bottom bar For quick access move the app to the bottom bar"
+        self.lastDrinkDatelabel.text = KnockItOffPersistant.sharedInstance().startDateString()
         self.twoLabel.sizeToFit()
         self.todayLabel.sizeToFit()
     }
@@ -46,11 +45,8 @@ class SettingsTableViewController: UITableViewController {
     }
     
     func doneButtonAction() {
-//        navigationController?.popViewControllerAnimated(true)
         dismissViewControllerAnimated(true, completion: { () -> Void in
             
         })
     }
-    
-
 }

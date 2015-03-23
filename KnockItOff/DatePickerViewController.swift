@@ -12,7 +12,7 @@ import KnockItOffKit
 
 class DatePickerViewController: UIViewController{
     
-    let defaults = VWWUserDefaults.sharedInstance()
+    let defaults = KnockItOffPersistant.sharedInstance()
     
     @IBOutlet weak var datePicker: RSDFDatePickerView!
     

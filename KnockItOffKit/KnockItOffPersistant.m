@@ -1,23 +1,25 @@
 //
-//  VWWUserDefaults.m
+//  KnockItOffPersistant.m
 //  KnockItOff
 //
 //  Created by Zakk Hoyt on 3/21/15.
 //  Copyright (c) 2015 Zakk Hoyt. All rights reserved.
 //
 
-#import "VWWUserDefaults.h"
+#import "KnockItOffPersistant.h"
 
-@interface VWWUserDefaults()
+
+
+@interface KnockItOffPersistant()
 @property (nonatomic, strong) NSUserDefaults *defaults;
 @end
 
-@implementation VWWUserDefaults
+@implementation KnockItOffPersistant
 
-+(VWWUserDefaults*)sharedInstance{
-    static VWWUserDefaults *instance;
++(KnockItOffPersistant*)sharedInstance{
+    static KnockItOffPersistant *instance;
     if(instance == nil){
-        instance = [[VWWUserDefaults alloc]init];
+        instance = [[KnockItOffPersistant alloc]init];
     }
     return instance;
 }
@@ -42,6 +44,11 @@ static NSString *VWWStartDateKey = @"startDate";
     [self.defaults synchronize];
 }
 
+
+-(Summary*)summary{
+    Summary *summary = [[Summary alloc]initWithStartDate:self.startDate];
+    return summary;
+}
 
 -(NSString*)startDateString{
     NSString *dateFormatString = @"MMMM dd, YYYY";

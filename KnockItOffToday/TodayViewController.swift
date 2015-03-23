@@ -12,7 +12,7 @@ import NotificationCenter
 import KnockItOffKit
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-    let defaults = VWWUserDefaults.sharedInstance()
+    let defaults = KnockItOffPersistant.sharedInstance()
     
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
@@ -28,10 +28,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         let startDate: NSDate? = defaults.startDate()
         
         if startDate != nil {
-            self.imageView.image = VWWUserDefaults.sharedInstance().imageForStartDate()
-            self.imageStringLabel.text = VWWUserDefaults.sharedInstance().imageStringForStartDate()
-            self.imageStringLabel.textColor = VWWUserDefaults.sharedInstance().imageStringColorForStartDate()
-            self.statusLabel.text = VWWUserDefaults.sharedInstance().statusStringForStartDate()
+            self.imageView.image = KnockItOffPersistant.sharedInstance().imageForStartDate()
+            self.imageStringLabel.text = KnockItOffPersistant.sharedInstance().imageStringForStartDate()
+            self.imageStringLabel.textColor = KnockItOffPersistant.sharedInstance().imageStringColorForStartDate()
+            self.statusLabel.text = KnockItOffPersistant.sharedInstance().statusStringForStartDate()
 
         } else {
             statusLabel.text = "Open 'Knock It Off' to setup a quitting date."

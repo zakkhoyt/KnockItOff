@@ -1,3 +1,4 @@
+
 //
 //  NotificationScheduler.swift
 //  KnockItOff
@@ -27,8 +28,8 @@ class NotificationScheduler: NSObject {
             var dateTime = NSDate(timeInterval: 10, sinceDate: NSDate())
             let futureDate = dateForDaysFromNow(day)
             notification.fireDate = futureDate
-            notification.alertBody = VWWUserDefaults.sharedInstance().statusStringForStartDate()
-            notification.alertTitle = VWWUserDefaults.sharedInstance().statusStringForStartDate()
+            notification.alertBody = KnockItOffPersistant.sharedInstance().statusStringForStartDate()
+            notification.alertTitle = KnockItOffPersistant.sharedInstance().statusStringForStartDate()
             notification.applicationIconBadgeNumber = 1;
             let localTimeDescription = futureDate.descriptionWithLocale(NSLocale.currentLocale())
             println("fireDate: " + localTimeDescription!)
