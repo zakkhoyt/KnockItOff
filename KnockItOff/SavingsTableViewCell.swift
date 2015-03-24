@@ -21,7 +21,7 @@ class SavingsTableViewCell: UITableViewCell {
             let attr1 = [NSParagraphStyleAttributeName : paragraph,
                 NSForegroundColorAttributeName : UIColor.blackColor(),
                 NSFontAttributeName: UIFont.systemFontOfSize(24)]
-            let str1 = NSString(format: "\nBy not drinking you've saved yourself:\ndrinking %lu beers\nSpending $%lu\nConsuming %ld calories\n",
+            let str1 = NSString(format: "\nBy not drinking you've saved yourself:\nGuzzling %lu beers/drinks\nSpending $%lu\nConsuming %ld calories\n",
                 summary!.beersSaved.unsignedIntegerValue,
                 summary!.moneySaved.unsignedIntegerValue,
                 summary!.caloriesSaved.unsignedIntegerValue)

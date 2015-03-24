@@ -45,7 +45,14 @@ class CurrentStatusViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: false)
         
-        NotificationScheduler.scheduleNotifications();
+        if KnockItOffPersistant.sharedInstance().localNotifications() == true {
+            let alarmTime = KnockItOffPersistant.sharedInstance().alarmTime()
+            if alarmTime != nil {
+                NotificationScheduler.scheduleNotifications();
+            }
+        } else {
+            NotificationScheduler.unscheduleNotifications();
+        }
         
         UIApplication.sharedApplication().applicationIconBadgeNumber = 0
     }
@@ -76,7 +83,7 @@ class CurrentStatusViewController: UIViewController {
                         let indexPath = NSIndexPath(forRow: index, inSection: CurrentStatusTableViewSection.Reddit.rawValue)
                         indexPaths.append(indexPath)
                         //                                    println("link: " + uLink.title + "\n\t" + uLink.URL!.absoluteString!)
-                        println("link: " + post.title + "\n\t" + post.selfText!)
+                        //                        println("link: " + post.title + "\n\t" + post.selfText!)
                     }
                     self.tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: UITableViewRowAnimation.Automatic)
                 } else {
@@ -166,7 +173,7 @@ extension CurrentStatusViewController: UITableViewDataSource, UITableViewDelegat
             let cell = tableView.dequeueReusableCellWithIdentifier("RedditPostTableViewCell") as RedditPostTableViewCell
             cell.post = posts[indexPath.row]
             cell.index = UInt(indexPath.row)
-            println("indexPath: \(indexPath.row)")
+//            println("indexPath: \(indexPath.row)")
             return cell
         default:
             return UITableViewCell()

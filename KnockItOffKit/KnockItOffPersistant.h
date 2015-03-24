@@ -15,6 +15,12 @@
 -(NSDate*)startDate;
 -(void)setStartDate:(NSDate*)date;
 
+-(BOOL)localNotifications;
+-(void)setLocalNotifications:(BOOL)localNotifications;
+
+-(NSDate*)alarmTime;
+-(void)setAlarmTime:(NSDate*)alarmTime;
+
 -(Summary*)summary;
 
 -(NSURL*)backgroungImageURL;

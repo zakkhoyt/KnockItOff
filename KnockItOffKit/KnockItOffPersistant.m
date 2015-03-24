@@ -43,6 +43,30 @@ static NSString *VWWStartDateKey = @"startDate";
     [self.defaults synchronize];
 }
 
+#pragma mark AlarmTime
+static NSString *VWWLocalNotificationsKey = @"localNotifications";
+-(BOOL)localNotifications{
+    return [self.defaults boolForKey:VWWLocalNotificationsKey];
+}
+-(void)setLocalNotifications:(BOOL)localNotifications{
+    [self.defaults setBool:localNotifications forKey:VWWLocalNotificationsKey];
+    [self.defaults synchronize];
+}
+
+
+
+static NSString *VWWAlarmTimeKey = @"alarmTime";
+-(NSDate*)alarmTime{
+    NSDate *date = [self.defaults objectForKey:VWWAlarmTimeKey];
+    return date;
+}
+-(void)setAlarmTime:(NSDate*)alarmTime{
+    [self.defaults setObject:alarmTime forKey:VWWAlarmTimeKey];
+    [self.defaults synchronize];
+}
+
+
+
 #pragma mark Summary
 -(Summary*)summary{
     Summary *summary = [[Summary alloc]initWithStartDate:self.startDate];

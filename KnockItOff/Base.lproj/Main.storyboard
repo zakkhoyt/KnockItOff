@@ -300,7 +300,7 @@
                                                         <action selector="notificationSwitchValueChanged:" destination="jzs-Lw-ZdD" eventType="valueChanged" id="C87-c9-ZIJ"/>
                                                     </connections>
                                                 </switch>
-                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="15" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sg8-FO-IIu">
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sg8-FO-IIu">
                                                     <rect key="frame" x="0.0" y="42" width="600" height="162"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="448722000.04247499">
                                                         <!--2015-03-22 13:00:00 +0000-->

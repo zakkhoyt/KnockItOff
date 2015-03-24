@@ -38,16 +38,30 @@ class SettingsTableViewController: UITableViewController {
         self.lastDrinkDatelabel.text = summary.startDateString
         self.twoLabel.sizeToFit()
         self.todayLabel.sizeToFit()
+        
+        let alarmTime = KnockItOffPersistant.sharedInstance().alarmTime()
+        if alarmTime != nil {
+            self.notificationTimePicker.date = alarmTime
+        } else {
+            // IB set it to 6:00 AM
+        }
+        
+        notificationsSwitch.on = KnockItOffPersistant.sharedInstance().localNotifications()
+        notificationTimePicker.enabled = notificationsSwitch.on
+        notificationTimePicker.userInteractionEnabled = notificationsSwitch.on
+        notificationTimePicker.alpha = notificationsSwitch.on ? 1.0 : 0.5
     }
 
     @IBAction func notificationSwitchValueChanged(sender: UISwitch) {
-    }
-    
-    @IBAction func lastDrinkButtonTouchUpInsde(sender: AnyObject) {
-        
+        KnockItOffPersistant.sharedInstance().setLocalNotifications(sender.on)
+        notificationTimePicker.enabled = sender.on
+        notificationTimePicker.userInteractionEnabled = notificationsSwitch.on
+        notificationTimePicker.alpha = notificationsSwitch.on ? 1.0 : 0.5
     }
     
     func doneButtonAction() {
+        let alarmTime = notificationTimePicker.date
+        KnockItOffPersistant.sharedInstance().setAlarmTime(alarmTime)
         dismissViewControllerAnimated(true, completion: { () -> Void in
             
         })
