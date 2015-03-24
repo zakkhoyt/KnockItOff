@@ -84,13 +84,13 @@
 -(NSString*)timeSinceStartDate{
     NSInteger days = ((NSNumber*)[self daysSinceStartDate]).integerValue;
     if(days >= 0 && days <= 6){
-        return [NSString stringWithFormat:@"%ldd", (long)days];
+        return [NSString stringWithFormat:@"%ld", (long)days];
     } else if(days >= 7 && days <= 30){
-        return [NSString stringWithFormat:@"%ldw", (long)days / 7];
+        return [NSString stringWithFormat:@"%ld", (long)days / 7];
     } else if(days >= 31 && days <= 364){
-        return [NSString stringWithFormat:@"%ldm", (long)days / 31];
+        return [NSString stringWithFormat:@"%ld", (long)days / 31];
     } else if(days >= 365 && days <= INT_MAX){
-        return [NSString stringWithFormat:@"%ldm", (long)days / 364];
+        return [NSString stringWithFormat:@"%ld", (long)days / 364];
     }
     return nil;
 }

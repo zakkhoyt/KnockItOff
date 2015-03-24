@@ -19,6 +19,7 @@
 		CF51FBF61ABE6EE000C1C9BF /* KnockItOffKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCE94A51ABE563900E1E947 /* KnockItOffKit.framework */; };
 		CF9415BA1AC10A130011C06D /* DaysQuitStringTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9415B91AC10A130011C06D /* DaysQuitStringTableViewCell.swift */; };
 		CF9415BC1AC10AF40011C06D /* SavingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9415BB1AC10AF40011C06D /* SavingsTableViewCell.swift */; };
+		CF9415BF1AC118400011C06D /* TouchableUITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9415BE1AC118400011C06D /* TouchableUITextView.swift */; };
 		CFCE94811ABE546900E1E947 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94801ABE546900E1E947 /* AppDelegate.swift */; };
 		CFCE94831ABE546900E1E947 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */; };
 		CFCE94861ABE546900E1E947 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCE94841ABE546900E1E947 /* Main.storyboard */; };
@@ -124,6 +125,7 @@
 		C6FF23431AC0D989008BB058 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
 		CF9415B91AC10A130011C06D /* DaysQuitStringTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysQuitStringTableViewCell.swift; sourceTree = "<group>"; };
 		CF9415BB1AC10AF40011C06D /* SavingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavingsTableViewCell.swift; sourceTree = "<group>"; };
+		CF9415BE1AC118400011C06D /* TouchableUITextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchableUITextView.swift; sourceTree = "<group>"; };
 		CFCE947B1ABE546900E1E947 /* KnockItOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnockItOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCE947F1ABE546900E1E947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFCE94801ABE546900E1E947 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				CF9415B91AC10A130011C06D /* DaysQuitStringTableViewCell.swift */,
 				CF9415BB1AC10AF40011C06D /* SavingsTableViewCell.swift */,
 				CFFDF83C1AC0FCFE00241A04 /* RedditPostTableViewCell.swift */,
+				CF9415BE1AC118400011C06D /* TouchableUITextView.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -653,6 +656,7 @@
 				CFE243C31ABE726C003044B0 /* CurrentStatusViewController.swift in Sources */,
 				C668C6A21AC0BA9100478BD6 /* HelpTableViewController.swift in Sources */,
 				C668C6981AC08CED00478BD6 /* NotificationScheduler.swift in Sources */,
+				CF9415BF1AC118400011C06D /* TouchableUITextView.swift in Sources */,
 				C668C6A41AC0BB1D00478BD6 /* WebViewController.swift in Sources */,
 				CFFDF83D1AC0FCFE00241A04 /* RedditPostTableViewCell.swift in Sources */,
 				CF9415BC1AC10AF40011C06D /* SavingsTableViewCell.swift in Sources */,
@@ -934,7 +938,7 @@
 		CFCE94BF1ABE563900E1E947 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -963,7 +967,7 @@
 		CFCE94C01ABE563900E1E947 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

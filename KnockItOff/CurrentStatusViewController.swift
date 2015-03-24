@@ -17,7 +17,7 @@ enum CurrentStatusTableViewSection: Int{
 }
 
 class CurrentStatusViewController: UIViewController {
-    
+    let refreshControl = UIRefreshControl()
     let imagePicker = UIImagePickerController()
     var posts: [RKLink] = []
     @IBOutlet weak var backgroundImageView: UIImageView!
@@ -26,10 +26,18 @@ class CurrentStatusViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.estimatedRowHeight = 68.0
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.contentInset = UIEdgeInsetsMake(20.0, 0, 0, 0)
+
+        
         NSNotificationCenter.defaultCenter().addObserverForName(UIApplicationWillEnterForegroundNotification, object: nil, queue: NSOperationQueue.mainQueue()) { (note) -> Void in
             self.refreshUI()
         }
-        reddit()
+        
+        refreshControl.targetForAction("refreshUI", withSender: nil)
+        tableView.addSubview(refreshControl)
+        
         refreshUI()
     }
     
@@ -46,6 +54,7 @@ class CurrentStatusViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     func reddit(){
         //        RKClient.sharedClient().signInWithUsername("", password: "") { (error) -> Void in
@@ -79,87 +88,8 @@ class CurrentStatusViewController: UIViewController {
     
     
     func refreshUI() {
-        
-        tableView.estimatedRowHeight = 68.0
-        tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.contentInset = UIEdgeInsetsMake(20.0, 0, 0, 0)
-        //
-        //        let summary = KnockItOffPersistant.sharedInstance().summary()
-        //
-        //        if summary == nil {
-        //            self.imageView.image = nil
-        //            self.imageStringLabel.text = nil
-        //
-        //            let attrString = NSMutableAttributedString()
-        //            var insertPoint: Int = 0
-        //            let paragraph = NSMutableParagraphStyle()
-        //            paragraph.alignment = .Center
-        //
-        //            let attr1 = [NSParagraphStyleAttributeName : paragraph,
-        //                NSForegroundColorAttributeName : UIColor.darkTextColor(),
-        //                NSFontAttributeName: UIFont.systemFontOfSize(32)]
-        //            let str1 = NSString(format: "Tap settings to set up your scenario. Tap the camera to add a meaningful photo to help you.")
-        //            attrString.appendAttributedString(NSAttributedString(string: str1))
-        //            attrString.setAttributes(attr1, range: NSMakeRange(insertPoint, str1.length))
-        //            insertPoint += str1.length
-        //
-        //
-        //            self.statusTextView.attributedText = attrString
-        //
-        //        } else {
-        //            if let i = summary.timeQuitImage {
-        //                imageView.image = i
-        //            }
-        //
-        //            if let i = summary.timeQuitString {
-        //                imageStringLabel.text = i
-        //            }
-        //
-        //            if let i = summary.timeQuitStringColor {
-        //                imageStringLabel.textColor = i
-        //            }
-        //
-        //
-        //            imageStringLabel.sizeToFit()
-        //
-        //            let attrString = NSMutableAttributedString()
-        //            var insertPoint: Int = 0
-        //            let paragraph = NSMutableParagraphStyle()
-        //            paragraph.alignment = .Center
-        //
-        //            let attr1 = [NSParagraphStyleAttributeName : paragraph,
-        //                NSForegroundColorAttributeName : UIColor.darkTextColor(),
-        //                NSFontAttributeName: UIFont.systemFontOfSize(32)]
-        //
-        //            let str1 = NSString(format: "%@ ", summary.daysQuitString)
-        //            attrString.appendAttributedString(NSAttributedString(string: str1))
-        //            attrString.setAttributes(attr1, range: NSMakeRange(insertPoint, str1.length))
-        //            insertPoint += str1.length
-        //
-        //            let attr2 = [NSParagraphStyleAttributeName : paragraph,
-        //                NSForegroundColorAttributeName : UIColor.darkTextColor(),
-        //                NSFontAttributeName: UIFont.systemFontOfSize(24)]
-        //            let str2 = NSString(format: "(%@)", summary.startDateString)
-        //            attrString.appendAttributedString(NSAttributedString(string: str2))
-        //            attrString.setAttributes(attr2, range: NSMakeRange(insertPoint, str2.length))
-        //            insertPoint += str2.length
-        //
-        //            let attr3 = [NSParagraphStyleAttributeName : paragraph,
-        //                NSForegroundColorAttributeName : UIColor.blackColor(),
-        //                NSFontAttributeName: UIFont.systemFontOfSize(24)]
-        //            let str3 = NSString(format: "\n\n\nYou've saved yourself:\n%lu beers\n$%lu\n%ld calories\n",
-        //                summary.beersSaved.unsignedIntegerValue,
-        //                summary.moneySaved.unsignedIntegerValue,
-        //                summary.caloriesSaved.unsignedIntegerValue)
-        //            attrString.appendAttributedString(NSAttributedString(string: str3))
-        //            attrString.setAttributes(attr3, range: NSMakeRange(insertPoint, str3.length))
-        //            insertPoint += str3.length
-        //
-        //
-        //            statusTextView.attributedText = attrString
-        //
-        //        }
-        
+        refreshControl.endRefreshing()
+        reddit()
         loadBackgroundImage()
     }
     
@@ -235,6 +165,8 @@ extension CurrentStatusViewController: UITableViewDataSource, UITableViewDelegat
         case CurrentStatusTableViewSection.Reddit.rawValue:
             let cell = tableView.dequeueReusableCellWithIdentifier("RedditPostTableViewCell") as RedditPostTableViewCell
             cell.post = posts[indexPath.row]
+            cell.index = UInt(indexPath.row)
+            println("indexPath: \(indexPath.row)")
             return cell
         default:
             return UITableViewCell()
