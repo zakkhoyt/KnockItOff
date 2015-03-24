@@ -17,6 +17,8 @@
 		C6FF233A1AC0D68A008BB058 /* libPods-RedditKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FF23391AC0D68A008BB058 /* libPods-RedditKit.a */; };
 		C6FF23401AC0D8B6008BB058 /* libPods-AFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FF233F1AC0D8B6008BB058 /* libPods-AFNetworking.a */; };
 		CF51FBF61ABE6EE000C1C9BF /* KnockItOffKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCE94A51ABE563900E1E947 /* KnockItOffKit.framework */; };
+		CF9415BA1AC10A130011C06D /* DaysQuitStringTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9415B91AC10A130011C06D /* DaysQuitStringTableViewCell.swift */; };
+		CF9415BC1AC10AF40011C06D /* SavingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9415BB1AC10AF40011C06D /* SavingsTableViewCell.swift */; };
 		CFCE94811ABE546900E1E947 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94801ABE546900E1E947 /* AppDelegate.swift */; };
 		CFCE94831ABE546900E1E947 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */; };
 		CFCE94861ABE546900E1E947 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCE94841ABE546900E1E947 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 		CFE243C31ABE726C003044B0 /* CurrentStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE243C21ABE726C003044B0 /* CurrentStatusViewController.swift */; };
 		CFE2440C1ABF6F01003044B0 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2440B1ABF6F01003044B0 /* SettingsTableViewController.swift */; };
 		CFE2440F1ABF830B003044B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCE94871ABE546900E1E947 /* Images.xcassets */; };
+		CFFDF8391AC0FCBE00241A04 /* TimeQuitImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFDF8381AC0FCBE00241A04 /* TimeQuitImageTableViewCell.swift */; };
+		CFFDF83D1AC0FCFE00241A04 /* RedditPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFDF83C1AC0FCFE00241A04 /* RedditPostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +122,8 @@
 		C6FF233F1AC0D8B6008BB058 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
 		C6FF23411AC0D8DB008BB058 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
 		C6FF23431AC0D989008BB058 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
+		CF9415B91AC10A130011C06D /* DaysQuitStringTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysQuitStringTableViewCell.swift; sourceTree = "<group>"; };
+		CF9415BB1AC10AF40011C06D /* SavingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavingsTableViewCell.swift; sourceTree = "<group>"; };
 		CFCE947B1ABE546900E1E947 /* KnockItOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnockItOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCE947F1ABE546900E1E947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFCE94801ABE546900E1E947 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +152,8 @@
 		CFCE94E41ABE685F00E1E947 /* KnockItOff-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KnockItOff-Bridging-Header.h"; sourceTree = "<group>"; };
 		CFE243C21ABE726C003044B0 /* CurrentStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentStatusViewController.swift; sourceTree = "<group>"; };
 		CFE2440B1ABF6F01003044B0 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		CFFDF8381AC0FCBE00241A04 /* TimeQuitImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeQuitImageTableViewCell.swift; sourceTree = "<group>"; };
+		CFFDF83C1AC0FCFE00241A04 /* RedditPostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditPostTableViewCell.swift; sourceTree = "<group>"; };
 		E2533ADB502EAFE8398C7855 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,7 +215,7 @@
 		C668C6991AC08CF300478BD6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				CFE243C21ABE726C003044B0 /* CurrentStatusViewController.swift */,
+				CFFDF8371AC0FC9300241A04 /* CurrentStatus */,
 				CFE2440B1ABF6F01003044B0 /* SettingsTableViewController.swift */,
 				CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */,
 				C668C6A11AC0BA9100478BD6 /* HelpTableViewController.swift */,
@@ -224,6 +232,17 @@
 				CFCE94891ABE546900E1E947 /* LaunchScreen.xib */,
 			);
 			name = UserInterface;
+			sourceTree = "<group>";
+		};
+		CF9415BD1AC10DE10011C06D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CFFDF8381AC0FCBE00241A04 /* TimeQuitImageTableViewCell.swift */,
+				CF9415B91AC10A130011C06D /* DaysQuitStringTableViewCell.swift */,
+				CF9415BB1AC10AF40011C06D /* SavingsTableViewCell.swift */,
+				CFFDF83C1AC0FCFE00241A04 /* RedditPostTableViewCell.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		CFCE94721ABE546900E1E947 = {
@@ -362,6 +381,15 @@
 				CFCE94D71ABE5C6B00E1E947 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFFDF8371AC0FC9300241A04 /* CurrentStatus */ = {
+			isa = PBXGroup;
+			children = (
+				CFE243C21ABE726C003044B0 /* CurrentStatusViewController.swift */,
+				CF9415BD1AC10DE10011C06D /* Cell */,
+			);
+			name = CurrentStatus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -621,11 +649,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFE2440C1ABF6F01003044B0 /* SettingsTableViewController.swift in Sources */,
+				CF9415BA1AC10A130011C06D /* DaysQuitStringTableViewCell.swift in Sources */,
 				CFE243C31ABE726C003044B0 /* CurrentStatusViewController.swift in Sources */,
 				C668C6A21AC0BA9100478BD6 /* HelpTableViewController.swift in Sources */,
 				C668C6981AC08CED00478BD6 /* NotificationScheduler.swift in Sources */,
 				C668C6A41AC0BB1D00478BD6 /* WebViewController.swift in Sources */,
+				CFFDF83D1AC0FCFE00241A04 /* RedditPostTableViewCell.swift in Sources */,
+				CF9415BC1AC10AF40011C06D /* SavingsTableViewCell.swift in Sources */,
 				CFCE94831ABE546900E1E947 /* DatePickerViewController.swift in Sources */,
+				CFFDF8391AC0FCBE00241A04 /* TimeQuitImageTableViewCell.swift in Sources */,
 				CFCE94811ABE546900E1E947 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
