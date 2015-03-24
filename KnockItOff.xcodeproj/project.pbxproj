@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B8F95FA84802CDEE5C93ACBC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 172AB3A890436BE0BAF1F3B3 /* libPods.a */; };
+		C61524251AC20458005F3E2E /* RedditPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61524241AC20458005F3E2E /* RedditPostViewController.swift */; };
+		C61A0A841AC210370002D761 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A0A831AC210370002D761 /* CommentTableViewCell.swift */; };
+		C61A0A861AC210B10002D761 /* PostDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A0A851AC210B10002D761 /* PostDetailsTableViewCell.swift */; };
 		C668C6981AC08CED00478BD6 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C668C6971AC08CED00478BD6 /* NotificationScheduler.swift */; };
 		C668C69D1AC0AC5F00478BD6 /* Summary.h in Headers */ = {isa = PBXBuildFile; fileRef = C668C69B1AC0AC5F00478BD6 /* Summary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C668C69E1AC0AC5F00478BD6 /* Summary.m in Sources */ = {isa = PBXBuildFile; fileRef = C668C69C1AC0AC5F00478BD6 /* Summary.m */; };
@@ -111,6 +114,9 @@
 /* Begin PBXFileReference section */
 		172AB3A890436BE0BAF1F3B3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B9A1C462C84B9CC26BC24EB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C61524241AC20458005F3E2E /* RedditPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditPostViewController.swift; sourceTree = "<group>"; };
+		C61A0A831AC210370002D761 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		C61A0A851AC210B10002D761 /* PostDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		C668C6971AC08CED00478BD6 /* NotificationScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
 		C668C69B1AC0AC5F00478BD6 /* Summary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Summary.h; sourceTree = "<group>"; };
 		C668C69C1AC0AC5F00478BD6 /* Summary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Summary.m; sourceTree = "<group>"; };
@@ -214,6 +220,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C61A0A7F1AC205D50002D761 /* RedditPost */ = {
+			isa = PBXGroup;
+			children = (
+				C61524241AC20458005F3E2E /* RedditPostViewController.swift */,
+				C61A0A871AC211900002D761 /* Cell */,
+			);
+			name = RedditPost;
+			sourceTree = "<group>";
+		};
+		C61A0A871AC211900002D761 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C61A0A831AC210370002D761 /* CommentTableViewCell.swift */,
+				C61A0A851AC210B10002D761 /* PostDetailsTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		C668C6991AC08CF300478BD6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +246,7 @@
 				CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */,
 				C668C6A11AC0BA9100478BD6 /* HelpTableViewController.swift */,
 				C668C6A31AC0BB1D00478BD6 /* WebViewController.swift */,
+				C61A0A7F1AC205D50002D761 /* RedditPost */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -658,6 +683,9 @@
 				C668C6981AC08CED00478BD6 /* NotificationScheduler.swift in Sources */,
 				CF9415BF1AC118400011C06D /* TouchableUITextView.swift in Sources */,
 				C668C6A41AC0BB1D00478BD6 /* WebViewController.swift in Sources */,
+				C61A0A841AC210370002D761 /* CommentTableViewCell.swift in Sources */,
+				C61A0A861AC210B10002D761 /* PostDetailsTableViewCell.swift in Sources */,
+				C61524251AC20458005F3E2E /* RedditPostViewController.swift in Sources */,
 				CFFDF83D1AC0FCFE00241A04 /* RedditPostTableViewCell.swift in Sources */,
 				CF9415BC1AC10AF40011C06D /* SavingsTableViewCell.swift in Sources */,
 				CFCE94831ABE546900E1E947 /* DatePickerViewController.swift in Sources */,

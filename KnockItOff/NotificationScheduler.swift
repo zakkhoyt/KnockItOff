@@ -27,7 +27,7 @@ class NotificationScheduler: NSObject {
             let futureDate = dateForDaysFromNow(day)
             notification.fireDate = futureDate
             let summary = KnockItOffPersistant.sharedInstance().summary()
-            notification.alertBody = summary.timeQuitString
+            notification.alertBody = summary.daysQuitString
             notification.alertTitle = summary.timeQuitString
             notification.applicationIconBadgeNumber = 1;
             let localTimeDescription = futureDate.descriptionWithLocale(NSLocale.currentLocale())

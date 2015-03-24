@@ -19,7 +19,9 @@ enum CurrentStatusTableViewSection: Int{
 class CurrentStatusViewController: UIViewController {
     let refreshControl = UIRefreshControl()
     let imagePicker = UIImagePickerController()
+    let SegueMainToPost = "SegueMainToPost"
     var posts: [RKLink] = []
+    
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     
@@ -62,6 +64,13 @@ class CurrentStatusViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == SegueMainToPost {
+            let nc = segue.destinationViewController as UINavigationController
+            let vc = nc.viewControllers[0] as RedditPostViewController
+            vc.post = sender as? RKLink
+        }
+    }
     
     func reddit(){
         //        RKClient.sharedClient().signInWithUsername("", password: "") { (error) -> Void in
@@ -185,6 +194,11 @@ extension CurrentStatusViewController: UITableViewDataSource, UITableViewDelegat
     }
     func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return UIView()
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let post = posts[indexPath.row]
+        self.performSegueWithIdentifier(self.SegueMainToPost, sender: post)
     }
 }
 
