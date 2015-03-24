@@ -14,6 +14,8 @@
 		C668C6A01AC0B83800478BD6 /* TODO.txt in Resources */ = {isa = PBXBuildFile; fileRef = C668C69F1AC0B83800478BD6 /* TODO.txt */; };
 		C668C6A21AC0BA9100478BD6 /* HelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C668C6A11AC0BA9100478BD6 /* HelpTableViewController.swift */; };
 		C668C6A41AC0BB1D00478BD6 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C668C6A31AC0BB1D00478BD6 /* WebViewController.swift */; };
+		C6FF233A1AC0D68A008BB058 /* libPods-RedditKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FF23391AC0D68A008BB058 /* libPods-RedditKit.a */; };
+		C6FF23401AC0D8B6008BB058 /* libPods-AFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FF233F1AC0D8B6008BB058 /* libPods-AFNetworking.a */; };
 		CF51FBF61ABE6EE000C1C9BF /* KnockItOffKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCE94A51ABE563900E1E947 /* KnockItOffKit.framework */; };
 		CFCE94811ABE546900E1E947 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94801ABE546900E1E947 /* AppDelegate.swift */; };
 		CFCE94831ABE546900E1E947 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */; };
@@ -110,6 +112,12 @@
 		C668C69F1AC0B83800478BD6 /* TODO.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO.txt; sourceTree = "<group>"; };
 		C668C6A11AC0BA9100478BD6 /* HelpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTableViewController.swift; sourceTree = "<group>"; };
 		C668C6A31AC0BB1D00478BD6 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		C6FF23391AC0D68A008BB058 /* libPods-RedditKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RedditKit.a"; path = "Pods/build/Debug-iphoneos/libPods-RedditKit.a"; sourceTree = "<group>"; };
+		C6FF233B1AC0D759008BB058 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
+		C6FF233C1AC0D759008BB058 /* libPods-RedditKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RedditKit.a"; path = "Pods/build/Debug-iphoneos/libPods-RedditKit.a"; sourceTree = "<group>"; };
+		C6FF233F1AC0D8B6008BB058 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
+		C6FF23411AC0D8DB008BB058 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
+		C6FF23431AC0D989008BB058 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
 		CFCE947B1ABE546900E1E947 /* KnockItOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnockItOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCE947F1ABE546900E1E947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFCE94801ABE546900E1E947 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +154,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6FF23401AC0D8B6008BB058 /* libPods-AFNetworking.a in Frameworks */,
+				C6FF233A1AC0D68A008BB058 /* libPods-RedditKit.a in Frameworks */,
 				CFCE94BC1ABE563900E1E947 /* KnockItOffKit.framework in Frameworks */,
 				B8F95FA84802CDEE5C93ACBC /* libPods.a in Frameworks */,
 			);
@@ -323,6 +333,12 @@
 		CFCE94D21ABE5C6B00E1E947 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C6FF23431AC0D989008BB058 /* libPods-AFNetworking.a */,
+				C6FF23411AC0D8DB008BB058 /* libPods-AFNetworking.a */,
+				C6FF233F1AC0D8B6008BB058 /* libPods-AFNetworking.a */,
+				C6FF233B1AC0D759008BB058 /* libPods-AFNetworking.a */,
+				C6FF233C1AC0D759008BB058 /* libPods-RedditKit.a */,
+				C6FF23391AC0D68A008BB058 /* libPods-RedditKit.a */,
 				CFCE94D31ABE5C6B00E1E947 /* NotificationCenter.framework */,
 				172AB3A890436BE0BAF1F3B3 /* libPods.a */,
 			);
@@ -780,18 +796,36 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E2533ADB502EAFE8398C7855 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = KnockItOff/KnockItOff.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/Mantle\"",
+					"\"${PODS_ROOT}/Headers/Public/RSDayFlow\"",
+					"\"${PODS_ROOT}/Headers/Public/RedditKit\"/**",
+					"\"${PODS_ROOT}/Headers/Public/RedditKit/Categories\"",
+					"\"${PODS_ROOT}/Headers/Public/RedditKit/Model\"",
+					"\"${PODS_ROOT}/Headers/Public/RedditKit/Networking\"",
+					"KnockItOff/Pods/RedditKit/**",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = KnockItOff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "637945d0-6b96-4e23-a889-a6c500329da3";
 				SWIFT_OBJC_BRIDGING_HEADER = "KnockItOff/KnockItOff-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -799,17 +833,35 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4B9A1C462C84B9CC26BC24EB /* Pods.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = KnockItOff/KnockItOff.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/Mantle\"",
+					"\"${PODS_ROOT}/Headers/Public/RSDayFlow\"",
+					"\"${PODS_ROOT}/Headers/Public/RedditKit\"/**",
+					"\"${PODS_ROOT}/Headers/Public/RedditKit/Categories\"",
+					"\"${PODS_ROOT}/Headers/Public/RedditKit/Model\"",
+					"\"${PODS_ROOT}/Headers/Public/RedditKit/Networking\"",
+					"KnockItOff/Pods/RedditKit/**",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = KnockItOff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "637945d0-6b96-4e23-a889-a6c500329da3";
 				SWIFT_OBJC_BRIDGING_HEADER = "KnockItOff/KnockItOff-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -864,6 +916,10 @@
 				INFOPLIST_FILE = KnockItOffKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -885,6 +941,10 @@
 				INFOPLIST_FILE = KnockItOffKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";

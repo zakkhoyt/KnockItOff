@@ -3,23 +3,3 @@
 pod 'RSDayFlow'
 pod 'RedditKit', '~> 1.3'
 
-target 'KnockItOff' do
-
-end
-
-target 'KnockItOffTests' do
-
-end
-
-target 'KnockItOffKit' do
-
-end
-
-target 'KnockItOffKitTests' do
-
-end
-
-target 'KnockItOffToday' do
-
-end
-

@@ -9,131 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-KnockItOff-AFNetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOff-Mantle.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOff-RSDayFlow.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOff-RedditKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOff.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOffKit-AFNetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOffKit-Mantle.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOffKit-RSDayFlow.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOffKit-RedditKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOffKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOffKitTests-AFNetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOffKitTests-Mantle.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOffKitTests-RSDayFlow.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOffKitTests-RedditKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOffKitTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOffTests-AFNetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOffTests-Mantle.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOffTests-RSDayFlow.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOffTests-RedditKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOffTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOffToday-AFNetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOffToday-Mantle.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOffToday-RSDayFlow.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOffToday-RedditKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-KnockItOffToday.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-Mantle.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -157,152 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>236803948C5B4ADB5701791E</key>
+		<key>121E5A070AA72940C8D8DEC9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>25D5B431890C219728B12D88</key>
+		<key>213747ACC02A0FE60CC583F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2F33EA3BD4819830929FDF90</key>
+		<key>6B9016FA3ECE2E6C04E87B11</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3D8C7722A24F0EABCE8A38D8</key>
+		<key>8621623C1F1F783FDDF441E8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4EFA5590B4DA1C3CC2C845A0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>562E3A2C3487ABC32EA5CF49</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5B1DE02835A4BF7CEAF5C4A9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5C6402FDA4C2CCD1995562B5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>61E57774F96BF4F98E55C0CF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>623D2E24180A9CD149F3549C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>638DB9002FD242DC90812EB5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7AB266C19D9A5749D7E16262</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>880B41B76DF2A52395C62D4D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8C561885D93DEF92B934B070</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8E3D81B6E107A7CD27374D50</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9C3EE10BF2822142E766B284</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A172A628C5681BD2614874F9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A3B72A8533218FD07C22BA5B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A63F2A2FC413B25624129920</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A818067000CDCE65254610B1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AAEDB355AE5D82E6F0FF3282</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AF669E258EE12C01EFA1710C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B522B998C1D538A2AB20AB3A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B7156E6A125055C4A5E84028</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CB9F90B436CBC94C770D92F8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CF1D775B69494CC9AE8A8200</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E0805F236F182E3867EB3053</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E2FD127C034B91E84780A9BB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E921ABC71A44ED8C34F22E6A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FC969907A55B601D8717C922</key>
+		<key>FC4FB1DF36A096A873670C89</key>
 		<dict>
 			<key>primary</key>
 			<true/>

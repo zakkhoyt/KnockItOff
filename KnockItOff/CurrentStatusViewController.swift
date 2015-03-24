@@ -11,6 +11,8 @@ import AssetsLibrary
 
 import KnockItOffKit
 
+
+
 class CurrentStatusViewController: UIViewController {
     
     let imagePicker = UIImagePickerController()
@@ -26,7 +28,7 @@ class CurrentStatusViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserverForName(UIApplicationWillEnterForegroundNotification, object: nil, queue: NSOperationQueue.mainQueue()) { (note) -> Void in
             self.refreshUI()
         }
-        
+        reddit()
         refreshUI()
     }
     
@@ -43,6 +45,36 @@ class CurrentStatusViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func reddit(){
+//        RKClient.sharedClient().signInWithUsername("", password: "") { (error) -> Void in
+//            if error == nil {
+//                println("logged in")
+        
+                RKClient.sharedClient().subredditWithName("stopdrinking", completion: { (subreddit, error) -> Void in
+                    let pagination = RKPagination()
+                    RKClient.sharedClient().linksInSubreddit(subreddit as RKSubreddit, pagination: pagination, completion: { (list: [AnyObject]!, page: RKPagination!, error:NSError!) -> Void in
+                        if error == nil {
+                            println("Got subreddit links")
+                            for link in list {
+                                if let uLink = link as? RKLink {
+                                    println("link: " + uLink.title + "\n\t" + uLink.URL!.absoluteString!)
+                                    
+                                }
+                            }
+                        } else {
+                            println("could not get subreddit links")
+                        }
+                    })
+                })
+
+//            } else {
+//                println("error logging in")
+//            }
+//            
+//        }
+    }
+    
     
     func refreshUI() {
         

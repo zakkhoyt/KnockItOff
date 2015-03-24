@@ -8,8 +8,6 @@
 
 #import "KnockItOffPersistant.h"
 
-
-
 @interface KnockItOffPersistant()
 @property (nonatomic, strong) NSUserDefaults *defaults;
 @end
