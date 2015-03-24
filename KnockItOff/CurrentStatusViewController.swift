@@ -53,12 +53,14 @@ class CurrentStatusViewController: UIViewController {
         
                 RKClient.sharedClient().subredditWithName("stopdrinking", completion: { (subreddit, error) -> Void in
                     let pagination = RKPagination()
-                    RKClient.sharedClient().linksInSubreddit(subreddit as RKSubreddit, pagination: pagination, completion: { (list: [AnyObject]!, page: RKPagination!, error:NSError!) -> Void in
+                    RKClient.sharedClient().linksInSubreddit(subreddit as RKSubreddit, category: RKSubredditCategory.Top, pagination: pagination, completion: { (list: [AnyObject]!, page: RKPagination!, error:NSError!) -> Void in
+//                    RKClient.sharedClient().linksInSubreddit(subreddit as RKSubreddit, pagination: pagination, completion: { (list: [AnyObject]!, page: RKPagination!, error:NSError!) -> Void in
                         if error == nil {
                             println("Got subreddit links")
                             for link in list {
                                 if let uLink = link as? RKLink {
-                                    println("link: " + uLink.title + "\n\t" + uLink.URL!.absoluteString!)
+//                                    println("link: " + uLink.title + "\n\t" + uLink.URL!.absoluteString!)
+                                    println("link: " + uLink.title + "\n\t" + uLink.selfText!)
                                     
                                 }
                             }

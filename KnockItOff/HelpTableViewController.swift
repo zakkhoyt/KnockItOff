@@ -39,6 +39,4 @@ class HelpTableViewController: UITableViewController {
         }
         
     }
-
-//
 }
