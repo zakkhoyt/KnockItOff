@@ -11,9 +11,20 @@ import UIKit
 class CommentTableViewCell: UITableViewCell {
 
     @IBOutlet weak var commentTextView: UITextView!
+    @IBOutlet weak var repliesLabel: UILabel!
+    
+    @IBOutlet weak var indentConstrint: NSLayoutConstraint!
+    var level: Int = 0{
+        didSet{
+            indentConstrint.constant = CGFloat(level) * 16
+        }
+    }
+    
     var comment: RKComment? = nil {
         didSet{
             commentTextView.text = comment?.body
+            let replies = comment?.replies as NSArray?
+            repliesLabel.text = NSString(format: "%lu", replies!.count)
         }
     }
     

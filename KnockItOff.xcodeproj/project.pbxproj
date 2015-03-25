@@ -11,6 +11,7 @@
 		C61524251AC20458005F3E2E /* RedditPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61524241AC20458005F3E2E /* RedditPostViewController.swift */; };
 		C61A0A841AC210370002D761 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A0A831AC210370002D761 /* CommentTableViewCell.swift */; };
 		C61A0A861AC210B10002D761 /* PostDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A0A851AC210B10002D761 /* PostDetailsTableViewCell.swift */; };
+		C63F1FA71AC36BEF007333B6 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63F1FA61AC36BEF007333B6 /* CommentTableViewCell.xib */; };
 		C668C6981AC08CED00478BD6 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C668C6971AC08CED00478BD6 /* NotificationScheduler.swift */; };
 		C668C69D1AC0AC5F00478BD6 /* Summary.h in Headers */ = {isa = PBXBuildFile; fileRef = C668C69B1AC0AC5F00478BD6 /* Summary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C668C69E1AC0AC5F00478BD6 /* Summary.m in Sources */ = {isa = PBXBuildFile; fileRef = C668C69C1AC0AC5F00478BD6 /* Summary.m */; };
@@ -117,6 +118,7 @@
 		C61524241AC20458005F3E2E /* RedditPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditPostViewController.swift; sourceTree = "<group>"; };
 		C61A0A831AC210370002D761 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		C61A0A851AC210B10002D761 /* PostDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		C63F1FA61AC36BEF007333B6 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 		C668C6971AC08CED00478BD6 /* NotificationScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
 		C668C69B1AC0AC5F00478BD6 /* Summary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Summary.h; sourceTree = "<group>"; };
 		C668C69C1AC0AC5F00478BD6 /* Summary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Summary.m; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				CFCE94841ABE546900E1E947 /* Main.storyboard */,
 				CFCE94871ABE546900E1E947 /* Images.xcassets */,
 				CFCE94891ABE546900E1E947 /* LaunchScreen.xib */,
+				C63F1FA61AC36BEF007333B6 /* CommentTableViewCell.xib */,
 			);
 			name = UserInterface;
 			sourceTree = "<group>";
@@ -603,6 +606,7 @@
 				CFCE94861ABE546900E1E947 /* Main.storyboard in Resources */,
 				CFCE948B1ABE546900E1E947 /* LaunchScreen.xib in Resources */,
 				CFCE94881ABE546900E1E947 /* Images.xcassets in Resources */,
+				C63F1FA71AC36BEF007333B6 /* CommentTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
