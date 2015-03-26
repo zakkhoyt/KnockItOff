@@ -34,7 +34,7 @@ class RedditPostTableViewCell: UITableViewCell  {
             
             
             let attr1 = [NSParagraphStyleAttributeName : paragraph,
-                NSForegroundColorAttributeName : UIColor.blackColor(),
+                NSForegroundColorAttributeName : UIColor.whiteColor(),
                 NSFontAttributeName: UIFont.systemFontOfSize(22)]
             
             let str1 = NSString(format: "%@\n", post!.title)
@@ -51,7 +51,7 @@ class RedditPostTableViewCell: UITableViewCell  {
 //            insertPoint += str2.length
             
             let attr3 = [NSParagraphStyleAttributeName : paragraph,
-                NSForegroundColorAttributeName : UIColor.blackColor(),
+                NSForegroundColorAttributeName : UIColor.lightGrayColor(),
                 NSFontAttributeName: UIFont.italicSystemFontOfSize(16)]
             
             let str3 = NSString(format: "\n-%@\n", post!.author)

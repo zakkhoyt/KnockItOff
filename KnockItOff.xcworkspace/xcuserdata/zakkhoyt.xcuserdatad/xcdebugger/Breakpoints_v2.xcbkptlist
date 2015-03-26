@@ -132,11 +132,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KnockItOff/CommentTableViewCell.swift"
-            timestampString = "449019098.574419"
+            timestampString = "449021391.166927"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "CommentTableViewCell"
             landmarkType = "3">
          </BreakpointContent>
