@@ -22,6 +22,7 @@ class RedditPostViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        UIApplication.sharedApplication().statusBarHidden = false
         
         treeView.dataSource = self;
         treeView.delegate = self;

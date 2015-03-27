@@ -21,31 +21,38 @@ class CurrentStatusViewController: UIViewController {
     let imagePicker = UIImagePickerController()
     let SegueMainToPost = "SegueMainToPost"
     var posts: [RKLink] = []
+    var lastContentOffset: CGPoint = CGPointZero
+    var statusBarHidden = false
     
+
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var toolbar: UIToolbar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
         
         tableView.estimatedRowHeight = 68.0
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.contentInset = UIEdgeInsetsMake(20.0, 0, 0, 0)
-
+        tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0)
+        
         
         NSNotificationCenter.defaultCenter().addObserverForName(UIApplicationWillEnterForegroundNotification, object: nil, queue: NSOperationQueue.mainQueue()) { (note) -> Void in
-            self.refreshUI()
+            self.refreshUI(self.refreshControl)
         }
         
-        refreshControl.targetForAction("refreshUI", withSender: nil)
+//        refreshControl.targetForAction("refreshUI", withSender: nil)
+        refreshControl.addTarget(self, action: "refreshUI", forControlEvents: UIControlEvents.ValueChanged)
         tableView.addSubview(refreshControl)
         
-        refreshUI()
+        refreshUI(refreshControl)
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: false)
+        UIApplication.sharedApplication().statusBarHidden = statusBarHidden
         
         if KnockItOffPersistant.sharedInstance().localNotifications() == true {
             let alarmTime = KnockItOffPersistant.sharedInstance().alarmTime()
@@ -103,10 +110,11 @@ class CurrentStatusViewController: UIViewController {
     }
     
     
-    func refreshUI() {
-        refreshControl.endRefreshing()
+    func refreshUI(sender: UIRefreshControl) {
+        sender.endRefreshing()
         reddit()
         loadBackgroundImage()
+
     }
     
     
@@ -143,6 +151,39 @@ class CurrentStatusViewController: UIViewController {
     
     
 }
+
+extension CurrentStatusViewController: UIScrollViewDelegate {
+    
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        if scrollView.contentOffset.y < 100 {
+            showNavBar()
+        } else {
+            hideNavBar()
+        }
+    }
+    
+    func showNavBar() {
+        if statusBarHidden == false {
+            return
+        }
+        statusBarHidden = false
+        UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: UIStatusBarAnimation.Fade)
+        UIView.animateWithDuration(0.2, animations: { () -> Void in
+            self.toolbar.alpha = 1.0
+        })
+    }
+    func hideNavBar() {
+        if statusBarHidden == true {
+            return
+        }
+        statusBarHidden = true
+        UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: UIStatusBarAnimation.Fade)
+        UIView.animateWithDuration(0.2, animations: { () -> Void in
+            self.toolbar.alpha = 0.0
+        })
+    }
+}
+
 
 extension CurrentStatusViewController: UITableViewDataSource, UITableViewDelegate {
     
@@ -184,19 +225,44 @@ extension CurrentStatusViewController: UITableViewDataSource, UITableViewDelegat
             let cell = tableView.dequeueReusableCellWithIdentifier("RedditPostTableViewCell") as RedditPostTableViewCell
             cell.post = posts[indexPath.row]
             cell.index = UInt(indexPath.row)
-//            println("indexPath: \(indexPath.row)")
+            //            println("indexPath: \(indexPath.row)")
             return cell
         default:
             return UITableViewCell()
         }
     }
     
-    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 0.001
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == CurrentStatusTableViewSection.Reddit.rawValue {
+            if posts.count > 0 {
+                return 0
+            } else {
+                return 44.0
+            }
+        }
+        return 0
     }
-    func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return UIView()
+    
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let frame = CGRectMake(0, 0, view.bounds.width, 44)
+        let headerView = UIView(frame: frame)
+        headerView.backgroundColor = UIColor.clearColor()
+        let activityView = UIActivityIndicatorView(frame: CGRectMake(0, 0, 44, 44))
+        activityView.startAnimating()
+        activityView.activityIndicatorViewStyle = .WhiteLarge
+        activityView.color = UIColor.darkGrayColor()
+        activityView.center = headerView.center
+        headerView.addSubview(activityView)
+        return headerView
     }
+    
+//    // Hide empty cells
+//    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+//        return 0.001
+//    }
+//    func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+//        return UIView()
+//    }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println(__FUNCTION__)
@@ -222,4 +288,11 @@ extension CurrentStatusViewController: UIImagePickerControllerDelegate, UINaviga
     }
     
     
+}
+
+
+extension CurrentStatusViewController: UIToolbarDelegate {
+    func positionForBar(bar: UIBarPositioning) -> UIBarPosition {
+        return UIBarPosition.TopAttached
+    }
 }

@@ -10,7 +10,7 @@ import UIKit
 import KnockItOffKit
 
 class SettingsTableViewController: UITableViewController {
-
+    var datePickerHidden = true;
     @IBOutlet weak var notificationsSwitch: UISwitch!
     @IBOutlet weak var lastDrinkDatelabel: UILabel!
     @IBOutlet weak var notificationTimePicker: UIDatePicker!
@@ -66,4 +66,14 @@ class SettingsTableViewController: UITableViewController {
             
         })
     }
+    
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if indexPath.section == 0 && indexPath.row == 1 {
+            return datePickerHidden ? 0 : 162
+        }
+        return super.tableView(tableView, heightForRowAtIndexPath:indexPath)
+    }
 }
+
+

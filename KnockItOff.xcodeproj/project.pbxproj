@@ -11,6 +11,7 @@
 		C61524251AC20458005F3E2E /* RedditPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61524241AC20458005F3E2E /* RedditPostViewController.swift */; };
 		C61A0A841AC210370002D761 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A0A831AC210370002D761 /* CommentTableViewCell.swift */; };
 		C61A0A861AC210B10002D761 /* PostDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A0A851AC210B10002D761 /* PostDetailsTableViewCell.swift */; };
+		C62BDB501AC5ECA300FB6172 /* TimePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62BDB4F1AC5ECA300FB6172 /* TimePickerTableViewCell.swift */; };
 		C63F1FA71AC36BEF007333B6 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63F1FA61AC36BEF007333B6 /* CommentTableViewCell.xib */; };
 		C668C6981AC08CED00478BD6 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C668C6971AC08CED00478BD6 /* NotificationScheduler.swift */; };
 		C668C69D1AC0AC5F00478BD6 /* Summary.h in Headers */ = {isa = PBXBuildFile; fileRef = C668C69B1AC0AC5F00478BD6 /* Summary.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -120,6 +121,7 @@
 		C61524241AC20458005F3E2E /* RedditPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditPostViewController.swift; sourceTree = "<group>"; };
 		C61A0A831AC210370002D761 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		C61A0A851AC210B10002D761 /* PostDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		C62BDB4F1AC5ECA300FB6172 /* TimePickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePickerTableViewCell.swift; sourceTree = "<group>"; };
 		C63F1FA61AC36BEF007333B6 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 		C668C6971AC08CED00478BD6 /* NotificationScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
 		C668C69B1AC0AC5F00478BD6 /* Summary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Summary.h; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				CFE2440B1ABF6F01003044B0 /* SettingsTableViewController.swift */,
+				C62BDB4F1AC5ECA300FB6172 /* TimePickerTableViewCell.swift */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -740,6 +743,7 @@
 				CFE243C31ABE726C003044B0 /* CurrentStatusViewController.swift in Sources */,
 				C668C6A21AC0BA9100478BD6 /* HelpTableViewController.swift in Sources */,
 				C668C6981AC08CED00478BD6 /* NotificationScheduler.swift in Sources */,
+				C62BDB501AC5ECA300FB6172 /* TimePickerTableViewCell.swift in Sources */,
 				CF9415BF1AC118400011C06D /* TouchableUITextView.swift in Sources */,
 				C668C6A41AC0BB1D00478BD6 /* WebViewController.swift in Sources */,
 				C61A0A841AC210370002D761 /* CommentTableViewCell.swift in Sources */,

@@ -17,10 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EeT-KO-s6Y">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EeT-KO-s6Y" userLabel="Image View - background">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11k-cl-b8I">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11k-cl-b8I" userLabel="View - background mask">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="0.70000000000000007" colorSpace="calibratedWhite"/>
                             </view>
@@ -164,7 +164,7 @@
                                 </connections>
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQg-5i-JQV">
-                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
                                     <barButtonItem systemItem="camera" id="5sV-dT-fZw">
                                         <connections>
@@ -184,30 +184,34 @@
                                         </connections>
                                     </barButtonItem>
                                 </items>
+                                <connections>
+                                    <outlet property="delegate" destination="6gQ-Oa-wko" id="uDD-sq-VSi"/>
+                                </connections>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CQg-5i-JQV" firstAttribute="leading" secondItem="A8E-XH-W0l" secondAttribute="leading" id="8cw-rV-lF9"/>
                             <constraint firstItem="cnr-qC-xp5" firstAttribute="top" secondItem="9dj-1q-iof" secondAttribute="bottom" id="D2f-Wi-zu8"/>
                             <constraint firstItem="9dj-1q-iof" firstAttribute="leading" secondItem="A8E-XH-W0l" secondAttribute="leading" id="DQj-mj-nw3"/>
                             <constraint firstItem="EeT-KO-s6Y" firstAttribute="top" secondItem="A8E-XH-W0l" secondAttribute="top" id="G6S-69-SVY"/>
                             <constraint firstItem="cnr-qC-xp5" firstAttribute="top" secondItem="11k-cl-b8I" secondAttribute="bottom" id="GSC-FV-SKg"/>
                             <constraint firstAttribute="trailing" secondItem="11k-cl-b8I" secondAttribute="trailing" id="JDk-9j-RpT"/>
                             <constraint firstItem="11k-cl-b8I" firstAttribute="leading" secondItem="A8E-XH-W0l" secondAttribute="leading" id="MkY-Zg-R0I"/>
-                            <constraint firstAttribute="trailing" secondItem="CQg-5i-JQV" secondAttribute="trailing" id="NE4-PC-jqX"/>
                             <constraint firstItem="11k-cl-b8I" firstAttribute="top" secondItem="A8E-XH-W0l" secondAttribute="top" id="OQ6-64-aJg"/>
                             <constraint firstItem="cnr-qC-xp5" firstAttribute="top" secondItem="EeT-KO-s6Y" secondAttribute="bottom" id="TzR-UT-45o"/>
+                            <constraint firstItem="CQg-5i-JQV" firstAttribute="leading" secondItem="A8E-XH-W0l" secondAttribute="leading" id="VxW-u1-QVO"/>
                             <constraint firstAttribute="trailing" secondItem="9dj-1q-iof" secondAttribute="trailing" id="bp3-kh-0U5"/>
+                            <constraint firstAttribute="trailing" secondItem="CQg-5i-JQV" secondAttribute="trailing" id="eXr-5W-lnG"/>
                             <constraint firstAttribute="trailing" secondItem="EeT-KO-s6Y" secondAttribute="trailing" id="fej-ed-9VT"/>
                             <constraint firstItem="9dj-1q-iof" firstAttribute="top" secondItem="A8E-XH-W0l" secondAttribute="top" id="hZB-U4-tfY"/>
-                            <constraint firstItem="cnr-qC-xp5" firstAttribute="top" secondItem="CQg-5i-JQV" secondAttribute="bottom" id="xg4-1L-EKl"/>
+                            <constraint firstItem="CQg-5i-JQV" firstAttribute="top" secondItem="yVr-64-WBQ" secondAttribute="bottom" id="ugG-C8-eD8"/>
                             <constraint firstItem="EeT-KO-s6Y" firstAttribute="leading" secondItem="A8E-XH-W0l" secondAttribute="leading" id="zA0-FH-MoY"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backgroundImageView" destination="EeT-KO-s6Y" id="ZE1-vp-IEb"/>
                         <outlet property="tableView" destination="9dj-1q-iof" id="q34-9f-zQZ"/>
+                        <outlet property="toolbar" destination="CQg-5i-JQV" id="YKr-Ye-gLi"/>
                         <segue destination="vfh-DW-D9n" kind="presentation" identifier="SegueMainToPost" id="Z2q-bB-P8i"/>
                     </connections>
                 </viewController>
@@ -246,9 +250,6 @@
                                                     <state key="normal" title="Set">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
-                                                    <connections>
-                                                        <segue destination="BYZ-38-t0r" kind="presentation" id="C0M-w5-ane"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -258,6 +259,27 @@
                                                 <constraint firstItem="SJJ-KY-oaW" firstAttribute="leading" secondItem="99p-8e-sLa" secondAttribute="trailing" constant="8" id="RhF-TC-Hu7"/>
                                                 <constraint firstItem="99p-8e-sLa" firstAttribute="leading" secondItem="Pqa-Ye-O8G" secondAttribute="leadingMargin" id="XDp-kb-UIP"/>
                                                 <constraint firstAttribute="centerY" secondItem="99p-8e-sLa" secondAttribute="centerY" id="daN-hE-Ypg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="162" id="nar-TE-CGe">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nar-TE-CGe" id="Su2-yt-fbn">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="m5D-oV-Yhk">
+                                                    <rect key="frame" x="0.0" y="-1" width="600" height="162"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="449179943.93993998">
+                                                        <!--2015-03-27 20:12:23 +0000-->
+                                                    </date>
+                                                </datePicker>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="m5D-oV-Yhk" secondAttribute="trailing" id="8NN-bO-k4D"/>
+                                                <constraint firstItem="m5D-oV-Yhk" firstAttribute="leading" secondItem="Su2-yt-fbn" secondAttribute="leading" id="DEq-7m-ajn"/>
+                                                <constraint firstAttribute="bottom" secondItem="m5D-oV-Yhk" secondAttribute="bottom" constant="1" id="TfL-zk-TLw"/>
+                                                <constraint firstItem="m5D-oV-Yhk" firstAttribute="top" secondItem="Su2-yt-fbn" secondAttribute="top" id="kLT-76-akn"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -388,8 +410,8 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Vf-oJ-qfC" id="O53-Xw-Xf8">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="About Page" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hX-Le-PGu">
-                                                    <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Page" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hX-Le-PGu">
+                                                    <rect key="frame" x="8" y="11" width="551" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
