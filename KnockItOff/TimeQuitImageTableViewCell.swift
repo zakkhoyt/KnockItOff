@@ -23,6 +23,7 @@ class TimeQuitImageTableViewCell: UITableViewCell {
             
             if let i = summary?.timeQuitString {
                 timeQuitStringLabel.text = i
+                timeQuitStringLabel.textColor = summary?.timeQuitStringColor
             }
         }
     }

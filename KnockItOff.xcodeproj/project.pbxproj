@@ -246,6 +246,14 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
+		C62BDB511AC6094A00FB6172 /* Scheduler */ = {
+			isa = PBXGroup;
+			children = (
+				C668C6971AC08CED00478BD6 /* NotificationScheduler.swift */,
+			);
+			name = Scheduler;
+			sourceTree = "<group>";
+		};
 		C668C6991AC08CF300478BD6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,7 +373,7 @@
 				C668C6991AC08CF300478BD6 /* ViewController */,
 				C668C69A1AC08D0000478BD6 /* UserInterface */,
 				CFCE947E1ABE546900E1E947 /* Supporting Files */,
-				C668C6971AC08CED00478BD6 /* NotificationScheduler.swift */,
+				C62BDB511AC6094A00FB6172 /* Scheduler */,
 				CF4C52781AC4EA8100FE2541 /* Documentation */,
 			);
 			path = KnockItOff;

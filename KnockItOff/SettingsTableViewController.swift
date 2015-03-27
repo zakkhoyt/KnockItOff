@@ -10,7 +10,7 @@ import UIKit
 import KnockItOffKit
 
 class SettingsTableViewController: UITableViewController {
-    var datePickerHidden = true;
+    var datePickerHidden = false;
     @IBOutlet weak var notificationsSwitch: UISwitch!
     @IBOutlet weak var lastDrinkDatelabel: UILabel!
     @IBOutlet weak var notificationTimePicker: UIDatePicker!
@@ -26,6 +26,7 @@ class SettingsTableViewController: UITableViewController {
         let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Plain, target: self, action: "doneButtonAction")
         self.navigationItem.rightBarButtonItem = doneButton
         self.navigationItem.hidesBackButton = true
+        
     }
 
 
@@ -36,8 +37,8 @@ class SettingsTableViewController: UITableViewController {
         let summary = KnockItOffPersistant.sharedInstance().summary()
         
         self.lastDrinkDatelabel.text = summary.startDateString
-        self.twoLabel.sizeToFit()
-        self.todayLabel.sizeToFit()
+//        self.twoLabel.sizeToFit()
+//        self.todayLabel.sizeToFit()
         
         let alarmTime = KnockItOffPersistant.sharedInstance().alarmTime()
         if alarmTime != nil {
@@ -47,21 +48,25 @@ class SettingsTableViewController: UITableViewController {
         }
         
         notificationsSwitch.on = KnockItOffPersistant.sharedInstance().localNotifications()
-        notificationTimePicker.enabled = notificationsSwitch.on
-        notificationTimePicker.userInteractionEnabled = notificationsSwitch.on
-        notificationTimePicker.alpha = notificationsSwitch.on ? 1.0 : 0.5
     }
 
-    @IBAction func notificationSwitchValueChanged(sender: UISwitch) {
-        KnockItOffPersistant.sharedInstance().setLocalNotifications(sender.on)
-        notificationTimePicker.enabled = sender.on
-        notificationTimePicker.userInteractionEnabled = notificationsSwitch.on
-        notificationTimePicker.alpha = notificationsSwitch.on ? 1.0 : 0.5
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.twoLabel.sizeToFit()
+        self.todayLabel.sizeToFit()
+        
     }
+    @IBAction func notificationTimeButtonTouchUpInside(sender: AnyObject) {
+        datePickerHidden = !datePickerHidden
+        let indexPath = NSIndexPath(forRow: 1, inSection: 2)
+        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+    }
+    
     
     func doneButtonAction() {
         let alarmTime = notificationTimePicker.date
         KnockItOffPersistant.sharedInstance().setAlarmTime(alarmTime)
+        KnockItOffPersistant.sharedInstance().setLocalNotifications(notificationsSwitch.on)
         dismissViewControllerAnimated(true, completion: { () -> Void in
             
         })
@@ -69,11 +74,68 @@ class SettingsTableViewController: UITableViewController {
     
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if indexPath.section == 0 && indexPath.row == 1 {
-            return datePickerHidden ? 0 : 162
+        if indexPath.row == 1 && indexPath.section == 2 {
+            if datePickerHidden {
+                println("--------------------- 0")
+                return 0.001
+            } else {
+                println("--------------------- 162")
+                return 162
+            }
         }
         return super.tableView(tableView, heightForRowAtIndexPath:indexPath)
     }
+
+    
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30
+    }
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView(frame: CGRectMake(0, 0, self.view.bounds.size.width, 30))
+        headerView.backgroundColor = UIColor.clearColor()
+        let label = UILabel(frame: CGRectMake(8,
+            (30 - 21)/2.0,
+            self.view.bounds.size.width - 2*8,
+            30))
+        
+        label.textAlignment = NSTextAlignment.Left
+        label.textColor = UIColor.yellowColor()
+        label.font = UIFont.systemFontOfSize(22)
+
+        headerView.addSubview(label)
+        
+        switch section {
+        case 0:
+            label.text = "1.) Enter the date of your last drink"
+        case 1:
+            label.text = "2.) Check your status any time"
+        case 2:
+            label.text = "3.) Daily notification"
+        case 3:
+            label.text = "4.) Today tab"
+        case 4:
+            label.text = "5.) Get help"
+        case 5:
+            label.text = "6.) About this app"
+        case 6:
+            label.text = ""
+        default:
+            label.text = ""
+            
+        }
+        return headerView
+    }
+
+    
+    
+    // Hide empty cells
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.001
+    }
+    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView()
+    }
+   
 }
 
 

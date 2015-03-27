@@ -8,11 +8,13 @@
         * Photo access
 
 * Settings screen
-    * Scheduler on time change
-    * Images for #2
-    * Help images for Today #3
-    * Create SD help section with links and maybe IRC?
+    * Images for Today tab
+    * Help images for Home row
     * Create an about section
+
+* GetHelp (live chat)
+    * Go directly to IRD
+
 
 * Calendar screen
     * Dont' allow selecting future date

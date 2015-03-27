@@ -20,7 +20,7 @@ class NotificationScheduler: NSObject {
         unscheduleNotifications()
         
         // Schedule daily notification for next 30 days
-        for day in 1...30 {
+        for day in 0...30 {
             // schedule notification for tomorrow
             var notification = UILocalNotification()
             notification.timeZone = NSTimeZone.defaultTimeZone()

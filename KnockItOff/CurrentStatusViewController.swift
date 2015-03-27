@@ -20,6 +20,8 @@ class CurrentStatusViewController: UIViewController {
     let refreshControl = UIRefreshControl()
     let imagePicker = UIImagePickerController()
     let SegueMainToPost = "SegueMainToPost"
+    let SegueMainToChat = "SegueMainToChat"
+    
     var posts: [RKLink] = []
     var lastContentOffset: CGPoint = CGPointZero
     var statusBarHidden = false
@@ -76,6 +78,29 @@ class CurrentStatusViewController: UIViewController {
             let nc = segue.destinationViewController as UINavigationController
             let vc = nc.viewControllers[0] as RedditPostViewController
             vc.post = sender as? RKLink
+        } else if segue.identifier == SegueMainToChat {
+            let nc = segue.destinationViewController as UINavigationController
+            let vc = nc.viewControllers[0] as WebViewController
+            vc.url = sender as? NSURL
+        }
+    }
+    
+    @IBAction func chatButtonTouchUpInside(sender: AnyObject) {
+        let ac = UIAlertController(title: "Chat with someone", message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
+        ac.addAction(UIAlertAction(title: "/r/stopdrinking main chat", style: UIAlertActionStyle.Default, handler: { (action) -> Void in
+            let url = NSURL(string: "https://kiwiirc.com/client/irc.snoonet.org/stopdrinking/")
+            self.performSegueWithIdentifier(self.SegueMainToChat, sender: url)
+        }))
+        
+        ac.addAction(UIAlertAction(title: "/r/stopdrinking alternate chat", style: UIAlertActionStyle.Default, handler: { (action) -> Void in
+            let url = NSURL(string: "http://client00.chat.mibbit.com/?server=irc.snoonet.org&channel=%23stopdrinking")
+            self.performSegueWithIdentifier(self.SegueMainToChat, sender: url)
+        }))
+        
+        ac.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler:nil))
+        
+        presentViewController(ac, animated: true) { () -> Void in
+            
         }
     }
     
