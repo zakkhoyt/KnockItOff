@@ -126,6 +126,8 @@ class CurrentStatusViewController: UIViewController {
                 }, failureBlock: { (error) -> Void in
                     println("Failed to retrieve image from AssetLibrary")
             })
+        } else {
+            self.backgroundImageView.image = UIImage(named: "background")
         }
         
     }

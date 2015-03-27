@@ -25,6 +25,7 @@ class RedditPostViewController: UIViewController {
         
         treeView.dataSource = self;
         treeView.delegate = self;
+        treeView.separatorStyle = RATreeViewCellSeparatorStyleNone
 
         MBProgressHUD.showHUDAddedTo(view, animated: true)
         RKClient.sharedClient().commentsForLink(post, completion: { (comments, pagination, error) -> Void in
@@ -83,6 +84,16 @@ extension RedditPostViewController: RATreeViewDataSource{
 
 extension RedditPostViewController: RATreeViewDelegate {
 
+    
+    func treeView(treeView: RATreeView!, willExpandRowForItem item: AnyObject!) {
+        let cell = treeView.cellForItem(item) as CommentTableViewCell
+        cell.expanded = true
+    }
+    
+    func treeView(treeView: RATreeView!, willCollapseRowForItem item: AnyObject!) {
+        let cell = treeView.cellForItem(item) as CommentTableViewCell
+        cell.expanded = false
+    }
 //    func treeView(treeView: RATreeView!, indentationLevelForRowForItem item: AnyObject!) -> Int {
 //        
 //    }

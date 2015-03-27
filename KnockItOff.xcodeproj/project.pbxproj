@@ -20,6 +20,7 @@
 		C668C6A41AC0BB1D00478BD6 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C668C6A31AC0BB1D00478BD6 /* WebViewController.swift */; };
 		C6FF233A1AC0D68A008BB058 /* libPods-RedditKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FF23391AC0D68A008BB058 /* libPods-RedditKit.a */; };
 		C6FF23401AC0D8B6008BB058 /* libPods-AFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FF233F1AC0D8B6008BB058 /* libPods-AFNetworking.a */; };
+		CF4C527A1AC4EB9500FE2541 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4C52791AC4EB9500FE2541 /* AboutViewController.swift */; };
 		CF51FBF61ABE6EE000C1C9BF /* KnockItOffKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCE94A51ABE563900E1E947 /* KnockItOffKit.framework */; };
 		CF9415BA1AC10A130011C06D /* DaysQuitStringTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9415B91AC10A130011C06D /* DaysQuitStringTableViewCell.swift */; };
 		CF9415BC1AC10AF40011C06D /* SavingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9415BB1AC10AF40011C06D /* SavingsTableViewCell.swift */; };
@@ -131,6 +132,7 @@
 		C6FF233F1AC0D8B6008BB058 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
 		C6FF23411AC0D8DB008BB058 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
 		C6FF23431AC0D989008BB058 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
+		CF4C52791AC4EB9500FE2541 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		CF9415B91AC10A130011C06D /* DaysQuitStringTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysQuitStringTableViewCell.swift; sourceTree = "<group>"; };
 		CF9415BB1AC10AF40011C06D /* SavingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavingsTableViewCell.swift; sourceTree = "<group>"; };
 		CF9415BE1AC118400011C06D /* TouchableUITextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchableUITextView.swift; sourceTree = "<group>"; };
@@ -243,12 +245,13 @@
 		C668C6991AC08CF300478BD6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				CF4C527B1AC4EBA000FE2541 /* About */,
 				CFFDF8371AC0FC9300241A04 /* CurrentStatus */,
-				CFE2440B1ABF6F01003044B0 /* SettingsTableViewController.swift */,
-				CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */,
-				C668C6A11AC0BA9100478BD6 /* HelpTableViewController.swift */,
-				C668C6A31AC0BB1D00478BD6 /* WebViewController.swift */,
+				CF4C527E1AC4EBB000FE2541 /* DatePicker */,
+				CF4C527D1AC4EBAB00FE2541 /* Help */,
 				C61A0A7F1AC205D50002D761 /* RedditPost */,
+				CF4C527F1AC4EBB700FE2541 /* Settings */,
+				CF4C527C1AC4EBA600FE2541 /* Web */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -262,6 +265,54 @@
 				C63F1FA61AC36BEF007333B6 /* CommentTableViewCell.xib */,
 			);
 			name = UserInterface;
+			sourceTree = "<group>";
+		};
+		CF4C52781AC4EA8100FE2541 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C668C69F1AC0B83800478BD6 /* TODO.txt */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		CF4C527B1AC4EBA000FE2541 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				CF4C52791AC4EB9500FE2541 /* AboutViewController.swift */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		CF4C527C1AC4EBA600FE2541 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				C668C6A31AC0BB1D00478BD6 /* WebViewController.swift */,
+			);
+			name = Web;
+			sourceTree = "<group>";
+		};
+		CF4C527D1AC4EBAB00FE2541 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				C668C6A11AC0BA9100478BD6 /* HelpTableViewController.swift */,
+			);
+			name = Help;
+			sourceTree = "<group>";
+		};
+		CF4C527E1AC4EBB000FE2541 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */,
+			);
+			name = DatePicker;
+			sourceTree = "<group>";
+		};
+		CF4C527F1AC4EBB700FE2541 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CFE2440B1ABF6F01003044B0 /* SettingsTableViewController.swift */,
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 		CF9415BD1AC10DE10011C06D /* Cell */ = {
@@ -309,7 +360,7 @@
 				C668C69A1AC08D0000478BD6 /* UserInterface */,
 				CFCE947E1ABE546900E1E947 /* Supporting Files */,
 				C668C6971AC08CED00478BD6 /* NotificationScheduler.swift */,
-				C668C69F1AC0B83800478BD6 /* TODO.txt */,
+				CF4C52781AC4EA8100FE2541 /* Documentation */,
 			);
 			path = KnockItOff;
 			sourceTree = "<group>";
@@ -694,6 +745,7 @@
 				CF9415BC1AC10AF40011C06D /* SavingsTableViewCell.swift in Sources */,
 				CFCE94831ABE546900E1E947 /* DatePickerViewController.swift in Sources */,
 				CFFDF8391AC0FCBE00241A04 /* TimeQuitImageTableViewCell.swift in Sources */,
+				CF4C527A1AC4EB9500FE2541 /* AboutViewController.swift in Sources */,
 				CFCE94811ABE546900E1E947 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

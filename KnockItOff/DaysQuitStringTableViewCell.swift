@@ -18,30 +18,31 @@ class DaysQuitStringTableViewCell: UITableViewCell {
     
     var summary: Summary? = nil{
         didSet{
-            let attrString = NSMutableAttributedString()
-            var insertPoint: Int = 0
-            let paragraph = NSMutableParagraphStyle()
-            paragraph.alignment = .Center
-            
-            let attr1 = [NSParagraphStyleAttributeName : paragraph,
-                NSForegroundColorAttributeName : UIColor.darkTextColor(),
-                NSFontAttributeName: UIFont.systemFontOfSize(32)]
-            
-            let str1 = NSString(format: "\n%@ ", summary!.daysQuitString)
-            attrString.appendAttributedString(NSAttributedString(string: str1))
-            attrString.setAttributes(attr1, range: NSMakeRange(insertPoint, str1.length))
-            insertPoint += str1.length
-            
-            let attr2 = [NSParagraphStyleAttributeName : paragraph,
-                NSForegroundColorAttributeName : UIColor.darkTextColor(),
-                NSFontAttributeName: UIFont.systemFontOfSize(24)]
-            let str2 = NSString(format: "(%@)\n", summary!.startDateString)
-            attrString.appendAttributedString(NSAttributedString(string: str2))
-            attrString.setAttributes(attr2, range: NSMakeRange(insertPoint, str2.length))
-            insertPoint += str2.length
-
-            statusLabel.attributedText = attrString
-            
+            if summary!.startDate != nil {
+                let attrString = NSMutableAttributedString()
+                var insertPoint: Int = 0
+                let paragraph = NSMutableParagraphStyle()
+                paragraph.alignment = .Center
+                
+                let attr1 = [NSParagraphStyleAttributeName : paragraph,
+                    NSForegroundColorAttributeName : UIColor.darkTextColor(),
+                    NSFontAttributeName: UIFont.systemFontOfSize(32)]
+                
+                let str1 = NSString(format: "\n%@ ", summary!.daysQuitString)
+                attrString.appendAttributedString(NSAttributedString(string: str1))
+                attrString.setAttributes(attr1, range: NSMakeRange(insertPoint, str1.length))
+                insertPoint += str1.length
+                
+                let attr2 = [NSParagraphStyleAttributeName : paragraph,
+                    NSForegroundColorAttributeName : UIColor.darkTextColor(),
+                    NSFontAttributeName: UIFont.systemFontOfSize(24)]
+                let str2 = NSString(format: "(%@)\n", summary!.startDateString)
+                attrString.appendAttributedString(NSAttributedString(string: str2))
+                attrString.setAttributes(attr2, range: NSMakeRange(insertPoint, str2.length))
+                insertPoint += str2.length
+                
+                statusLabel.attributedText = attrString
+            }
         }
     }
 
