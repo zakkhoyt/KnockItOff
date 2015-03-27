@@ -48,6 +48,11 @@ class RedditPostViewController: UIViewController {
     }
 }
 
+extension RedditPostViewController: UIScrollViewDelegate {
+    func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+        println(__FUNCTION__)
+    }
+}
 
 extension RedditPostViewController: RATreeViewDataSource{
     
@@ -68,15 +73,8 @@ extension RedditPostViewController: RATreeViewDataSource{
             return cell
             
         }
-        
         return UITableViewCell()
-//        let cell = NSBundle.mainBundle().loadNibNamed("CommentTableViewCell", owner: self, options: nil)[0] as? CommentTableViewCell
-//        if let comment = item as RKComment? {
-//            cell?.comment = comment
-//        }
-//        cell?.level = treeView.levelForCellForItem(item)
-//        return cell
-    }
+     }
     
     func treeView(treeView: RATreeView!, numberOfChildrenOfItem item: AnyObject!) -> Int {
         if item == nil {
@@ -89,22 +87,9 @@ extension RedditPostViewController: RATreeViewDataSource{
         
         let comment = item as RKComment
         return comment.replies.count
-//        if item == nil {
-//            if let c = comments? {
-//                return c.count + 0
-//            } else {
-//                return 0
-//            }
-//        }
-//        
-//        let comment = item as RKComment
-//        return comment.replies.count
-
     }
     
     func treeView(treeView: RATreeView!, child index: Int, ofItem item: AnyObject!) -> AnyObject! {
-        
-        
         if item == nil {
             if index == 0 {
                 return post
@@ -113,27 +98,16 @@ extension RedditPostViewController: RATreeViewDataSource{
             }
         } else {
             let comment = item as RKComment?
-            return comment!.replies[index-1]
+            return comment!.replies[index]
         }
-        
-//        if let comment = item as RKComment? {
-//          return comment.replies[index]
-//        } else if let post = item as RKLink? {
-//            return post
-//        } else {
-//            return comments![index]
-//        }
-        
-//        let comment = item as RKComment?
-//        if item == nil {
-//            return comments![index]
-//        }
-//        return comment!.replies[index]
     }
 }
 
 extension RedditPostViewController: RATreeViewDelegate {
 
+    func treeView(treeView: RATreeView!, editingStyleForRowForItem item: AnyObject!) -> UITableViewCellEditingStyle {
+        return .Insert
+    }
     
     func treeView(treeView: RATreeView!, willExpandRowForItem item: AnyObject!) {
         let cell = treeView.cellForItem(item) as CommentTableViewCell

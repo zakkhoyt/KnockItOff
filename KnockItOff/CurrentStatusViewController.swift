@@ -199,6 +199,7 @@ extension CurrentStatusViewController: UITableViewDataSource, UITableViewDelegat
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        println(__FUNCTION__)
         let post = posts[indexPath.row]
         self.performSegueWithIdentifier(self.SegueMainToPost, sender: post)
     }

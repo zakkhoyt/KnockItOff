@@ -52,7 +52,7 @@ class RedditPostTableViewCell: UITableViewCell  {
             
             let attr3 = [NSParagraphStyleAttributeName : paragraph,
                 NSForegroundColorAttributeName : UIColor.lightGrayColor(),
-                NSFontAttributeName: UIFont.italicSystemFontOfSize(16)]
+                NSFontAttributeName: UIFont.italicSystemFontOfSize(18)]
             
             let str3 = NSString(format: "\n-%@\n", post!.author)
             attrString.appendAttributedString(NSAttributedString(string: str3))

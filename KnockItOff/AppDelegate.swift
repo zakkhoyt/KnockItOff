@@ -15,7 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+     
+        let attr = [NSForegroundColorAttributeName: UIColor.yellowColor()]
+        UINavigationBar.appearance().titleTextAttributes = attr
+        UINavigationBar.appearance().barTintColor = UIColor.darkGrayColor()
+        UINavigationBar.appearance().tintColor = UIColor.yellowColor()
+        UIBarButtonItem.appearance().setTitleTextAttributes(attr, forState: UIControlState.Normal)
+        
+        UIToolbar.appearance().barTintColor = UIColor.darkGrayColor()
+        UIToolbar.appearance().tintColor = UIColor.yellowColor()
+        
         return true
     }
 

@@ -9,19 +9,19 @@
 import UIKit
 
 class PostDetailsTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var bodyTextView: UITextView!
     
-//    var post: RKLink? = nil {
-//        didSet{
-//            if post != nil  {
-//                let text = NSString(format: "%@\n\n%@\n\n-%@", post!.title, post!.selfText, post!.author)
-//                bodyTextView.text = text
-//            } else {
-//                bodyTextView.text = "post is nil"
-//            }            
-//        }
-//    }
+    //    var post: RKLink? = nil {
+    //        didSet{
+    //            if post != nil  {
+    //                let text = NSString(format: "%@\n\n%@\n\n-%@", post!.title, post!.selfText, post!.author)
+    //                bodyTextView.text = text
+    //            } else {
+    //                bodyTextView.text = "post is nil"
+    //            }
+    //        }
+    //    }
     var post: RKLink? = nil{
         didSet{
             let attrString = NSMutableAttributedString()
@@ -44,24 +44,22 @@ class PostDetailsTableViewCell: UITableViewCell {
             let attr1 = [NSParagraphStyleAttributeName : paragraph,
                 NSForegroundColorAttributeName : UIColor.whiteColor(),
                 NSFontAttributeName: UIFont.systemFontOfSize(22)]
-            
             let str1 = NSString(format: "%@\n", post!.title)
             attrString.appendAttributedString(NSAttributedString(string: str1))
             attrString.setAttributes(attr1, range: NSMakeRange(insertPoint, str1.length))
             insertPoint += str1.length
             
-            //            let attr2 = [NSParagraphStyleAttributeName : paragraph,
-            //                NSForegroundColorAttributeName : UIColor.darkTextColor(),
-            //                NSFontAttributeName: UIFont.systemFontOfSize(15)]
-            //            let str2 = NSString(format: "\n%@\n", post!.selfText)
-            //            attrString.appendAttributedString(NSAttributedString(string: str2))
-            //            attrString.setAttributes(attr2, range: NSMakeRange(insertPoint, str2.length))
-            //            insertPoint += str2.length
+            let attr2 = [NSParagraphStyleAttributeName : paragraph,
+                NSForegroundColorAttributeName : UIColor.whiteColor(),
+                NSFontAttributeName: UIFont.systemFontOfSize(15)]
+            let str2 = NSString(format: "\n%@\n", post!.selfText)
+            attrString.appendAttributedString(NSAttributedString(string: str2))
+            attrString.setAttributes(attr2, range: NSMakeRange(insertPoint, str2.length))
+            insertPoint += str2.length
             
             let attr3 = [NSParagraphStyleAttributeName : paragraph,
                 NSForegroundColorAttributeName : UIColor.lightGrayColor(),
-                NSFontAttributeName: UIFont.italicSystemFontOfSize(16)]
-            
+                NSFontAttributeName: UIFont.italicSystemFontOfSize(18)]
             let str3 = NSString(format: "\n-%@\n", post!.author)
             attrString.appendAttributedString(NSAttributedString(string: str3))
             attrString.setAttributes(attr3, range: NSMakeRange(insertPoint, str3.length))
@@ -71,7 +69,7 @@ class PostDetailsTableViewCell: UITableViewCell {
             
             //            let size = postTextView.sizeThatFits(CGSizeMake(self.bounds.width, 100000))
             //            println("size: " + NSStringFromCGSize(size))
-            //            
+            //
             UIView.animateWithDuration(3.0, animations: { () -> Void in
                 self.layoutIfNeeded()
             })
@@ -82,11 +80,11 @@ class PostDetailsTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
+    
 }
