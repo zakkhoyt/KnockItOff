@@ -24,6 +24,7 @@
 		CF4C527A1AC4EB9500FE2541 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4C52791AC4EB9500FE2541 /* AboutViewController.swift */; };
 		CF4C52811AC4F9D900FE2541 /* PostDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF4C52801AC4F9D900FE2541 /* PostDetailsTableViewCell.xib */; };
 		CF51FBF61ABE6EE000C1C9BF /* KnockItOffKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCE94A51ABE563900E1E947 /* KnockItOffKit.framework */; };
+		CF8C757B1AC64F6C00436F9C /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8C757A1AC64F6C00436F9C /* Settings.storyboard */; };
 		CF8E91CF1AC63F4900641FE5 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8E91CE1AC63F4900641FE5 /* Splash.storyboard */; };
 		CF8E91D41AC643C500641FE5 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E91D31AC643C500641FE5 /* SplashViewController.swift */; };
 		CF9415BA1AC10A130011C06D /* DaysQuitStringTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9415B91AC10A130011C06D /* DaysQuitStringTableViewCell.swift */; };
@@ -138,6 +139,7 @@
 		C6FF23431AC0D989008BB058 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
 		CF4C52791AC4EB9500FE2541 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		CF4C52801AC4F9D900FE2541 /* PostDetailsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		CF8C757A1AC64F6C00436F9C /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		CF8E91CE1AC63F4900641FE5 /* Splash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		CF8E91D31AC643C500641FE5 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		CF9415B91AC10A130011C06D /* DaysQuitStringTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysQuitStringTableViewCell.swift; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 				C63F1FA61AC36BEF007333B6 /* CommentTableViewCell.xib */,
 				CF4C52801AC4F9D900FE2541 /* PostDetailsTableViewCell.xib */,
 				CF8E91CE1AC63F4900641FE5 /* Splash.storyboard */,
+				CF8C757A1AC64F6C00436F9C /* Settings.storyboard */,
 			);
 			name = UserInterface;
 			sourceTree = "<group>";
@@ -683,6 +686,7 @@
 				CFCE94881ABE546900E1E947 /* Images.xcassets in Resources */,
 				CF4C52811AC4F9D900FE2541 /* PostDetailsTableViewCell.xib in Resources */,
 				C63F1FA71AC36BEF007333B6 /* CommentTableViewCell.xib in Resources */,
+				CF8C757B1AC64F6C00436F9C /* Settings.storyboard in Resources */,
 				CF8E91CF1AC63F4900641FE5 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

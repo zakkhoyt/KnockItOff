@@ -34,6 +34,8 @@ class NotificationScheduler: NSObject {
             println("fireDate: " + localTimeDescription!)
             UIApplication.sharedApplication().scheduleLocalNotification(notification)
         }
+        
+        UIApplication.sharedApplication().applicationIconBadgeNumber = 99
     }
     
     class func unscheduleNotifications() {

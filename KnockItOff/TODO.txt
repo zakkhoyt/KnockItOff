@@ -11,22 +11,40 @@
     * Images for Today tab
     * Help images for Home row
     * Create an about section
-
-* GetHelp (live chat)
-    * Go directly to IRD
+    * replace with onboarding flow
+        * 1.) Enter date of last drink
+        * 2.) Enter daily notification time
+        * 3.) Today tab description
+        * 4.) Home bar desription
+        * 5.) Come back often
 
 
 * Calendar screen
     * Dont' allow selecting future date
     * Make completed days green
-    *
 
-* UserDefaults
-    * Store notification time
 
-* Reddit
-    * Integate SDK: https://github.com/samsymons/RedditKit
-    * Authenticate using reddit
-    * Grab top post from /r/sd and display on front page of app
-    * Grab top post from /r/sd and display in today tab
-    * Grab top post from /r/sd and display in notification
+
+
+
+
+
+
+
+
+
+This app was inspired by reddit.com/r/stopdrinking, as the name suggests. /r/sd is a terrific community.
+
+I consider this app open source. You can access the source code here:
+https://github.com/zakkhoyt/KnockItOff
+
+Features coming soon:
+Log into reddit which will allow you to vote, reply, and other reddit stuff.
+Pagination support for reddit content.
+Built in real time chat based on CloudKit.
+
+
+
+
+
+

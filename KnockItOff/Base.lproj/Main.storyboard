@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D113c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6gQ-Oa-wko">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6gQ-Oa-wko">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -224,48 +224,34 @@
         <scene sceneID="Uxh-xg-SFw">
             <objects>
                 <tableViewController id="jzs-Lw-ZdD" customClass="SettingsTableViewController" customModule="KnockItOff" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="oZD-1x-qLp">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="oZD-1x-qLp">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection headerTitle="1.) Enter the date of your last drink" id="eps-5b-eM0">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3U2-6o-hz1">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="3U2-6o-hz1">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3U2-6o-hz1" id="Pqa-Ye-O8G">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yesterday at..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99p-8e-sLa">
-                                                    <rect key="frame" x="8" y="11" width="518" height="21"/>
+                                                    <rect key="frame" x="8" y="11" width="109" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJJ-KY-oaW">
-                                                    <rect key="frame" x="534" y="7" width="50" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="50" id="I4S-Nf-KjE"/>
-                                                        <constraint firstAttribute="height" constant="30" id="nmr-yx-G0D"/>
-                                                    </constraints>
-                                                    <state key="normal" title="Set">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <segue destination="BYZ-38-t0r" kind="show" id="ESQ-Gg-FrE"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="SJJ-KY-oaW" firstAttribute="leading" secondItem="99p-8e-sLa" secondAttribute="trailing" constant="8" id="4jp-BT-fn8"/>
-                                                <constraint firstAttribute="centerY" secondItem="SJJ-KY-oaW" secondAttribute="centerY" id="CwZ-GI-XPD"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="SJJ-KY-oaW" secondAttribute="trailing" constant="8" id="DKY-rm-TFe"/>
-                                                <constraint firstItem="SJJ-KY-oaW" firstAttribute="leading" secondItem="99p-8e-sLa" secondAttribute="trailing" constant="8" id="RhF-TC-Hu7"/>
                                                 <constraint firstItem="99p-8e-sLa" firstAttribute="leading" secondItem="Pqa-Ye-O8G" secondAttribute="leadingMargin" id="XDp-kb-UIP"/>
                                                 <constraint firstAttribute="centerY" secondItem="99p-8e-sLa" secondAttribute="centerY" id="daN-hE-Ypg"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="Nwt-E8-GJh"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -441,7 +427,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="a5J-OS-4P8" kind="show" id="6Mw-jY-72S"/>
+                                            <segue destination="a5J-OS-4P8" kind="show" id="R1J-2J-wHi"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -479,30 +465,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1b-eJ-vrA">
-                                <rect key="frame" x="16" y="0.0" width="568" height="800"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eN5-I7-Gqh" customClass="YALLabel">
+                                <rect key="frame" x="0.0" y="72" width="600" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">I was inspired to write this app when I found reddit.com/r/stopdrinking. It is a terrific community and near real-time help is available.</string>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Rhi-jD-6IA"/>
+                                    <constraint firstAttribute="height" constant="100" id="aal-Uq-PPR"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAF-Mm-EFC">
+                                <rect key="frame" x="8" y="180" width="584" height="612"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">This app was inspired by reddit.com/r/stopdrinking, as the name suggests. /r/sd is a terrific community.
+
+I consider this app open source. You can access the source code here:
+https://github.com/zakkhoyt/KnockItOff
+
+Features coming soon:
+Log into reddit which will allow you to vote, reply, and other reddit stuff.
+Pagination support for reddit content.
+Built in real time chat based on CloudKit.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="a1b-eJ-vrA" firstAttribute="trailing" secondItem="7qb-ki-F9t" secondAttribute="trailingMargin" id="MeC-1i-XP5"/>
-                            <constraint firstItem="afV-DO-X4t" firstAttribute="top" secondItem="a1b-eJ-vrA" secondAttribute="bottom" id="Yad-8H-GEt"/>
-                            <constraint firstItem="a1b-eJ-vrA" firstAttribute="top" secondItem="7qb-ki-F9t" secondAttribute="topMargin" id="b7R-Mb-jyc"/>
-                            <constraint firstItem="a1b-eJ-vrA" firstAttribute="leading" secondItem="7qb-ki-F9t" secondAttribute="leadingMargin" id="oQ1-fW-JRH"/>
+                            <constraint firstItem="afV-DO-X4t" firstAttribute="top" secondItem="BAF-Mm-EFC" secondAttribute="bottom" constant="8" id="3B7-92-aLB"/>
+                            <constraint firstAttribute="trailing" secondItem="eN5-I7-Gqh" secondAttribute="trailing" id="GWw-td-JGt"/>
+                            <constraint firstItem="eN5-I7-Gqh" firstAttribute="leading" secondItem="7qb-ki-F9t" secondAttribute="leading" id="LmF-G7-j6w"/>
+                            <constraint firstItem="BAF-Mm-EFC" firstAttribute="top" secondItem="eN5-I7-Gqh" secondAttribute="bottom" constant="8" id="MfC-oY-3YI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BAF-Mm-EFC" secondAttribute="trailing" constant="-8" id="SL2-uA-dhm"/>
+                            <constraint firstItem="eN5-I7-Gqh" firstAttribute="top" secondItem="tb2-Vr-Crp" secondAttribute="bottom" constant="8" id="hl0-aE-4GC"/>
+                            <constraint firstItem="BAF-Mm-EFC" firstAttribute="leading" secondItem="7qb-ki-F9t" secondAttribute="leadingMargin" constant="-8" id="ogX-Sq-HOj"/>
+                            <constraint firstItem="BAF-Mm-EFC" firstAttribute="top" secondItem="eN5-I7-Gqh" secondAttribute="bottom" constant="8" id="v8l-qd-EeZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About" id="1J5-qC-AXk"/>
                     <connections>
-                        <outlet property="textView" destination="a1b-eJ-vrA" id="jHZ-aC-lAT"/>
+                        <outlet property="textView" destination="BAF-Mm-EFC" id="l9O-ba-2j8"/>
+                        <outlet property="yalLabel" destination="eN5-I7-Gqh" id="3Sa-0n-Qh5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wa8-ha-LiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3444" y="16"/>
+            <point key="canvasLocation" x="3493" y="878"/>
         </scene>
         <!--Date of Last Drink-->
         <scene sceneID="tne-QT-ifu">
@@ -544,7 +553,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3438" y="883"/>
+            <point key="canvasLocation" x="3493" y="-61"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cSc-X8-R7r">

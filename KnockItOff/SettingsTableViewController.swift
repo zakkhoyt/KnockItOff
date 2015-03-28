@@ -136,6 +136,10 @@ class SettingsTableViewController: UITableViewController {
         return UIView()
     }
    
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        println("tap")
+    }
 }
 
 
