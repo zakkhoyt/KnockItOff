@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14A379a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bsF-Dm-MYR">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="NHr-dS-u81">
+            <objects>
+                <viewController id="bsF-Dm-MYR" customClass="SplashViewController" customModule="KnockItOff" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7qX-wc-6Do"/>
+                        <viewControllerLayoutGuide type="bottom" id="gg5-JK-feB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O5l-GH-6Uj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AYU-Q6-wKF" customClass="YALLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gg5-JK-feB" firstAttribute="top" secondItem="AYU-Q6-wKF" secondAttribute="bottom" id="Ih9-Pd-8uA"/>
+                            <constraint firstAttribute="trailing" secondItem="AYU-Q6-wKF" secondAttribute="trailing" id="YhP-Ql-jPM"/>
+                            <constraint firstItem="AYU-Q6-wKF" firstAttribute="leading" secondItem="O5l-GH-6Uj" secondAttribute="leading" id="fy0-ou-9Fr"/>
+                            <constraint firstItem="AYU-Q6-wKF" firstAttribute="top" secondItem="O5l-GH-6Uj" secondAttribute="top" id="yNU-Mc-i1u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="yalLabel" destination="AYU-Q6-wKF" id="ZMw-Io-u9V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ey-Rn-4hP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="377" y="534"/>
+        </scene>
+    </scenes>
+</document>

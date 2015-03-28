@@ -24,6 +24,8 @@
 		CF4C527A1AC4EB9500FE2541 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4C52791AC4EB9500FE2541 /* AboutViewController.swift */; };
 		CF4C52811AC4F9D900FE2541 /* PostDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF4C52801AC4F9D900FE2541 /* PostDetailsTableViewCell.xib */; };
 		CF51FBF61ABE6EE000C1C9BF /* KnockItOffKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCE94A51ABE563900E1E947 /* KnockItOffKit.framework */; };
+		CF8E91CF1AC63F4900641FE5 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8E91CE1AC63F4900641FE5 /* Splash.storyboard */; };
+		CF8E91D41AC643C500641FE5 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8E91D31AC643C500641FE5 /* SplashViewController.swift */; };
 		CF9415BA1AC10A130011C06D /* DaysQuitStringTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9415B91AC10A130011C06D /* DaysQuitStringTableViewCell.swift */; };
 		CF9415BC1AC10AF40011C06D /* SavingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9415BB1AC10AF40011C06D /* SavingsTableViewCell.swift */; };
 		CF9415BF1AC118400011C06D /* TouchableUITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9415BE1AC118400011C06D /* TouchableUITextView.swift */; };
@@ -31,7 +33,6 @@
 		CFCE94831ABE546900E1E947 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */; };
 		CFCE94861ABE546900E1E947 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCE94841ABE546900E1E947 /* Main.storyboard */; };
 		CFCE94881ABE546900E1E947 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCE94871ABE546900E1E947 /* Images.xcassets */; };
-		CFCE948B1ABE546900E1E947 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFCE94891ABE546900E1E947 /* LaunchScreen.xib */; };
 		CFCE94971ABE546900E1E947 /* KnockItOffTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94961ABE546900E1E947 /* KnockItOffTests.swift */; };
 		CFCE94AA1ABE563900E1E947 /* KnockItOffKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CFCE94A91ABE563900E1E947 /* KnockItOffKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CFCE94B01ABE563900E1E947 /* KnockItOffKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCE94A51ABE563900E1E947 /* KnockItOffKit.framework */; };
@@ -137,6 +138,8 @@
 		C6FF23431AC0D989008BB058 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
 		CF4C52791AC4EB9500FE2541 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		CF4C52801AC4F9D900FE2541 /* PostDetailsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		CF8E91CE1AC63F4900641FE5 /* Splash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		CF8E91D31AC643C500641FE5 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		CF9415B91AC10A130011C06D /* DaysQuitStringTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysQuitStringTableViewCell.swift; sourceTree = "<group>"; };
 		CF9415BB1AC10AF40011C06D /* SavingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavingsTableViewCell.swift; sourceTree = "<group>"; };
 		CF9415BE1AC118400011C06D /* TouchableUITextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchableUITextView.swift; sourceTree = "<group>"; };
@@ -146,7 +149,6 @@
 		CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		CFCE94851ABE546900E1E947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFCE94871ABE546900E1E947 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CFCE948A1ABE546900E1E947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CFCE94901ABE546900E1E947 /* KnockItOffTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnockItOffTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCE94951ABE546900E1E947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFCE94961ABE546900E1E947 /* KnockItOffTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnockItOffTests.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 				C61A0A7F1AC205D50002D761 /* RedditPost */,
 				CF4C527F1AC4EBB700FE2541 /* Settings */,
 				CF4C527C1AC4EBA600FE2541 /* Web */,
+				CF8E91D51AC646B600641FE5 /* Splash */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -273,9 +276,9 @@
 			children = (
 				CFCE94841ABE546900E1E947 /* Main.storyboard */,
 				CFCE94871ABE546900E1E947 /* Images.xcassets */,
-				CFCE94891ABE546900E1E947 /* LaunchScreen.xib */,
 				C63F1FA61AC36BEF007333B6 /* CommentTableViewCell.xib */,
 				CF4C52801AC4F9D900FE2541 /* PostDetailsTableViewCell.xib */,
+				CF8E91CE1AC63F4900641FE5 /* Splash.storyboard */,
 			);
 			name = UserInterface;
 			sourceTree = "<group>";
@@ -327,6 +330,14 @@
 				C62BDB4F1AC5ECA300FB6172 /* TimePickerTableViewCell.swift */,
 			);
 			name = Settings;
+			sourceTree = "<group>";
+		};
+		CF8E91D51AC646B600641FE5 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				CF8E91D31AC643C500641FE5 /* SplashViewController.swift */,
+			);
+			name = Splash;
 			sourceTree = "<group>";
 		};
 		CF9415BD1AC10DE10011C06D /* Cell */ = {
@@ -669,10 +680,10 @@
 			files = (
 				C668C6A01AC0B83800478BD6 /* TODO.txt in Resources */,
 				CFCE94861ABE546900E1E947 /* Main.storyboard in Resources */,
-				CFCE948B1ABE546900E1E947 /* LaunchScreen.xib in Resources */,
 				CFCE94881ABE546900E1E947 /* Images.xcassets in Resources */,
 				CF4C52811AC4F9D900FE2541 /* PostDetailsTableViewCell.xib in Resources */,
 				C63F1FA71AC36BEF007333B6 /* CommentTableViewCell.xib in Resources */,
+				CF8E91CF1AC63F4900641FE5 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,6 +770,7 @@
 				C61524251AC20458005F3E2E /* RedditPostViewController.swift in Sources */,
 				CFFDF83D1AC0FCFE00241A04 /* RedditPostTableViewCell.swift in Sources */,
 				CF9415BC1AC10AF40011C06D /* SavingsTableViewCell.swift in Sources */,
+				CF8E91D41AC643C500641FE5 /* SplashViewController.swift in Sources */,
 				CFCE94831ABE546900E1E947 /* DatePickerViewController.swift in Sources */,
 				CFFDF8391AC0FCBE00241A04 /* TimeQuitImageTableViewCell.swift in Sources */,
 				CF4C527A1AC4EB9500FE2541 /* AboutViewController.swift in Sources */,
@@ -836,14 +848,6 @@
 				CFCE94851ABE546900E1E947 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CFCE94891ABE546900E1E947 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CFCE948A1ABE546900E1E947 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

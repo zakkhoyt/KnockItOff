@@ -26,7 +26,6 @@ class CurrentStatusViewController: UIViewController {
     var lastContentOffset: CGPoint = CGPointZero
     var statusBarHidden = false
     
-
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var toolbar: UIToolbar!
@@ -44,10 +43,8 @@ class CurrentStatusViewController: UIViewController {
             self.refreshUI(self.refreshControl)
         }
         
-//        refreshControl.targetForAction("refreshUI", withSender: nil)
         refreshControl.addTarget(self, action: "refreshUI", forControlEvents: UIControlEvents.ValueChanged)
         tableView.addSubview(refreshControl)
-        
         refreshUI(refreshControl)
     }
     
@@ -66,11 +63,6 @@ class CurrentStatusViewController: UIViewController {
         }
         
         UIApplication.sharedApplication().applicationIconBadgeNumber = 0
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -105,17 +97,10 @@ class CurrentStatusViewController: UIViewController {
     }
     
     func reddit(){
-        //        RKClient.sharedClient().signInWithUsername("", password: "") { (error) -> Void in
-        //            if error == nil {
-        //                println("logged in")
-        
         RKClient.sharedClient().subredditWithName("stopdrinking", completion: { (subreddit, error) -> Void in
             let pagination = RKPagination()
             RKClient.sharedClient().linksInSubreddit(subreddit as RKSubreddit, category: RKSubredditCategory.Top, pagination: pagination, completion: { (posts: [AnyObject]!, page: RKPagination!, error:NSError!) -> Void in
-                //                    RKClient.sharedClient().linksInSubreddit(subreddit as RKSubreddit, pagination: pagination, completion: { (list: [AnyObject]!, page: RKPagination!, error:NSError!) -> Void in
                 if error == nil {
-                    
-                    println("Got subreddit links")
                     
                     self.posts = posts as [RKLink]
                     var indexPaths: [NSIndexPath] = []
@@ -123,8 +108,6 @@ class CurrentStatusViewController: UIViewController {
                         let post = posts[index] as RKLink
                         let indexPath = NSIndexPath(forRow: index, inSection: CurrentStatusTableViewSection.Reddit.rawValue)
                         indexPaths.append(indexPath)
-                        //                                    println("link: " + uLink.title + "\n\t" + uLink.URL!.absoluteString!)
-                        //                        println("link: " + post.title + "\n\t" + post.selfText!)
                     }
                     self.tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: UITableViewRowAnimation.Automatic)
                 } else {
@@ -215,6 +198,7 @@ extension CurrentStatusViewController: UITableViewDataSource, UITableViewDelegat
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 2
     }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case CurrentStatusTableViewSection.Status.rawValue:
@@ -281,14 +265,6 @@ extension CurrentStatusViewController: UITableViewDataSource, UITableViewDelegat
         return headerView
     }
     
-//    // Hide empty cells
-//    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-//        return 0.001
-//    }
-//    func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-//        return UIView()
-//    }
-    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println(__FUNCTION__)
         let post = posts[indexPath.row]
@@ -311,8 +287,6 @@ extension CurrentStatusViewController: UIImagePickerControllerDelegate, UINaviga
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    
 }
 
 
