@@ -17,19 +17,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AYU-Q6-wKF" customClass="YALLabel">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="247"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0s2-4N-esp" customClass="YALLabel">
+                                <rect key="frame" x="0.0" y="255" width="600" height="345"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gg5-JK-feB" firstAttribute="top" secondItem="AYU-Q6-wKF" secondAttribute="bottom" id="Ih9-Pd-8uA"/>
-                            <constraint firstAttribute="trailing" secondItem="AYU-Q6-wKF" secondAttribute="trailing" id="YhP-Ql-jPM"/>
-                            <constraint firstItem="AYU-Q6-wKF" firstAttribute="leading" secondItem="O5l-GH-6Uj" secondAttribute="leading" id="fy0-ou-9Fr"/>
-                            <constraint firstItem="AYU-Q6-wKF" firstAttribute="top" secondItem="O5l-GH-6Uj" secondAttribute="top" id="yNU-Mc-i1u"/>
+                            <constraint firstAttribute="trailing" secondItem="0s2-4N-esp" secondAttribute="trailing" id="CE6-lh-6w6"/>
+                            <constraint firstItem="AYU-Q6-wKF" firstAttribute="leading" secondItem="O5l-GH-6Uj" secondAttribute="leading" id="DcK-mZ-mgT"/>
+                            <constraint firstItem="gg5-JK-feB" firstAttribute="top" secondItem="0s2-4N-esp" secondAttribute="bottom" id="F2Y-E9-KbG"/>
+                            <constraint firstAttribute="trailing" secondItem="AYU-Q6-wKF" secondAttribute="trailing" id="LnY-IX-mSw"/>
+                            <constraint firstItem="AYU-Q6-wKF" firstAttribute="top" secondItem="O5l-GH-6Uj" secondAttribute="top" id="fnE-Pf-b0T"/>
+                            <constraint firstItem="AYU-Q6-wKF" firstAttribute="leading" secondItem="O5l-GH-6Uj" secondAttribute="leading" id="hjE-ro-uX5"/>
+                            <constraint firstItem="AYU-Q6-wKF" firstAttribute="height" secondItem="0s2-4N-esp" secondAttribute="height" id="qcM-zm-wqS"/>
+                            <constraint firstItem="0s2-4N-esp" firstAttribute="top" secondItem="AYU-Q6-wKF" secondAttribute="bottom" constant="8" id="sh0-Wt-wgf"/>
+                            <constraint firstItem="0s2-4N-esp" firstAttribute="leading" secondItem="O5l-GH-6Uj" secondAttribute="leading" id="wva-sU-vc2"/>
+                            <constraint firstAttribute="trailing" secondItem="AYU-Q6-wKF" secondAttribute="trailing" id="yX7-7B-L4m"/>
+                            <constraint firstItem="AYU-Q6-wKF" firstAttribute="top" secondItem="O5l-GH-6Uj" secondAttribute="top" id="z8y-YM-kUY"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="descriptionLabel" destination="0s2-4N-esp" id="wy7-a8-gze"/>
                         <outlet property="yalLabel" destination="AYU-Q6-wKF" id="ZMw-Io-u9V"/>
                     </connections>
                 </viewController>
