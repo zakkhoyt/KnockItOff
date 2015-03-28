@@ -966,7 +966,7 @@
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "637945d0-6b96-4e23-a889-a6c500329da3";
+				PROVISIONING_PROFILE = "b1f0cb21-7124-4993-9a0c-3aa3a2d29763";
 				SWIFT_OBJC_BRIDGING_HEADER = "KnockItOff/KnockItOff-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -1003,7 +1003,7 @@
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "637945d0-6b96-4e23-a889-a6c500329da3";
+				PROVISIONING_PROFILE = "b1f0cb21-7124-4993-9a0c-3aa3a2d29763";
 				SWIFT_OBJC_BRIDGING_HEADER = "KnockItOff/KnockItOff-Bridging-Header.h";
 				USER_HEADER_SEARCH_PATHS = "";
 			};

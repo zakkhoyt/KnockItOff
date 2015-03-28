@@ -43,7 +43,7 @@ class CurrentStatusViewController: UIViewController {
             self.refreshUI(self.refreshControl)
         }
         
-        refreshControl.addTarget(self, action: "refreshUI", forControlEvents: UIControlEvents.ValueChanged)
+        refreshControl.addTarget(self, action: "refreshUI:", forControlEvents: UIControlEvents.ValueChanged)
         tableView.addSubview(refreshControl)
         refreshUI(refreshControl)
     }
@@ -102,14 +102,18 @@ class CurrentStatusViewController: UIViewController {
             RKClient.sharedClient().linksInSubreddit(subreddit as RKSubreddit, category: RKSubredditCategory.Top, pagination: pagination, completion: { (posts: [AnyObject]!, page: RKPagination!, error:NSError!) -> Void in
                 if error == nil {
                     
-                    self.posts = posts as [RKLink]
-                    var indexPaths: [NSIndexPath] = []
-                    for index in 0..<posts.count {
-                        let post = posts[index] as RKLink
-                        let indexPath = NSIndexPath(forRow: index, inSection: CurrentStatusTableViewSection.Reddit.rawValue)
-                        indexPaths.append(indexPath)
+                    if self.posts.count == 0 {
+                        self.posts = posts as [RKLink]
+                        var indexPaths: [NSIndexPath] = []
+                        for index in 0..<posts.count {
+                            let post = posts[index] as RKLink
+                            let indexPath = NSIndexPath(forRow: index, inSection: CurrentStatusTableViewSection.Reddit.rawValue)
+                            indexPaths.append(indexPath)
+                        }
+                        self.tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: UITableViewRowAnimation.Automatic)
+                    } else {
+                        self.tableView.reloadData()
                     }
-                    self.tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: UITableViewRowAnimation.Automatic)
                 } else {
                     println("could not get subreddit links")
                 }

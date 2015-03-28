@@ -12,11 +12,12 @@
     * Help images for Home row
     * Create an about section
     * replace with onboarding flow
-        * 1.) Enter date of last drink
-        * 2.) Enter daily notification time
-        * 3.) Today tab description
-        * 4.) Home bar desription
-        * 5.) Come back often
+        * 1.) Enter date of last drink (date picker)
+        * 2.) Enter daily notification time (date picker)
+        * 3.) Today tab description (image)
+        * 4.) Home bar desription (image)
+        * 5.) Come back often (image)
+        * 6.) Reminder image (image)
 
 
 * Calendar screen

@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6gQ-Oa-wko">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -218,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WQG-ce-bAO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="716" y="1555"/>
+            <point key="canvasLocation" x="232" y="-1909"/>
         </scene>
         <!--Settings Table View Controller-->
         <scene sceneID="Uxh-xg-SFw">
@@ -432,6 +434,47 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="7.) Onboarding" id="UPQ-aN-VhO">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="KWl-OC-7Zh">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KWl-OC-7Zh" id="Z2e-XZ-hOO">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Onboarding" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plc-Ux-i0E">
+                                                    <rect key="frame" x="8" y="11" width="497" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rx3-nJ-bsg">
+                                                    <rect key="frame" x="513" y="8" width="46" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="46" id="1GO-od-bmS"/>
+                                                        <constraint firstAttribute="height" constant="30" id="HAB-xr-jEv"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="testButtonAction:" destination="jzs-Lw-ZdD" eventType="touchUpInside" id="dDS-t5-PGz"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="plc-Ux-i0E" firstAttribute="leading" secondItem="Z2e-XZ-hOO" secondAttribute="leadingMargin" id="2Em-Sk-9OT"/>
+                                                <constraint firstItem="rx3-nJ-bsg" firstAttribute="trailing" secondItem="Z2e-XZ-hOO" secondAttribute="trailingMargin" id="2d2-io-kOQ"/>
+                                                <constraint firstItem="rx3-nJ-bsg" firstAttribute="top" secondItem="Z2e-XZ-hOO" secondAttribute="topMargin" id="KBq-Kh-ieO"/>
+                                                <constraint firstItem="plc-Ux-i0E" firstAttribute="centerY" secondItem="Z2e-XZ-hOO" secondAttribute="centerY" id="VPX-US-6Qq"/>
+                                                <constraint firstItem="rx3-nJ-bsg" firstAttribute="leading" secondItem="plc-Ux-i0E" secondAttribute="trailing" constant="8" id="bi7-8N-LEq"/>
+                                                <constraint firstItem="plc-Ux-i0E" firstAttribute="baseline" secondItem="rx3-nJ-bsg" secondAttribute="baseline" id="grn-fo-0Qn"/>
+                                                <constraint firstItem="plc-Ux-i0E" firstAttribute="baseline" secondItem="rx3-nJ-bsg" secondAttribute="firstBaseline" id="uT4-PT-CwX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="jzs-Lw-ZdD" id="Sv9-13-7md"/>
@@ -451,7 +494,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pAp-RC-zRB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2588" y="490"/>
+            <point key="canvasLocation" x="-1056" y="1642"/>
         </scene>
         <!--About-->
         <scene sceneID="cA7-hy-1y8">
@@ -511,7 +554,7 @@ Built in real time chat based on CloudKit.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wa8-ha-LiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3493" y="878"/>
+            <point key="canvasLocation" x="-667" y="2854"/>
         </scene>
         <!--Date of Last Drink-->
         <scene sceneID="tne-QT-ifu">
@@ -553,7 +596,7 @@ Built in real time chat based on CloudKit.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3493" y="-61"/>
+            <point key="canvasLocation" x="-1489" y="2875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cSc-X8-R7r">
@@ -571,7 +614,7 @@ Built in real time chat based on CloudKit.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOy-NR-Q83" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1776" y="493"/>
+            <point key="canvasLocation" x="-1056" y="429"/>
         </scene>
         <!--/r/stopdrinking-->
         <scene sceneID="Jmr-Rg-gjY">
@@ -611,7 +654,7 @@ Built in real time chat based on CloudKit.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3me-At-ffC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2593" y="2416"/>
+            <point key="canvasLocation" x="1585" y="1568"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YQX-mI-dXI">
@@ -629,7 +672,7 @@ Built in real time chat based on CloudKit.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NGA-TF-3gD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1776" y="1595"/>
+            <point key="canvasLocation" x="232" y="435"/>
         </scene>
         <!--Chat-->
         <scene sceneID="HI0-kT-apU">
@@ -672,7 +715,7 @@ Built in real time chat based on CloudKit.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NuN-iP-80O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2593" y="1595"/>
+            <point key="canvasLocation" x="241" y="1531"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UeC-dI-Wc2">
@@ -690,7 +733,7 @@ Built in real time chat based on CloudKit.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZf-1b-24i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1791" y="2408"/>
+            <point key="canvasLocation" x="1511" y="392"/>
         </scene>
     </scenes>
     <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
