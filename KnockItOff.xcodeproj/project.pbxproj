@@ -30,6 +30,14 @@
 		CF9415BA1AC10A130011C06D /* DaysQuitStringTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9415B91AC10A130011C06D /* DaysQuitStringTableViewCell.swift */; };
 		CF9415BC1AC10AF40011C06D /* SavingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9415BB1AC10AF40011C06D /* SavingsTableViewCell.swift */; };
 		CF9415BF1AC118400011C06D /* TouchableUITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9415BE1AC118400011C06D /* TouchableUITextView.swift */; };
+		CF9C468C1ACB84A20077168A /* SettingsCostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9C468B1ACB84A20077168A /* SettingsCostViewController.swift */; };
+		CF9C468E1ACB84B30077168A /* SettingsLastDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9C468D1ACB84B30077168A /* SettingsLastDrinkViewController.swift */; };
+		CF9C46901ACB84D00077168A /* SettingsNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9C468F1ACB84D00077168A /* SettingsNotificationsViewController.swift */; };
+		CF9C46921ACB84DE0077168A /* SettingsTodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9C46911ACB84DE0077168A /* SettingsTodayViewController.swift */; };
+		CF9C46941ACB84EE0077168A /* SettingsHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9C46931ACB84EE0077168A /* SettingsHomeViewController.swift */; };
+		CF9C46961ACB85030077168A /* SettingsBackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9C46951ACB85030077168A /* SettingsBackgroundViewController.swift */; };
+		CFBFADB31ACB8F4900E9997B /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBFADB11ACB8F4900E9997B /* ImageCollectionViewCell.swift */; };
+		CFBFADB41ACB8F4900E9997B /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFBFADB21ACB8F4900E9997B /* ImageCollectionViewCell.xib */; };
 		CFCE94811ABE546900E1E947 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94801ABE546900E1E947 /* AppDelegate.swift */; };
 		CFCE94831ABE546900E1E947 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE94821ABE546900E1E947 /* DatePickerViewController.swift */; };
 		CFCE94861ABE546900E1E947 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCE94841ABE546900E1E947 /* Main.storyboard */; };
@@ -145,6 +153,14 @@
 		CF9415B91AC10A130011C06D /* DaysQuitStringTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysQuitStringTableViewCell.swift; sourceTree = "<group>"; };
 		CF9415BB1AC10AF40011C06D /* SavingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavingsTableViewCell.swift; sourceTree = "<group>"; };
 		CF9415BE1AC118400011C06D /* TouchableUITextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchableUITextView.swift; sourceTree = "<group>"; };
+		CF9C468B1ACB84A20077168A /* SettingsCostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCostViewController.swift; sourceTree = "<group>"; };
+		CF9C468D1ACB84B30077168A /* SettingsLastDrinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLastDrinkViewController.swift; sourceTree = "<group>"; };
+		CF9C468F1ACB84D00077168A /* SettingsNotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsNotificationsViewController.swift; sourceTree = "<group>"; };
+		CF9C46911ACB84DE0077168A /* SettingsTodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTodayViewController.swift; sourceTree = "<group>"; };
+		CF9C46931ACB84EE0077168A /* SettingsHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsHomeViewController.swift; sourceTree = "<group>"; };
+		CF9C46951ACB85030077168A /* SettingsBackgroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsBackgroundViewController.swift; sourceTree = "<group>"; };
+		CFBFADB11ACB8F4900E9997B /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		CFBFADB21ACB8F4900E9997B /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		CFCE947B1ABE546900E1E947 /* KnockItOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnockItOff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCE947F1ABE546900E1E947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFCE94801ABE546900E1E947 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -282,6 +298,7 @@
 				CF4C52801AC4F9D900FE2541 /* PostDetailsTableViewCell.xib */,
 				CF8E91CE1AC63F4900641FE5 /* Splash.storyboard */,
 				CF8C757A1AC64F6C00436F9C /* Settings.storyboard */,
+				CFBFADB21ACB8F4900E9997B /* ImageCollectionViewCell.xib */,
 			);
 			name = UserInterface;
 			sourceTree = "<group>";
@@ -331,6 +348,13 @@
 			children = (
 				CFE2440B1ABF6F01003044B0 /* SettingsTableViewController.swift */,
 				C62BDB4F1AC5ECA300FB6172 /* TimePickerTableViewCell.swift */,
+				CF9C468D1ACB84B30077168A /* SettingsLastDrinkViewController.swift */,
+				CF9C468B1ACB84A20077168A /* SettingsCostViewController.swift */,
+				CF9C468F1ACB84D00077168A /* SettingsNotificationsViewController.swift */,
+				CF9C46911ACB84DE0077168A /* SettingsTodayViewController.swift */,
+				CF9C46931ACB84EE0077168A /* SettingsHomeViewController.swift */,
+				CF9C46951ACB85030077168A /* SettingsBackgroundViewController.swift */,
+				CFBFADB11ACB8F4900E9997B /* ImageCollectionViewCell.swift */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -384,11 +408,11 @@
 		CFCE947D1ABE546900E1E947 /* KnockItOff */ = {
 			isa = PBXGroup;
 			children = (
-				C668C6991AC08CF300478BD6 /* ViewController */,
-				C668C69A1AC08D0000478BD6 /* UserInterface */,
-				CFCE947E1ABE546900E1E947 /* Supporting Files */,
-				C62BDB511AC6094A00FB6172 /* Scheduler */,
 				CF4C52781AC4EA8100FE2541 /* Documentation */,
+				C62BDB511AC6094A00FB6172 /* Scheduler */,
+				CFCE947E1ABE546900E1E947 /* Supporting Files */,
+				C668C69A1AC08D0000478BD6 /* UserInterface */,
+				C668C6991AC08CF300478BD6 /* ViewController */,
 			);
 			path = KnockItOff;
 			sourceTree = "<group>";
@@ -687,6 +711,7 @@
 				CF4C52811AC4F9D900FE2541 /* PostDetailsTableViewCell.xib in Resources */,
 				C63F1FA71AC36BEF007333B6 /* CommentTableViewCell.xib in Resources */,
 				CF8C757B1AC64F6C00436F9C /* Settings.storyboard in Resources */,
+				CFBFADB41ACB8F4900E9997B /* ImageCollectionViewCell.xib in Resources */,
 				CF8E91CF1AC63F4900641FE5 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -762,9 +787,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFE2440C1ABF6F01003044B0 /* SettingsTableViewController.swift in Sources */,
+				CFBFADB31ACB8F4900E9997B /* ImageCollectionViewCell.swift in Sources */,
 				CF9415BA1AC10A130011C06D /* DaysQuitStringTableViewCell.swift in Sources */,
 				CFE243C31ABE726C003044B0 /* CurrentStatusViewController.swift in Sources */,
+				CF9C46921ACB84DE0077168A /* SettingsTodayViewController.swift in Sources */,
 				C668C6A21AC0BA9100478BD6 /* HelpTableViewController.swift in Sources */,
+				CF9C468E1ACB84B30077168A /* SettingsLastDrinkViewController.swift in Sources */,
 				C668C6981AC08CED00478BD6 /* NotificationScheduler.swift in Sources */,
 				C62BDB501AC5ECA300FB6172 /* TimePickerTableViewCell.swift in Sources */,
 				CF9415BF1AC118400011C06D /* TouchableUITextView.swift in Sources */,
@@ -776,7 +804,11 @@
 				CF9415BC1AC10AF40011C06D /* SavingsTableViewCell.swift in Sources */,
 				CF8E91D41AC643C500641FE5 /* SplashViewController.swift in Sources */,
 				CFCE94831ABE546900E1E947 /* DatePickerViewController.swift in Sources */,
+				CF9C46961ACB85030077168A /* SettingsBackgroundViewController.swift in Sources */,
+				CF9C468C1ACB84A20077168A /* SettingsCostViewController.swift in Sources */,
+				CF9C46941ACB84EE0077168A /* SettingsHomeViewController.swift in Sources */,
 				CFFDF8391AC0FCBE00241A04 /* TimeQuitImageTableViewCell.swift in Sources */,
+				CF9C46901ACB84D00077168A /* SettingsNotificationsViewController.swift in Sources */,
 				CF4C527A1AC4EB9500FE2541 /* AboutViewController.swift in Sources */,
 				CFCE94811ABE546900E1E947 /* AppDelegate.swift in Sources */,
 			);

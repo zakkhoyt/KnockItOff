@@ -43,6 +43,40 @@ static NSString *VWWStartDateKey = @"startDate";
     [self.defaults synchronize];
 }
 
+static NSString *VWWPricePerDayDateKey = @"pricePerDay";
+-(NSUInteger)pricePerDay{
+    NSNumber *number = [self.defaults objectForKey:VWWPricePerDayDateKey];
+    if(number) {
+        return number.unsignedIntegerValue;
+    } else {
+        return 999;
+    }
+}
+-(void)setPricePerDay:(NSUInteger)pricePerDay{
+    [self.defaults setObject:@(pricePerDay) forKey:VWWPricePerDayDateKey];
+    [self.defaults synchronize];
+}
+
+static NSString *VWWBeveragesPerDayDateKey = @"beveragesPerDay";
+-(NSUInteger)beveragesPerDay {
+    NSNumber *number = [self.defaults objectForKey:VWWBeveragesPerDayDateKey];
+    if(number) {
+        return number.floatValue;
+    } else {
+        return 6;
+    }
+}
+
+-(void)setBeveragesPerDay:(NSUInteger)beveragesPerDay{
+    [self.defaults setObject:@(beveragesPerDay) forKey:VWWBeveragesPerDayDateKey];
+    [self.defaults synchronize];
+}
+
+
+
+
+
+
 #pragma mark AlarmTime
 static NSString *VWWLocalNotificationsKey = @"localNotifications";
 -(BOOL)localNotifications{

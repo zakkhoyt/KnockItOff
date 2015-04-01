@@ -15,11 +15,20 @@
 -(NSDate*)startDate;
 -(void)setStartDate:(NSDate*)date;
 
+-(NSUInteger)pricePerDay;
+-(void)setPricePerDay:(NSUInteger)pricePerDay;
+
+-(NSUInteger)beveragesPerDay;
+-(void)setBeveragesPerDay:(NSUInteger)beveragesPerDay;
+
 -(BOOL)localNotifications;
 -(void)setLocalNotifications:(BOOL)localNotifications;
 
 -(NSDate*)alarmTime;
 -(void)setAlarmTime:(NSDate*)alarmTime;
+
+
+
 
 -(Summary*)summary;
 

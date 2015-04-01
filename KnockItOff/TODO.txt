@@ -13,6 +13,7 @@
     * Create an about section
     * replace with onboarding flow
         * 1.) Enter date of last drink (date picker)
+        * 2.) Cost
         * 2.) Enter daily notification time (date picker)
         * 3.) Today tab description (image)
         * 4.) Home bar desription (image)
