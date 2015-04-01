@@ -47,14 +47,17 @@ static NSString *VWWPricePerDayDateKey = @"pricePerDay";
 -(NSUInteger)pricePerDay{
     NSNumber *number = [self.defaults objectForKey:VWWPricePerDayDateKey];
     if(number) {
+        NSLog(@"pricePerDay: %lu", (unsigned long)number.unsignedIntegerValue);
         return number.unsignedIntegerValue;
     } else {
+        NSLog(@"pricePerDay: 999 (default)");
         return 999;
     }
 }
 -(void)setPricePerDay:(NSUInteger)pricePerDay{
     [self.defaults setObject:@(pricePerDay) forKey:VWWPricePerDayDateKey];
     [self.defaults synchronize];
+    NSLog(@"setPricePerDay: %lu", (unsigned long)pricePerDay);
 }
 
 static NSString *VWWBeveragesPerDayDateKey = @"beveragesPerDay";

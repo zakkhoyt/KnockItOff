@@ -134,7 +134,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Wp-5y-hDc">
                                 <rect key="frame" x="0.0" y="219" width="600" height="162"/>
                                 <subviews>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="999" maximumValue="10000" stepValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="eNY-s6-U09">
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1000" maximumValue="10000" stepValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="eNY-s6-U09">
                                         <rect key="frame" x="253" y="37" width="94" height="29"/>
                                         <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>

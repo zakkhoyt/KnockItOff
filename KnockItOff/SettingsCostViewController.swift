@@ -17,17 +17,20 @@ class SettingsCostViewController: UIViewController {
     @IBOutlet weak var priceStepper: UIStepper!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let p: UInt = KnockItOffPersistant.sharedInstance().pricePerDay()
-        priceStepper?.value = Double(p)
-        costLabel?.text = NSString(format: "%.2f spent daily", p / 100.0)
+        super.viewDidLoad()        
+    }
 
+    override func viewWillAppear(animated: Bool) {
+        var p: UInt = KnockItOffPersistant.sharedInstance().pricePerDay()
+        priceStepper?.value = Double(p)
+        let f: Float = Float(p) / 100.0
+        costLabel?.text = NSString(format: "%.2f spent daily", f)
+        
         let b = KnockItOffPersistant.sharedInstance().beveragesPerDay()
         beveragesStepper?.value = Double(b)
         beveragesLabel?.text = NSString(format: "%lu beverages daily", b)
+        
     }
-
     
     
     @IBAction func priceStepperValueChanged(sender: UIStepper) {
@@ -37,8 +40,9 @@ class SettingsCostViewController: UIViewController {
     }
 
     @IBAction func beveragesStepperValueChanged(sender: UIStepper) {
-        beveragesLabel?.text = NSString(format: "%lu beverages daily", sender.value)
-        KnockItOffPersistant.sharedInstance().setBeveragesPerDay(UInt(sender.value))
+        let b = UInt(sender.value)
+        beveragesLabel?.text = NSString(format: "%lu beverages daily", b)
+        KnockItOffPersistant.sharedInstance().setBeveragesPerDay(b)
     }
 
 }
