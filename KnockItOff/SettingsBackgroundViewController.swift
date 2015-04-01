@@ -7,29 +7,62 @@
 //
 
 import UIKit
+import AssetsLibrary
 
 class SettingsBackgroundViewController: UIViewController {
-
+    
+    let library = ALAssetsLibrary()
+    @IBOutlet weak var promptButton: UIButton!
+    @IBOutlet weak var chooseButton: UIButton!
+    @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var nextButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        nextButton.hidden = true;
+        
+        let status: ALAuthorizationStatus = ALAssetsLibrary.authorizationStatus()
+        
+        switch status{
+        case .NotDetermined:
+            self.chooseButton.hidden = true
+            self.promptButton.hidden = false
+            self.errorLabel.hidden = true
+            self.nextButton.hidden = false
+        case .Restricted:
+            self.chooseButton.hidden = true
+            self.promptButton.hidden = true
+            self.errorLabel.hidden = false
+            self.nextButton.hidden = false
+        case .Denied:
+            self.chooseButton.hidden = true
+            self.promptButton.hidden = true
+            self.errorLabel.hidden = false
+            self.nextButton.hidden = false
+        case .Authorized:
+            self.chooseButton.hidden = false
+            self.promptButton.hidden = true
+            self.errorLabel.hidden = true
+            self.nextButton.hidden = false
+        }
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func promptButtonTouchUpinside(sender: AnyObject) {
+        library.enumerateGroupsWithTypes(ALAssetsGroupSavedPhotos, usingBlock: { (group, stop) -> Void in
+            self.chooseButton.hidden = false
+            self.promptButton.hidden = true
+            self.errorLabel.hidden = true
+            
+            }, failureBlock: { (error) -> Void in
+                self.chooseButton.hidden = true
+                self.promptButton.hidden = true
+                self.errorLabel.hidden = false
+        })
     }
-    */
-
+    
+    
+    @IBAction func choosePhotoButtonTouchUpInside(sender: AnyObject) {
+    }
 }

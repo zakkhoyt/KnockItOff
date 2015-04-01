@@ -9,27 +9,38 @@
 import UIKit
 
 class SettingsHomeViewController: UIViewController {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    let ImageCollectionViewCellKey = "ImageCollectionViewCell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let nib = UINib(nibName: ImageCollectionViewCellKey, bundle:nil)
+        collectionView?.registerNib(nib, forCellWithReuseIdentifier:  ImageCollectionViewCellKey)
+        collectionView?.backgroundColor = UIColor.clearColor()
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+extension SettingsHomeViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 2
     }
-    */
-
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ImageCollectionViewCellKey, forIndexPath: indexPath) as ImageCollectionViewCell
+        let imageName = NSString(format: "home_%1", indexPath.item)
+        cell.imageView.image = UIImage(named: imageName)
+        return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        return collectionView.bounds.size
+    }
 }

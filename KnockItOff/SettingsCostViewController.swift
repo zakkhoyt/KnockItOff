@@ -24,7 +24,7 @@ class SettingsCostViewController: UIViewController {
         var p: UInt = KnockItOffPersistant.sharedInstance().pricePerDay()
         priceStepper?.value = Double(p)
         let f: Float = Float(p) / 100.0
-        costLabel?.text = NSString(format: "%.2f spent daily", f)
+        costLabel?.text = NSString(format: "$%.2f spent daily", f)
         
         let b = KnockItOffPersistant.sharedInstance().beveragesPerDay()
         beveragesStepper?.value = Double(b)
@@ -35,7 +35,7 @@ class SettingsCostViewController: UIViewController {
     
     @IBAction func priceStepperValueChanged(sender: UIStepper) {
         let f: Float = Float(sender.value);
-        costLabel?.text = NSString(format: "%.2f spent daily", f / 100)
+        costLabel?.text = NSString(format: "$%.2f spent daily", f / 100)
         KnockItOffPersistant.sharedInstance().setPricePerDay(UInt(f))
     }
 

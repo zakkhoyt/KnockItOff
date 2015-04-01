@@ -51,7 +51,7 @@ static NSString *VWWPricePerDayDateKey = @"pricePerDay";
         return number.unsignedIntegerValue;
     } else {
         NSLog(@"pricePerDay: 999 (default)");
-        return 999;
+        return 1000; // $10.00
     }
 }
 -(void)setPricePerDay:(NSUInteger)pricePerDay{

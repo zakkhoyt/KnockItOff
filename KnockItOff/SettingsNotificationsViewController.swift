@@ -10,26 +10,48 @@ import UIKit
 
 class SettingsNotificationsViewController: UIViewController {
 
+    @IBOutlet weak var successLabel: UILabel!
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var promptButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        
+        let status: UIUserNotificationSettings? = UIApplication.sharedApplication().currentUserNotificationSettings()
+        let types = status?.types
+
+//        if UIApplication.sharedApplication().enabledRemoteNotificationTypes() {
+//            println("already got notification permission")
+//            promptButton?.hidden = true
+//            nextButton?.hidden = false
+//            successLabel?.hidden = false
+//            
+//        } else {
+//            println("none. Display notifiation permissions")
+//            promptButton?.hidden = false
+//            nextButton?.hidden = true
+//            successLabel?.hidden = true
+//        }
+        if types == UIUserNotificationType.None {
+            println("none. Display notifiation permissions")
+            promptButton?.hidden = false
+            nextButton?.hidden = true
+            successLabel?.hidden = true
+        } else {
+            println("already got notification permission")
+            promptButton?.hidden = true
+            nextButton?.hidden = false
+            successLabel?.hidden = false
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func promptButtonTouchUpInside(sender: AnyObject) {
+        let status: UIUserNotificationSettings? = UIApplication.sharedApplication().currentUserNotificationSettings()
+        UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil))
+        
+        successLabel?.hidden = false
+        promptButton?.hidden = true
+        nextButton?.hidden = false
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -19,6 +19,7 @@ class SettingsTodayViewController: UIViewController {
         super.viewDidLoad()
         let nib = UINib(nibName: ImageCollectionViewCellKey, bundle:nil)
         collectionView?.registerNib(nib, forCellWithReuseIdentifier:  ImageCollectionViewCellKey)
+        collectionView?.backgroundColor = UIColor.clearColor()
     }
 }
 
@@ -40,7 +41,6 @@ extension SettingsTodayViewController: UICollectionViewDataSource, UICollectionV
         cell.imageView.image = UIImage(named: imageName)
         return cell
     }
-    
 
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return collectionView.bounds.size

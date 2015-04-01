@@ -251,6 +251,9 @@
                                         <state key="normal" title="Prompt Me">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="promptButtonTouchUpInside:" destination="k5w-ds-mLu" eventType="touchUpInside" id="r4y-Ow-RWV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -260,6 +263,15 @@
                                     <constraint firstAttribute="centerY" secondItem="qzW-JM-OZ4" secondAttribute="centerY" id="RnI-Hu-MOw"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have already given permission for notifications." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ou3-09-PNj">
+                                <rect key="frame" x="16" y="279" width="568" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Re8-1c-QOZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -269,16 +281,24 @@
                             <constraint firstItem="Oq0-k3-bZ3" firstAttribute="top" secondItem="JoQ-yB-C0M" secondAttribute="bottom" constant="8" id="DIr-tK-c22"/>
                             <constraint firstItem="gGa-bN-3RW" firstAttribute="top" secondItem="v4L-HX-mZx" secondAttribute="bottom" constant="20" id="EGj-2v-elf"/>
                             <constraint firstAttribute="centerX" secondItem="1Vr-aO-oAR" secondAttribute="centerX" id="Fwk-HO-hKK"/>
+                            <constraint firstItem="ou3-09-PNj" firstAttribute="leading" secondItem="7Dl-N8-YYL" secondAttribute="leadingMargin" id="Ilo-tu-nek"/>
                             <constraint firstItem="v4L-HX-mZx" firstAttribute="top" secondItem="1Vr-aO-oAR" secondAttribute="bottom" constant="8" id="K2j-Cx-Gcr"/>
+                            <constraint firstAttribute="centerY" secondItem="ou3-09-PNj" secondAttribute="centerY" id="czZ-89-Cau"/>
                             <constraint firstItem="v4L-HX-mZx" firstAttribute="leading" secondItem="7Dl-N8-YYL" secondAttribute="leadingMargin" id="elo-yp-u2B"/>
                             <constraint firstItem="v4L-HX-mZx" firstAttribute="trailing" secondItem="7Dl-N8-YYL" secondAttribute="trailingMargin" id="ki1-aY-A41"/>
                             <constraint firstItem="JoQ-yB-C0M" firstAttribute="leading" secondItem="7Dl-N8-YYL" secondAttribute="leadingMargin" id="lbP-M8-3yd"/>
                             <constraint firstItem="JoQ-yB-C0M" firstAttribute="top" secondItem="D7E-K9-fvk" secondAttribute="bottom" id="rm5-8e-ZeR"/>
                             <constraint firstItem="Oq0-k3-bZ3" firstAttribute="leading" secondItem="7Dl-N8-YYL" secondAttribute="leading" id="uan-8o-DZ4"/>
                             <constraint firstAttribute="centerX" secondItem="Oq0-k3-bZ3" secondAttribute="centerX" id="vmb-Ho-tT2"/>
+                            <constraint firstItem="ou3-09-PNj" firstAttribute="trailing" secondItem="7Dl-N8-YYL" secondAttribute="trailingMargin" id="wri-Pv-io9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9r3-23-59C"/>
+                    <connections>
+                        <outlet property="nextButton" destination="v4L-HX-mZx" id="4Uk-71-MaC"/>
+                        <outlet property="promptButton" destination="qzW-JM-OZ4" id="Ion-1i-c7L"/>
+                        <outlet property="successLabel" destination="ou3-09-PNj" id="FgU-BD-1T6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lVu-qk-KRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -394,7 +414,7 @@
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" currentPage="4" translatesAutoresizingMaskIntoConstraints="NO" id="4NP-kj-QmX">
                                 <rect key="frame" x="257" y="471" width="87" height="37"/>
                             </pageControl>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PI6-xk-EHq">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PI6-xk-EHq">
                                 <rect key="frame" x="186" y="57" width="228" height="406"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="PI6-xk-EHq" secondAttribute="height" multiplier="114:203" id="czI-DE-zCX"/>
@@ -406,6 +426,10 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BDS-ee-l9m" id="PkQ-F0-L9V"/>
+                                    <outlet property="delegate" destination="BDS-ee-l9m" id="c7M-Qc-IGN"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -424,6 +448,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="25C-WA-QoK"/>
+                    <connections>
+                        <outlet property="collectionView" destination="PI6-xk-EHq" id="jEA-Wq-jH0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vOj-fO-X4y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -469,6 +496,9 @@
                                         <state key="normal" title="Choose a photo">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="choosePhotoButtonTouchUpInside:" destination="pB8-rU-JO1" eventType="touchUpInside" id="dgG-N5-2eN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umP-Ds-9yg">
                                         <rect key="frame" x="264" y="36" width="80" height="30"/>
@@ -476,7 +506,16 @@
                                         <state key="normal" title="Prompt me!">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="promptButtonTouchUpinside:" destination="pB8-rU-JO1" eventType="touchUpInside" id="XHE-P9-dZC"/>
+                                        </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have denied access to your photo library. You can change this in iOS Settings." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwc-Bx-NLf">
+                                        <rect key="frame" x="8" y="8" width="593" height="146"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -484,7 +523,11 @@
                                     <constraint firstItem="umP-Ds-9yg" firstAttribute="top" secondItem="rNZ-uq-bGS" secondAttribute="top" constant="36" id="98C-6y-lp0"/>
                                     <constraint firstItem="uzp-25-NLy" firstAttribute="top" secondItem="umP-Ds-9yg" secondAttribute="bottom" constant="8" id="Kbr-wS-P9i"/>
                                     <constraint firstAttribute="centerX" secondItem="uzp-25-NLy" secondAttribute="centerX" id="L9u-sL-uYo"/>
+                                    <constraint firstAttribute="trailing" secondItem="bwc-Bx-NLf" secondAttribute="trailing" constant="8" id="YkE-xe-iXE"/>
+                                    <constraint firstItem="bwc-Bx-NLf" firstAttribute="top" secondItem="rNZ-uq-bGS" secondAttribute="top" constant="8" id="ZOX-4g-uXj"/>
                                     <constraint firstAttribute="centerX" secondItem="umP-Ds-9yg" secondAttribute="centerX" id="aMD-8H-PDA"/>
+                                    <constraint firstItem="bwc-Bx-NLf" firstAttribute="leading" secondItem="rNZ-uq-bGS" secondAttribute="leading" constant="8" id="dia-2e-oiG"/>
+                                    <constraint firstAttribute="bottom" secondItem="bwc-Bx-NLf" secondAttribute="bottom" constant="8" id="fsx-uJ-pIO"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -506,6 +549,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="b36-jJ-hDt"/>
+                    <connections>
+                        <outlet property="chooseButton" destination="uzp-25-NLy" id="x4U-lV-QCY"/>
+                        <outlet property="errorLabel" destination="bwc-Bx-NLf" id="zWx-na-vs1"/>
+                        <outlet property="nextButton" destination="OH5-fd-qe0" id="xLh-4T-hZm"/>
+                        <outlet property="promptButton" destination="umP-Ds-9yg" id="1b3-Xb-sHg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VKf-cK-gls" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
