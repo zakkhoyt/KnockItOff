@@ -255,12 +255,24 @@
                                             <action selector="promptButtonTouchUpInside:" destination="k5w-ds-mLu" eventType="touchUpInside" id="r4y-Ow-RWV"/>
                                         </connections>
                                     </button>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="YXL-0a-4dJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="162"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="162" id="aSZ-Xp-hKu"/>
+                                        </constraints>
+                                        <date key="date" timeIntervalSinceReferenceDate="449638643.25644898">
+                                            <!--2015-04-02 03:37:23 +0000-->
+                                        </date>
+                                    </datePicker>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="YXL-0a-4dJ" secondAttribute="trailing" id="2OH-fB-flX"/>
                                     <constraint firstAttribute="centerX" secondItem="qzW-JM-OZ4" secondAttribute="centerX" id="8qF-d1-K7j"/>
+                                    <constraint firstItem="YXL-0a-4dJ" firstAttribute="leading" secondItem="Oq0-k3-bZ3" secondAttribute="leading" id="IHc-8N-qj7"/>
                                     <constraint firstAttribute="height" constant="162" id="LYd-8X-3fq"/>
                                     <constraint firstAttribute="centerY" secondItem="qzW-JM-OZ4" secondAttribute="centerY" id="RnI-Hu-MOw"/>
+                                    <constraint firstAttribute="centerY" secondItem="YXL-0a-4dJ" secondAttribute="centerY" id="T6q-01-W4c"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have already given permission for notifications." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ou3-09-PNj">
@@ -295,6 +307,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="9r3-23-59C"/>
                     <connections>
+                        <outlet property="datePicker" destination="YXL-0a-4dJ" id="zaV-6r-0qO"/>
                         <outlet property="nextButton" destination="v4L-HX-mZx" id="4Uk-71-MaC"/>
                         <outlet property="promptButton" destination="qzW-JM-OZ4" id="Ion-1i-c7L"/>
                         <outlet property="successLabel" destination="ou3-09-PNj" id="FgU-BD-1T6"/>
