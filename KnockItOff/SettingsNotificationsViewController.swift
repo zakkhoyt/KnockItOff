@@ -17,14 +17,18 @@ class SettingsNotificationsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        let status: UIUserNotificationSettings? = UIApplication.sharedApplication().currentUserNotificationSettings()
-//        let types = status?.types
-
-
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
-        let status: NotificationStatus = appDelegate.notificationStatus
-        
+        updateControls(appDelegate.notificationStatus)
+    }
+    
+    @IBAction func promptButtonTouchUpInside(sender: AnyObject) {
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        appDelegate.promptForNotifcations { (status) -> (Void) in
+            self.updateControls(status)
+        }
+    }
+    
+    func updateControls(status: NotificationStatus) {
         switch status {
         case .NotPrompted:
             println("Not Prompted")
@@ -32,14 +36,14 @@ class SettingsNotificationsViewController: UIViewController {
             nextButton?.hidden = true
             successLabel?.hidden = true
             datePicker?.hidden = true
-
+            
         case .Authorized:
             println("Authorized")
             promptButton?.hidden = true
             nextButton?.hidden = false
-            successLabel?.hidden = false
+            successLabel?.hidden = true
             datePicker?.hidden = false
-
+            
         case .Denied:
             println("Denied")
             promptButton?.hidden = true
@@ -47,23 +51,6 @@ class SettingsNotificationsViewController: UIViewController {
             successLabel?.hidden = false
             datePicker?.hidden = true
         }
-    }
-    
-    @IBAction func promptButtonTouchUpInside(sender: AnyObject) {
-        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
-        appDelegate.promptForNotifcations { (status) -> (Void) in
-            switch status {
-            case .NotPrompted:
-                println("Not Prompted")
-            case .Authorized:
-                println("Authorized")
-            case .Denied:
-                println("Denied")
-            }
-        }
-        
-//        successLabel?.hidden = false
-//        promptButton?.hidden = true
-//        nextButton?.hidden = false
+
     }
 }

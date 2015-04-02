@@ -255,7 +255,7 @@
                                             <action selector="promptButtonTouchUpInside:" destination="k5w-ds-mLu" eventType="touchUpInside" id="r4y-Ow-RWV"/>
                                         </connections>
                                     </button>
-                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="YXL-0a-4dJ">
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="YXL-0a-4dJ">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="162"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="162" id="aSZ-Xp-hKu"/>
@@ -275,7 +275,7 @@
                                     <constraint firstAttribute="centerY" secondItem="YXL-0a-4dJ" secondAttribute="centerY" id="T6q-01-W4c"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have already given permission for notifications." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ou3-09-PNj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have denied permission to send you daily notifications. You can change this in iOS Settings." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ou3-09-PNj">
                                 <rect key="frame" x="16" y="279" width="568" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="Re8-1c-QOZ"/>
