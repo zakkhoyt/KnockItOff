@@ -75,11 +75,6 @@ static NSString *VWWBeveragesPerDayDateKey = @"beveragesPerDay";
     [self.defaults synchronize];
 }
 
-
-
-
-
-
 #pragma mark AlarmTime
 static NSString *VWWLocalNotificationsKey = @"localNotifications";
 -(BOOL)localNotifications{
@@ -90,7 +85,14 @@ static NSString *VWWLocalNotificationsKey = @"localNotifications";
     [self.defaults synchronize];
 }
 
-
+static NSString *VWWHasPromptedNotificationsKey = @"hasPromptedNotifications";
+-(BOOL)hasPromptedNotifications{
+    return [self.defaults boolForKey:VWWHasPromptedNotificationsKey];
+}
+-(void)setHasPromptedNotifications:(BOOL)hasPromptedNotifications{
+    [self.defaults setBool:hasPromptedNotifications forKey:VWWHasPromptedNotificationsKey];
+    [self.defaults synchronize];
+}
 
 static NSString *VWWAlarmTimeKey = @"alarmTime";
 -(NSDate*)alarmTime{
@@ -101,8 +103,6 @@ static NSString *VWWAlarmTimeKey = @"alarmTime";
     [self.defaults setObject:alarmTime forKey:VWWAlarmTimeKey];
     [self.defaults synchronize];
 }
-
-
 
 #pragma mark Summary
 -(Summary*)summary{

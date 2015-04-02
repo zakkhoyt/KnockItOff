@@ -33,11 +33,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIToolbar.appearance().barTintColor = UIColor.darkGrayColor()
         UIToolbar.appearance().tintColor = UIColor.yellowColor()
         
+        if KnockItOffPersistant.sharedInstance().hasPromptedNotifications() == true {
+            promptForNotifcations({ (status) -> (Void) in
+                
+            })
+        }
+        
         return true
     }
 
     func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
         println("did register user notifications")
+        KnockItOffPersistant.sharedInstance().setHasPromptedNotifications(true)
         if notificationSettings.types == .None {
             notificationStatus = .Denied
         } else {

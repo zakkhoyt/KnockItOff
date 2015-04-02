@@ -24,6 +24,9 @@
 -(BOOL)localNotifications;
 -(void)setLocalNotifications:(BOOL)localNotifications;
 
+-(BOOL)hasPromptedNotifications;
+-(void)setHasPromptedNotifications:(BOOL)hasPromptedNotifications;
+
 -(NSDate*)alarmTime;
 -(void)setAlarmTime:(NSDate*)alarmTime;
 

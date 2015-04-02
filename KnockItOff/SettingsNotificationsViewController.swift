@@ -53,4 +53,10 @@ class SettingsNotificationsViewController: UIViewController {
         }
 
     }
+    
+    @IBAction func datePickerValueChanged(sender: UIDatePicker) {
+        KnockItOffPersistant.sharedInstance().setLocalNotifications(true)
+        KnockItOffPersistant.sharedInstance().setAlarmTime(sender.date)
+    }
+    
 }

@@ -263,6 +263,9 @@
                                         <date key="date" timeIntervalSinceReferenceDate="449638643.25644898">
                                             <!--2015-04-02 03:37:23 +0000-->
                                         </date>
+                                        <connections>
+                                            <action selector="datePickerValueChanged:" destination="k5w-ds-mLu" eventType="valueChanged" id="Mog-pH-fKu"/>
+                                        </connections>
                                     </datePicker>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
