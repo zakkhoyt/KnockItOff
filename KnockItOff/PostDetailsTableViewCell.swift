@@ -45,7 +45,7 @@ class PostDetailsTableViewCell: UITableViewCell {
                 NSForegroundColorAttributeName : UIColor.whiteColor(),
                 NSFontAttributeName: UIFont.systemFontOfSize(22)]
             let str1 = NSString(format: "%@\n", post!.title)
-            attrString.appendAttributedString(NSAttributedString(string: str1))
+            attrString.appendAttributedString(NSAttributedString(string: str1 as String))
             attrString.setAttributes(attr1, range: NSMakeRange(insertPoint, str1.length))
             insertPoint += str1.length
             
@@ -53,7 +53,7 @@ class PostDetailsTableViewCell: UITableViewCell {
                 NSForegroundColorAttributeName : UIColor.whiteColor(),
                 NSFontAttributeName: UIFont.systemFontOfSize(15)]
             let str2 = NSString(format: "\n%@\n", post!.selfText)
-            attrString.appendAttributedString(NSAttributedString(string: str2))
+            attrString.appendAttributedString(NSAttributedString(string: str2 as String))
             attrString.setAttributes(attr2, range: NSMakeRange(insertPoint, str2.length))
             insertPoint += str2.length
             
@@ -61,7 +61,7 @@ class PostDetailsTableViewCell: UITableViewCell {
                 NSForegroundColorAttributeName : UIColor.lightGrayColor(),
                 NSFontAttributeName: UIFont.italicSystemFontOfSize(18)]
             let str3 = NSString(format: "\n-%@\n", post!.author)
-            attrString.appendAttributedString(NSAttributedString(string: str3))
+            attrString.appendAttributedString(NSAttributedString(string: str3 as String))
             attrString.setAttributes(attr3, range: NSMakeRange(insertPoint, str3.length))
             insertPoint += str3.length
             

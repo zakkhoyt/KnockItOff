@@ -19,7 +19,7 @@ class TouchableUITextView: UITextView {
     var touchDelegate: TouchableUITextViewDelegate? = nil
     
 
-    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         touchDelegate?.touchesEnded()
     }
 }

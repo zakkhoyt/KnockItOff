@@ -65,4 +65,12 @@ class SettingsBackgroundViewController: UIViewController {
     
     @IBAction func choosePhotoButtonTouchUpInside(sender: AnyObject) {
     }
+    
+    @IBAction func nextButtonTouchUpInsde(sender: AnyObject) {
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        let vc: UIViewController! = storyboard.instantiateViewControllerWithIdentifier("CurrentStatusViewController") as! CurrentStatusViewController
+        presentViewController(vc, animated: true) { () -> Void in
+            
+        }
+    }
 }

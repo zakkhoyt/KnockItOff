@@ -34,9 +34,9 @@ extension SettingsHomeViewController: UICollectionViewDataSource, UICollectionVi
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ImageCollectionViewCellKey, forIndexPath: indexPath) as ImageCollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ImageCollectionViewCellKey, forIndexPath: indexPath) as! ImageCollectionViewCell
         let imageName = NSString(format: "home_%1", indexPath.item)
-        cell.imageView.image = UIImage(named: imageName)
+        cell.imageView.image = UIImage(named: imageName as String)
         return cell
     }
     

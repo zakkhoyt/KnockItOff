@@ -75,7 +75,7 @@ class SettingsTableViewController: UITableViewController {
     
     @IBAction func testButtonAction(sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Settings", bundle: NSBundle.mainBundle())
-        let vc = storyboard.instantiateInitialViewController() as UIViewController
+        let vc = storyboard.instantiateInitialViewController() as! UIViewController
         presentViewController(vc, animated: true, completion: nil)        
     }
     

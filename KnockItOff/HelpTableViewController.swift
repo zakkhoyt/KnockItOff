@@ -18,7 +18,7 @@ class HelpTableViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == SegueHelpToWeb {
-            let vc = segue.destinationViewController as WebViewController
+            let vc = segue.destinationViewController as! WebViewController
             let url = sender as? NSURL
             vc.url = url
         }

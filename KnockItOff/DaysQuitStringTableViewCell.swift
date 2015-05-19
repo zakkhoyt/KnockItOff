@@ -29,7 +29,7 @@ class DaysQuitStringTableViewCell: UITableViewCell {
                     NSFontAttributeName: UIFont.systemFontOfSize(32)]
                 
                 let str1 = NSString(format: "\n%@ ", summary!.daysQuitString)
-                attrString.appendAttributedString(NSAttributedString(string: str1))
+                attrString.appendAttributedString(NSAttributedString(string: str1 as String))
                 attrString.setAttributes(attr1, range: NSMakeRange(insertPoint, str1.length))
                 insertPoint += str1.length
                 
@@ -37,7 +37,7 @@ class DaysQuitStringTableViewCell: UITableViewCell {
                     NSForegroundColorAttributeName : UIColor.darkTextColor(),
                     NSFontAttributeName: UIFont.systemFontOfSize(24)]
                 let str2 = NSString(format: "(%@)\n", summary!.startDateString)
-                attrString.appendAttributedString(NSAttributedString(string: str2))
+                attrString.appendAttributedString(NSAttributedString(string: str2 as String))
                 attrString.setAttributes(attr2, range: NSMakeRange(insertPoint, str2.length))
                 insertPoint += str2.length
                 

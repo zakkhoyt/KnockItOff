@@ -25,7 +25,7 @@ class SavingsTableViewCell: UITableViewCell {
                 summary!.beersSaved.unsignedIntegerValue,
                 summary!.moneySaved.unsignedIntegerValue,
                 summary!.caloriesSaved.unsignedIntegerValue)
-            attrString.appendAttributedString(NSAttributedString(string: str1))
+            attrString.appendAttributedString(NSAttributedString(string: str1 as String))
             attrString.setAttributes(attr1, range: NSMakeRange(insertPoint, str1.length))
             insertPoint += str1.length
 

@@ -59,8 +59,8 @@ class CommentTableViewCell: UITableViewCell {
 
         }
         
-        userLabel.text = NSString(format: "%@", comment!.author)
-        votesLabel.text = NSString(format: "+%lu", comment!.score)
+        userLabel.text = NSString(format: "%@", comment!.author) as String
+        votesLabel.text = NSString(format: "+%lu", comment!.score) as String
         
         //            ▶︎
         //            ▲

@@ -17,12 +17,12 @@ class SettingsNotificationsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         updateControls(appDelegate.notificationStatus)
     }
     
     @IBAction func promptButtonTouchUpInside(sender: AnyObject) {
-        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         appDelegate.promptForNotifcations { (status) -> (Void) in
             self.updateControls(status)
         }

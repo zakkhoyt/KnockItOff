@@ -80,7 +80,7 @@ class SplashViewController: UIViewController {
         let popTime = dispatch_time(DISPATCH_TIME_NOW, 5 * Int64(NSEC_PER_SEC))
         dispatch_after(popTime, dispatch_get_main_queue()) { () -> Void in
             let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-            let vc = storyboard.instantiateInitialViewController() as UIViewController
+            let vc = storyboard.instantiateInitialViewController() as! UIViewController
             vc.modalTransitionStyle = .CrossDissolve
             self.presentViewController(vc, animated: true) { () -> Void in
             }

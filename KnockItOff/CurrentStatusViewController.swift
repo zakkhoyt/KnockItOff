@@ -67,12 +67,12 @@ class CurrentStatusViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == SegueMainToPost {
-            let nc = segue.destinationViewController as UINavigationController
-            let vc = nc.viewControllers[0] as RedditPostViewController
+            let nc = segue.destinationViewController as! UINavigationController
+            let vc = nc.viewControllers[0] as! RedditPostViewController
             vc.post = sender as? RKLink
         } else if segue.identifier == SegueMainToChat {
-            let nc = segue.destinationViewController as UINavigationController
-            let vc = nc.viewControllers[0] as WebViewController
+            let nc = segue.destinationViewController as! UINavigationController
+            let vc = nc.viewControllers[0] as! WebViewController
             vc.url = sender as? NSURL
         }
     }
@@ -99,14 +99,14 @@ class CurrentStatusViewController: UIViewController {
     func reddit(){
         RKClient.sharedClient().subredditWithName("stopdrinking", completion: { (subreddit, error) -> Void in
             let pagination = RKPagination()
-            RKClient.sharedClient().linksInSubreddit(subreddit as RKSubreddit, category: RKSubredditCategory.Top, pagination: pagination, completion: { (posts: [AnyObject]!, page: RKPagination!, error:NSError!) -> Void in
+            RKClient.sharedClient().linksInSubreddit(subreddit as! RKSubreddit, category: RKSubredditCategory.Top, pagination: pagination, completion: { (posts: [AnyObject]!, page: RKPagination!, error:NSError!) -> Void in
                 if error == nil {
                     
                     if self.posts.count == 0 {
-                        self.posts = posts as [RKLink]
+                        self.posts = posts as! [RKLink]
                         var indexPaths: [NSIndexPath] = []
                         for index in 0..<posts.count {
-                            let post = posts[index] as RKLink
+                            let post = posts[index] as! RKLink
                             let indexPath = NSIndexPath(forRow: index, inSection: CurrentStatusTableViewSection.Reddit.rawValue)
                             indexPaths.append(indexPath)
                         }
@@ -138,7 +138,7 @@ class CurrentStatusViewController: UIViewController {
                 let rep = asset.defaultRepresentation()
                 let cgImage = rep.fullScreenImage().takeRetainedValue()
                 let backgroundImage = UIImage(CGImage: cgImage)
-                self.backgroundImageView.image = backgroundImage?
+                self.backgroundImageView.image = backgroundImage
                 if let url = backgroundImageURL?.absoluteString {
                     println("Setting background image to asset at url: %@" + url)
                 }
@@ -220,22 +220,22 @@ extension CurrentStatusViewController: UITableViewDataSource, UITableViewDelegat
             let summary = KnockItOffPersistant.sharedInstance().summary()
             switch indexPath.row {
             case 0:
-                let cell = tableView.dequeueReusableCellWithIdentifier("TimeQuitImageTableViewCell") as TimeQuitImageTableViewCell
+                let cell = tableView.dequeueReusableCellWithIdentifier("TimeQuitImageTableViewCell") as! TimeQuitImageTableViewCell
                 cell.summary = summary
                 return cell
             case 1:
-                let cell = tableView.dequeueReusableCellWithIdentifier("DaysQuitStringTableViewCell") as DaysQuitStringTableViewCell
+                let cell = tableView.dequeueReusableCellWithIdentifier("DaysQuitStringTableViewCell") as! DaysQuitStringTableViewCell
                 cell.summary = summary
                 return cell
             case 2:
-                let cell = tableView.dequeueReusableCellWithIdentifier("SavingsTableViewCell") as SavingsTableViewCell
+                let cell = tableView.dequeueReusableCellWithIdentifier("SavingsTableViewCell") as! SavingsTableViewCell
                 cell.summary = summary
                 return cell
             default:
                 return UITableViewCell()
             }
         case CurrentStatusTableViewSection.Reddit.rawValue:
-            let cell = tableView.dequeueReusableCellWithIdentifier("RedditPostTableViewCell") as RedditPostTableViewCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("RedditPostTableViewCell") as! RedditPostTableViewCell
             cell.post = posts[indexPath.row]
             cell.index = UInt(indexPath.row)
             //            println("indexPath: \(indexPath.row)")
@@ -280,7 +280,7 @@ extension CurrentStatusViewController: UIImagePickerControllerDelegate, UINaviga
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
         
         // Store image path for use next instance
-        let assetURL = info[UIImagePickerControllerReferenceURL] as NSURL
+        let assetURL = info[UIImagePickerControllerReferenceURL] as! NSURL
         KnockItOffPersistant.sharedInstance().setBackgroundImageURL(assetURL)
         
         dismissViewControllerAnimated(true, completion: { () -> Void in

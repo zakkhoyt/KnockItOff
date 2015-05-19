@@ -1,11 +1,14 @@
 
+* Onboarding flow
+    * Walk through the setup
+    * Check permissions and prompt/guide for
+        * Notifications
+        * Photo access
+
 * Main Screen
     * Default background image
     * Settings icon
     * Scheduler on app load (if applicable)
-    * Check permissions and prompt/guide for
-        * Notifications
-        * Photo access
 
 * Settings screen
     * Images for Today tab
@@ -26,18 +29,23 @@
     * Make completed days green
 
 
+* Other
+    * App badge (count)
+    * Options for this
+
+* Bugs
+    * Crash on 2nd view of main page (background image bug)
+    * Scheduled notifications dont' have the right day count
+    * Tree view autoscrolling when near the top
+    * remove splash screen
+    * auto-hide in post detail view
 
 
 
 
 
 
-
-
-
-This app was inspired by reddit.com/r/stopdrinking, as the name suggests. /r/sd is a terrific community.
-
-I consider this app open source. You can access the source code here:
+Source code here:
 https://github.com/zakkhoyt/KnockItOff
 
 Features coming soon:
