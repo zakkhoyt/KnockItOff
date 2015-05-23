@@ -41,6 +41,7 @@ class CurrentStatusViewController: UIViewController {
         
         NSNotificationCenter.defaultCenter().addObserverForName(UIApplicationWillEnterForegroundNotification, object: nil, queue: NSOperationQueue.mainQueue()) { (note) -> Void in
             self.refreshUI(self.refreshControl)
+            self.refreshApplicationBadge()
         }
         
         refreshControl.addTarget(self, action: "refreshUI:", forControlEvents: UIControlEvents.ValueChanged)
@@ -62,7 +63,7 @@ class CurrentStatusViewController: UIViewController {
             NotificationScheduler.unscheduleNotifications();
         }
         
-        UIApplication.sharedApplication().applicationIconBadgeNumber = 0
+        refreshApplicationBadge()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -75,6 +76,11 @@ class CurrentStatusViewController: UIViewController {
             let vc = nc.viewControllers[0] as! WebViewController
             vc.url = sender as? NSURL
         }
+    }
+    
+    func refreshApplicationBadge() {
+        let summary = KnockItOffPersistant.sharedInstance().summary()
+        UIApplication.sharedApplication().applicationIconBadgeNumber = summary.daysQuit.unsignedIntegerValue
     }
     
     @IBAction func chatButtonTouchUpInside(sender: AnyObject) {
@@ -136,7 +142,7 @@ class CurrentStatusViewController: UIViewController {
             let library = ALAssetsLibrary()
             library.assetForURL(backgroundImageURL, resultBlock: { (asset) -> Void in
                 let rep = asset.defaultRepresentation()
-                let cgImage = rep.fullScreenImage().takeRetainedValue()
+                let cgImage = rep.fullScreenImage().takeUnretainedValue()
                 let backgroundImage = UIImage(CGImage: cgImage)
                 self.backgroundImageView.image = backgroundImage
                 if let url = backgroundImageURL?.absoluteString {

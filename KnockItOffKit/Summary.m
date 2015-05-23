@@ -8,6 +8,10 @@
 
 #import "Summary.h"
 #import <UIKit/UIKit.h>
+
+@interface Summary ()
+
+@end
 @implementation Summary
 
 -(instancetype)init{
@@ -19,6 +23,7 @@
     self = [super init];
     if(self){
         _startDate = startDate;
+        _currentDate = [NSDate date];
         [self setupStartDateString];
         [self setupDaysQuit];
         [self setupDaysQuitString];
@@ -31,6 +36,18 @@
         NSLog(@"");
     }
     return self;
+}
+-(void)setCurrentDate:(NSDate *)currentDate{
+    _currentDate = currentDate;
+    [self setupStartDateString];
+    [self setupDaysQuit];
+    [self setupDaysQuitString];
+    [self setupTimeQuitString];
+    [self setupTimeQuitStringColor];
+    [self setupTimeQuitImage];
+    [self setupBeersSaved];
+    [self setupMoneySaved];
+    [self setupCaloriesSaved];
 }
 
 #pragma mark Private
@@ -76,7 +93,8 @@
         return @(-1);
     }    _moneySaved = @(_beersSaved.integerValue * 9.99);
     
-    NSTimeInterval seconds = [[NSDate date] timeIntervalSinceDate:_startDate];
+//    NSTimeInterval seconds = [[NSDate date] timeIntervalSinceDate:_startDate];
+    NSTimeInterval seconds = [self.currentDate timeIntervalSinceDate:_startDate];
     NSTimeInterval days = (NSInteger)(seconds / 60.0 / 60.0 / 24.0);
     return @(days);
 }

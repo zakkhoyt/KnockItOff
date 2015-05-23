@@ -31,6 +31,7 @@
 
 * Other
     * App badge (count)
+    * Play button icon
     * Options for this
 
 * Bugs
@@ -39,6 +40,11 @@
     * Tree view autoscrolling when near the top
     * remove splash screen
     * auto-hide in post detail view
+
+* Reddit
+    * Have sign in dialog (optional)
+    * Use XPath to get days quit.
+    * If fails allow to set manually
 
 
 

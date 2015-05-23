@@ -14,6 +14,7 @@
 -(instancetype)initWithStartDate:(NSDate*)startDate;
 
 @property (nonatomic, strong) NSDate *startDate;
+@property (nonatomic, strong) NSDate *currentDate;
 @property (nonatomic, strong) NSString *startDateString;
 @property (nonatomic, strong) NSNumber *daysQuit;
 @property (nonatomic, strong) NSString *daysQuitString;
