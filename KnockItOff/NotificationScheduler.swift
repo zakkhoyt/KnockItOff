@@ -28,7 +28,6 @@ class NotificationScheduler: NSObject {
             notification.fireDate = futureDate
             let summary = KnockItOffPersistant.sharedInstance().summary()
             summary.currentDate = futureDate;
-//            let summary: Summary = Summary(startDate:futureDate)
             notification.alertBody = summary.daysQuitString
             notification.alertTitle = summary.timeQuitString
             notification.applicationIconBadgeNumber = summary.daysQuit.unsignedIntegerValue
@@ -37,6 +36,10 @@ class NotificationScheduler: NSObject {
             println("alert: " + summary.daysQuitString)
             UIApplication.sharedApplication().scheduleLocalNotification(notification)
         }
+        // Set current date back to now
+        let summary = KnockItOffPersistant.sharedInstance().summary()
+        summary.currentDate = NSDate()
+
         
         UIApplication.sharedApplication().applicationIconBadgeNumber = 99
     }
@@ -51,7 +54,7 @@ class NotificationScheduler: NSObject {
         
         let alarmDate = KnockItOffPersistant.sharedInstance().alarmTime()
         let calendar = NSCalendar.currentCalendar()
-        let comp = calendar.components((.HourCalendarUnit | .MinuteCalendarUnit), fromDate: alarmDate)
+        let comp = calendar.components((.CalendarUnitHour | .CalendarUnitMinute), fromDate: alarmDate)
         let hour = comp.hour
         let minute = comp.minute
         
