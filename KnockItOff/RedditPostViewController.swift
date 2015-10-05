@@ -33,7 +33,7 @@ class RedditPostViewController: UIViewController {
             if error == nil {
                 for index in 0..<comments.count {
                     let comment = comments[index] as! RKComment
-                    println("\(index): comment.replics \(comment.replies.count)")
+                    print("\(index): comment.replics \(comment.replies.count)")
                 }
                 self.comments = comments as? [RKComment]
                 self.treeView.reloadData()
@@ -51,7 +51,7 @@ class RedditPostViewController: UIViewController {
 
 extension RedditPostViewController: UIScrollViewDelegate {
     func scrollViewWillBeginDragging(scrollView: UIScrollView) {
-        println(__FUNCTION__)
+        print(__FUNCTION__)
     }
 }
 

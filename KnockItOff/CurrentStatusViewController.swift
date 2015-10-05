@@ -121,7 +121,7 @@ class CurrentStatusViewController: UIViewController {
                         self.tableView.reloadData()
                     }
                 } else {
-                    println("could not get subreddit links")
+                    print("could not get subreddit links")
                 }
             })
         })
@@ -146,11 +146,11 @@ class CurrentStatusViewController: UIViewController {
                 let backgroundImage = UIImage(CGImage: cgImage)
                 self.backgroundImageView.image = backgroundImage
                 if let url = backgroundImageURL?.absoluteString {
-                    println("Setting background image to asset at url: %@" + url)
+                    print("Setting background image to asset at url: %@" + url)
                 }
                 
                 }, failureBlock: { (error) -> Void in
-                    println("Failed to retrieve image from AssetLibrary")
+                    print("Failed to retrieve image from AssetLibrary")
             })
         } else {
             self.backgroundImageView.image = UIImage(named: "background")
@@ -276,14 +276,14 @@ extension CurrentStatusViewController: UITableViewDataSource, UITableViewDelegat
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println(__FUNCTION__)
+        print(__FUNCTION__)
         let post = posts[indexPath.row]
         self.performSegueWithIdentifier(self.SegueMainToPost, sender: post)
     }
 }
 
 extension CurrentStatusViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         
         // Store image path for use next instance
         let assetURL = info[UIImagePickerControllerReferenceURL] as! NSURL

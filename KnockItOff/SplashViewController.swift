@@ -54,35 +54,35 @@ class SplashViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        let sublayers: NSArray = yalLabel.fillLayer.sublayers
+        let sublayers: NSArray = yalLabel.fillLayer!.sublayers!
         sublayers.enumerateObjectsUsingBlock { (sublayer, index, stop) -> Void in
             if index % 2 == 0 {
-                let fillAnimation = YALPathFillAnimation(path: self.yalLabel.fillLayer.mask.path, andDirectionAngle: 180)
+                let fillAnimation = YALPathFillAnimation(path: self.yalLabel.fillLayer!.mask.path, andDirectionAngle: 180)
                 fillAnimation.duration = 4.0
-                sublayer.mask?.addAnimation(fillAnimation, forKey: "fillAnimation_even")
+                sublayer.mask?!.addAnimation(fillAnimation, forKey: "fillAnimation_even")
             } else {
-                let fillAnimation = YALPathFillAnimation(path: self.yalLabel.fillLayer.mask.path, andDirectionAngle: 180)
+                let fillAnimation = YALPathFillAnimation(path: self.yalLabel.fillLayer!.mask.path, andDirectionAngle: 180)
                 fillAnimation.duration = 4.0
-                sublayer.mask?.addAnimation(fillAnimation, forKey: "fillAnimation_odd")
+                sublayer.mask?!.addAnimation(fillAnimation, forKey: "fillAnimation_odd")
 
             }
         }
         
         
-        let dSublayers: NSArray = descriptionLabel.fillLayer.sublayers
+        let dSublayers: NSArray = descriptionLabel.fillLayer!.sublayers!
         dSublayers.enumerateObjectsUsingBlock { (sublayer, index, stop) -> Void in
-            let fillAnimation = YALPathFillAnimation(path: self.yalLabel.fillLayer.mask.path, andDirectionAngle: 180)
+            let fillAnimation = YALPathFillAnimation(path: self.yalLabel.fillLayer!.mask.path, andDirectionAngle: 180)
             fillAnimation.duration = 2.0
-            sublayer.mask?.addAnimation(fillAnimation, forKey: "fillAnimation_tiny")
+            sublayer.mask?!.addAnimation(fillAnimation, forKey: "fillAnimation_tiny")
         }
     
         
         let popTime = dispatch_time(DISPATCH_TIME_NOW, 5 * Int64(NSEC_PER_SEC))
         dispatch_after(popTime, dispatch_get_main_queue()) { () -> Void in
             let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-            let vc = storyboard.instantiateInitialViewController() as! UIViewController
-            vc.modalTransitionStyle = .CrossDissolve
-            self.presentViewController(vc, animated: true) { () -> Void in
+            let vc = storyboard.instantiateInitialViewController() as UIViewController?
+            vc!.modalTransitionStyle = .CrossDissolve
+            self.presentViewController(vc!, animated: true) { () -> Void in
             }
         }
     }

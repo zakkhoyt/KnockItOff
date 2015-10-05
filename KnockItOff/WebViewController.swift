@@ -41,7 +41,7 @@ extension WebViewController: UIWebViewDelegate {
         MBProgressHUD.hideAllHUDsForView(view, animated: true)
     }
     
-    func webView(webView: UIWebView, didFailLoadWithError error: NSError) {
+    func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
         MBProgressHUD.hideAllHUDsForView(view, animated: true)
     }
  

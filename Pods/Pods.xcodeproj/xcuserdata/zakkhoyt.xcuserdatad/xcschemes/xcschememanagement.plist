@@ -8,36 +8,185 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Pods-KnockItOff-AFNetworking.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>Pods-KnockItOff-Mantle.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Pods-KnockItOff-RSDayFlow.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>Pods-KnockItOff-RedditKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>Pods-KnockItOff.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Pods-KnockItOffKit-AFNetworking.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
+		<key>Pods-KnockItOffKit-Mantle.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>Pods-KnockItOffKit-RSDayFlow.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
+		<key>Pods-KnockItOffKit-RedditKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
+		<key>Pods-KnockItOffKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
+		<key>Pods-KnockItOffKitTests-AFNetworking.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
+		<key>Pods-KnockItOffKitTests-Mantle.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
+		<key>Pods-KnockItOffKitTests-RSDayFlow.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
+		<key>Pods-KnockItOffKitTests-RedditKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
+		<key>Pods-KnockItOffKitTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+		<key>Pods-KnockItOffTests-AFNetworking.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
+		<key>Pods-KnockItOffTests-Mantle.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>22</integer>
+		</dict>
+		<key>Pods-KnockItOffTests-RSDayFlow.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>24</integer>
+		</dict>
+		<key>Pods-KnockItOffTests-RedditKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>23</integer>
+		</dict>
+		<key>Pods-KnockItOffTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>20</integer>
+		</dict>
+		<key>Pods-KnockItOffToday-AFNetworking.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>26</integer>
+		</dict>
+		<key>Pods-KnockItOffToday-Mantle.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>27</integer>
+		</dict>
+		<key>Pods-KnockItOffToday-RSDayFlow.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>29</integer>
+		</dict>
+		<key>Pods-KnockItOffToday-RedditKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>28</integer>
+		</dict>
+		<key>Pods-KnockItOffToday.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>25</integer>
 		</dict>
 		<key>Pods-MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>31</integer>
 		</dict>
 		<key>Pods-Mantle.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>30</integer>
+		</dict>
+		<key>Pods-Onboard.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>35</integer>
+		</dict>
+		<key>Pods-Ophiuchus.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>36</integer>
 		</dict>
 		<key>Pods-RATreeView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>32</integer>
 		</dict>
 		<key>Pods-RSDayFlow.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>34</integer>
 		</dict>
 		<key>Pods-RedditKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>33</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -57,12 +206,52 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>2A2E7E37CBF617D2D084CD2D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2F749D29319124E138FBA825</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>625BAF65D46333FE1F47FFAB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6434BB141E3839E7F6D9B1F6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>6EDA8CF9E1C20406D93CABE2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7CB8ED71C22A56CF5F684109</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8479F8083814651CD7EF47BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8CCB86A5C31B8A0C0251FFCA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B4A6D59B724C2AA7E0D0BF02</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B9F874CA06658C379DB93800</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -73,6 +262,11 @@
 			<true/>
 		</dict>
 		<key>DB5A7053342D86FF282771C8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FFBBF7EE8A3E88531D5B5922</key>
 		<dict>
 			<key>primary</key>
 			<true/>

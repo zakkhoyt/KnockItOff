@@ -43,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
-        println("did register user notifications")
+        print("did register user notifications")
         KnockItOffPersistant.sharedInstance().setHasPromptedNotifications(true)
         if notificationSettings.types == .None {
             notificationStatus = .Denied
@@ -56,7 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func promptForNotifcations(notificationClosure: (NotificationStatus) -> (Void)) {
-        UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil))
+        UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [UIUserNotificationType.Sound, UIUserNotificationType.Alert, UIUserNotificationType.Badge], categories: nil))
         notificationStatus = .NotPrompted
         self.notificationClosure = notificationClosure
     }

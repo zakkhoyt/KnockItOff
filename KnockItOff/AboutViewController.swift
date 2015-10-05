@@ -32,16 +32,16 @@ class AboutViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        let sublayers: NSArray = yalLabel.fillLayer.sublayers
+        let sublayers: NSArray = yalLabel.fillLayer!.sublayers!
         sublayers.enumerateObjectsUsingBlock { (sublayer, index, stop) -> Void in
             if index % 2 == 0 {
-                let fillAnimation = YALPathFillAnimation(path: self.yalLabel.fillLayer.mask.path, andDirectionAngle: 0)
+                let fillAnimation = YALPathFillAnimation(path: self.yalLabel.fillLayer!.mask.path, andDirectionAngle: 0)
                 fillAnimation.duration = 3.0
-                sublayer.mask?.addAnimation(fillAnimation, forKey: "fillAnimation_even")
+                sublayer.mask?!.addAnimation(fillAnimation, forKey: "fillAnimation_even")
             } else {
-                let fillAnimation = YALPathFillAnimation(path: self.yalLabel.fillLayer.mask.path, andDirectionAngle: 180)
+                let fillAnimation = YALPathFillAnimation(path: self.yalLabel.fillLayer!.mask.path, andDirectionAngle: 180)
                 fillAnimation.duration = 3.0
-                sublayer.mask?.addAnimation(fillAnimation, forKey: "fillAnimation_odd")
+                sublayer.mask?!.addAnimation(fillAnimation, forKey: "fillAnimation_odd")
             }
         }
     }

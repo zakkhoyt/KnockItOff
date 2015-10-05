@@ -31,21 +31,21 @@ class SettingsNotificationsViewController: UIViewController {
     func updateControls(status: NotificationStatus) {
         switch status {
         case .NotPrompted:
-            println("Not Prompted")
+            print("Not Prompted")
             promptButton?.hidden = false
             nextButton?.hidden = true
             successLabel?.hidden = true
             datePicker?.hidden = true
             
         case .Authorized:
-            println("Authorized")
+            print("Authorized")
             promptButton?.hidden = true
             nextButton?.hidden = false
             successLabel?.hidden = true
             datePicker?.hidden = false
             
         case .Denied:
-            println("Denied")
+            print("Denied")
             promptButton?.hidden = true
             nextButton?.hidden = false
             successLabel?.hidden = false

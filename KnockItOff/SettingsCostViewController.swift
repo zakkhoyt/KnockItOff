@@ -21,7 +21,7 @@ class SettingsCostViewController: UIViewController {
     }
 
     override func viewWillAppear(animated: Bool) {
-        var p: UInt = KnockItOffPersistant.sharedInstance().pricePerDay()
+        let p: UInt = KnockItOffPersistant.sharedInstance().pricePerDay()
         priceStepper?.value = Double(p)
         let f: Float = Float(p) / 100.0
         costLabel?.text = NSString(format: "$%.2f spent daily", f) as String

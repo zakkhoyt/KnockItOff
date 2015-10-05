@@ -15,7 +15,7 @@ class NotificationScheduler: NSObject {
     class func scheduleNotifications(){
         // Ask for permission
         let status: UIUserNotificationSettings? = UIApplication.sharedApplication().currentUserNotificationSettings()
-        UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Sound | UIUserNotificationType.Alert | UIUserNotificationType.Badge, categories: nil))
+        UIApplication.sharedApplication().registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [UIUserNotificationType.Sound, UIUserNotificationType.Alert, UIUserNotificationType.Badge], categories: nil))
         
         unscheduleNotifications()
         
@@ -29,11 +29,15 @@ class NotificationScheduler: NSObject {
             let summary = KnockItOffPersistant.sharedInstance().summary()
             summary.currentDate = futureDate;
             notification.alertBody = summary.daysQuitString
-            notification.alertTitle = summary.timeQuitString
+            if #available(iOS 8.2, *) {
+                notification.alertTitle = summary.timeQuitString
+            } else {
+                // Fallback on earlier versions
+            }
             notification.applicationIconBadgeNumber = summary.daysQuit.unsignedIntegerValue
             let localTimeDescription = futureDate.descriptionWithLocale(NSLocale.currentLocale())
-            println("fireDate: " + localTimeDescription!)
-            println("alert: " + summary.daysQuitString)
+            print("fireDate: " + localTimeDescription)
+            print("alert: " + summary.daysQuitString)
             UIApplication.sharedApplication().scheduleLocalNotification(notification)
         }
         // Set current date back to now
@@ -47,14 +51,14 @@ class NotificationScheduler: NSObject {
     class func unscheduleNotifications() {
         // Cancel all previously scheduled notifications
         UIApplication.sharedApplication().cancelAllLocalNotifications()
-        println("Unscheduled all notifications")
+        print("Unscheduled all notifications")
     }
     
     class func dateForDaysFromNow(daysfromNow: Int) -> NSDate {
         
         let alarmDate = KnockItOffPersistant.sharedInstance().alarmTime()
         let calendar = NSCalendar.currentCalendar()
-        let comp = calendar.components((.CalendarUnitHour | .CalendarUnitMinute), fromDate: alarmDate)
+        let comp = calendar.components(([.Hour, .Minute]), fromDate: alarmDate)
         let hour = comp.hour
         let minute = comp.minute
         
@@ -64,9 +68,9 @@ class NotificationScheduler: NSObject {
         
         
         
-        let tomorrow = calendar.dateByAddingComponents(tomorrowComponents, toDate: now, options: nil)
+        let tomorrow = calendar.dateByAddingComponents(tomorrowComponents, toDate: now, options: [])
         
-        let tomorrowMorningComponents = calendar.components(.CalendarUnitEra | .CalendarUnitYear | .CalendarUnitMonth | .CalendarUnitDay, fromDate: tomorrow!)
+        let tomorrowMorningComponents = calendar.components([.Era, .Year, .Month, .Day], fromDate: tomorrow!)
         tomorrowMorningComponents.hour = hour
         tomorrowMorningComponents.minute = minute
         

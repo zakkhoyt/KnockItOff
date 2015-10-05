@@ -75,17 +75,17 @@ class SettingsTableViewController: UITableViewController {
     
     @IBAction func testButtonAction(sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Settings", bundle: NSBundle.mainBundle())
-        let vc = storyboard.instantiateInitialViewController() as! UIViewController
-        presentViewController(vc, animated: true, completion: nil)        
+        let vc = storyboard.instantiateInitialViewController() as UIViewController?
+        presentViewController(vc!, animated: true, completion: nil)
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if indexPath.row == 1 && indexPath.section == 2 {
             if datePickerHidden {
-                println("--------------------- 0")
+                print("--------------------- 0")
                 return 0.001
             } else {
-                println("--------------------- 162")
+                print("--------------------- 162")
                 return 162
             }
         }
@@ -144,7 +144,7 @@ class SettingsTableViewController: UITableViewController {
    
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println("tap")
+        print("tap")
     }
 }
 

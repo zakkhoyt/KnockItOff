@@ -19,6 +19,7 @@
 		C668C6A01AC0B83800478BD6 /* TODO.txt in Resources */ = {isa = PBXBuildFile; fileRef = C668C69F1AC0B83800478BD6 /* TODO.txt */; };
 		C668C6A21AC0BA9100478BD6 /* HelpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C668C6A11AC0BA9100478BD6 /* HelpTableViewController.swift */; };
 		C668C6A41AC0BB1D00478BD6 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C668C6A31AC0BB1D00478BD6 /* WebViewController.swift */; };
+		C6B323121BC3177900A2BB3B /* 1.0.txt in Resources */ = {isa = PBXBuildFile; fileRef = C6B323111BC3177900A2BB3B /* 1.0.txt */; };
 		C6FF233A1AC0D68A008BB058 /* libPods-RedditKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FF23391AC0D68A008BB058 /* libPods-RedditKit.a */; };
 		C6FF23401AC0D8B6008BB058 /* libPods-AFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FF233F1AC0D8B6008BB058 /* libPods-AFNetworking.a */; };
 		CF4C527A1AC4EB9500FE2541 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4C52791AC4EB9500FE2541 /* AboutViewController.swift */; };
@@ -139,6 +140,7 @@
 		C668C69F1AC0B83800478BD6 /* TODO.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO.txt; sourceTree = "<group>"; };
 		C668C6A11AC0BA9100478BD6 /* HelpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTableViewController.swift; sourceTree = "<group>"; };
 		C668C6A31AC0BB1D00478BD6 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		C6B323111BC3177900A2BB3B /* 1.0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.0.txt; sourceTree = "<group>"; };
 		C6FF23391AC0D68A008BB058 /* libPods-RedditKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RedditKit.a"; path = "Pods/build/Debug-iphoneos/libPods-RedditKit.a"; sourceTree = "<group>"; };
 		C6FF233B1AC0D759008BB058 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-AFNetworking.a"; sourceTree = "<group>"; };
 		C6FF233C1AC0D759008BB058 /* libPods-RedditKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RedditKit.a"; path = "Pods/build/Debug-iphoneos/libPods-RedditKit.a"; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				C668C69F1AC0B83800478BD6 /* TODO.txt */,
+				C6B323111BC3177900A2BB3B /* 1.0.txt */,
 			);
 			name = Documentation;
 			sourceTree = "<group>";
@@ -644,6 +647,8 @@
 		CFCE94731ABE546900E1E947 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Zakk Hoyt";
 				TargetAttributes = {
@@ -705,6 +710,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B323121BC3177900A2BB3B /* 1.0.txt in Resources */,
 				C668C6A01AC0B83800478BD6 /* TODO.txt in Resources */,
 				CFCE94861ABE546900E1E947 /* Main.storyboard in Resources */,
 				CFCE94881ABE546900E1E947 /* Images.xcassets in Resources */,

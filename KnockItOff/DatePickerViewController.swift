@@ -74,7 +74,7 @@ extension DatePickerViewController: RSDFDatePickerViewDataSource{
 
 extension DatePickerViewController: RSDFDatePickerViewDelegate{
     func datePickerView(view: RSDFDatePickerView!, didSelectDate date: NSDate!) {
-        println("selected date: " + date.description)
+        print("selected date: " + date.description)
         defaults.setStartDate(date)
         datePicker.reloadData()
         datePicker.selectDate(date)
